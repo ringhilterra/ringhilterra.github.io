@@ -1,14 +1,26 @@
 ---
 title: "Ryan Inghilterra"
 subtitle: "Senior Data Scientist"
+image: headshot.JPEG
+about:
+  template: trestles
+  image-shape: rectangle
+  image-width: 200px
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/ryan-inghilterra-017/
+    - icon: github
+      text: GitHub
+      href: https://github.com/ringhilterra
+    - icon: twitter
+      text: X/Twitter
+      href: https://x.com/RyanInghilterra
 ---
 
-Welcome!
+![](X_header_img.png){fig-align="center" width="80%"}
 
 ## Featured Projects
 
 - [Active Support Index (ASI)](projects/asi.qmd) - Quantifying off-ball movement during pressure situations
 
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/) | [GitHub](https://github.com/ringhilterra) | [X/Twitter](https://x.com/RyanInghilterra)
