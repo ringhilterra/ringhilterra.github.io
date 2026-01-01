@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome\n\n\n\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ryan Inghilterra",
+    "section": "",
+    "text": "Welcome!"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Ryan Inghilterra",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\nActive Support Index (ASI) - Quantifying off-ball movement during pressure situations"
+  },
+  {
+    "objectID": "index.html#writing",
+    "href": "index.html#writing",
+    "title": "Ryan Inghilterra",
+    "section": "Writing",
+    "text": "Writing\n\nSubstack - Long-form analysis\nBlog - Technical notes"
+  },
+  {
+    "objectID": "index.html#connect",
+    "href": "index.html#connect",
+    "title": "Ryan Inghilterra",
+    "section": "Connect",
+    "text": "Connect\nLinkedIn | GitHub | X/Twitter"
+  },
+  {
+    "objectID": "projects/kaggle-mancity.html",
+    "href": "projects/kaggle-mancity.html",
+    "title": "Kaggle Manchester City Competition",
+    "section": "",
+    "text": "Visualization work for the Kaggle Manchester City competition, analyzing simulated football data."
+  },
+  {
+    "objectID": "projects/kaggle-mancity.html#overview",
+    "href": "projects/kaggle-mancity.html#overview",
+    "title": "Kaggle Manchester City Competition",
+    "section": "",
+    "text": "Visualization work for the Kaggle Manchester City competition, analyzing simulated football data."
+  },
+  {
+    "objectID": "projects/kaggle-mancity.html#code",
+    "href": "projects/kaggle-mancity.html#code",
+    "title": "Kaggle Manchester City Competition",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to my blog on football analytics.\nI’m a Senior Data Scientist at CrowdStrike by day, building AI/ML systems for cybersecurity. By night and on weekends, I apply those same data science skills to my passion: football (soccer) analytics.\nHere I’ll share technical write-ups, analysis, and insights from my work with tracking data, metrics development, and more.\nStay tuned for deep dives into projects like the Active Support Index (ASI) and other football analytics explorations."
+  },
+  {
+    "objectID": "projects/asi.html",
+    "href": "projects/asi.html",
+    "title": "Active Support Index (ASI)",
+    "section": "",
+    "text": "A novel metric for quantifying off-ball movement during pressure situations, developed for the SkillCorner x PySport Analytics Cup (2025-2026)."
+  },
+  {
+    "objectID": "projects/asi.html#overview",
+    "href": "projects/asi.html#overview",
+    "title": "Active Support Index (ASI)",
+    "section": "",
+    "text": "A novel metric for quantifying off-ball movement during pressure situations, developed for the SkillCorner x PySport Analytics Cup (2025-2026)."
+  },
+  {
+    "objectID": "projects/asi.html#the-problem",
+    "href": "projects/asi.html#the-problem",
+    "title": "Active Support Index (ASI)",
+    "section": "The Problem",
+    "text": "The Problem\nWhen a teammate is under pressure, what makes good off-ball support? We intuitively know when teammates “show for the ball” vs. hide from it. But can we quantify it?"
+  },
+  {
+    "objectID": "projects/asi.html#the-solution",
+    "href": "projects/asi.html#the-solution",
+    "title": "Active Support Index (ASI)",
+    "section": "The Solution",
+    "text": "The Solution\nASI measures how actively teammates support the ball carrier during pressure situations. It captures positioning, movement toward passing lanes, and availability as an outlet."
+  },
+  {
+    "objectID": "projects/asi.html#data",
+    "href": "projects/asi.html#data",
+    "title": "Active Support Index (ASI)",
+    "section": "Data",
+    "text": "Data\n\n10 A-League 2024/25 matches\n7,063 pressure events\n8+ million tracking data points from SkillCorner"
+  },
+  {
+    "objectID": "projects/asi.html#validation",
+    "href": "projects/asi.html#validation",
+    "title": "Active Support Index (ASI)",
+    "section": "Validation",
+    "text": "Validation\nASI correlated strongly with physical performance metrics (r=0.74, p&lt;0.001). Players who score higher on ASI tend to be the ones covering more ground and making themselves available. The metric appears to capture something real."
+  },
+  {
+    "objectID": "projects/asi.html#code",
+    "href": "projects/asi.html#code",
+    "title": "Active Support Index (ASI)",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\nKaggle Manchester City Competition\n\n\n\nvisualization\n\nkaggle\n\n\n\nVisualization of simulated football data\n\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Senior Data Scientist II at CrowdStrike, focused on Agentic AI, detection models, and LLM-powered pipelines. 4+ years building AI/ML systems for cybersecurity, with several pending patents."
+  },
+  {
+    "objectID": "about.html#professional",
+    "href": "about.html#professional",
+    "title": "About",
+    "section": "",
+    "text": "Senior Data Scientist II at CrowdStrike, focused on Agentic AI, detection models, and LLM-powered pipelines. 4+ years building AI/ML systems for cybersecurity, with several pending patents."
+  },
+  {
+    "objectID": "about.html#football-analytics",
+    "href": "about.html#football-analytics",
+    "title": "About",
+    "section": "Football Analytics",
+    "text": "Football Analytics\nNights and weekends passion - applying data science to the beautiful game. Currently working with tracking data and building novel metrics.\nRecent work:\n\nActive Support Index (ASI) - A metric for quantifying off-ball movement during pressure situations, developed for the SkillCorner x PySport Analytics Cup"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n\nLinkedIn: ringhilterra\nGitHub: ringhilterra\nTwitter: @ringhilterra"
+  }
+]

@@ -1,0 +1,14 @@
+---
+title: "Kaggle Manchester City Competition"
+description: "Visualization of simulated football data"
+date: "2025-01-01"
+categories: [visualization, kaggle]
+---
+
+## Overview
+
+Visualization work for the Kaggle Manchester City competition, analyzing simulated football data.
+
+## Code
+
+[GitHub Repository](https://github.com/ringhilterra/kaggle-google-football-sim)

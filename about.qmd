@@ -1,0 +1,21 @@
+---
+title: "About"
+---
+
+## Professional
+
+Senior Data Scientist II at CrowdStrike, focused on Agentic AI, detection models, and LLM-powered pipelines. 4+ years building AI/ML systems for cybersecurity, with several pending patents.
+
+## Football Analytics
+
+Nights and weekends passion - applying data science to the beautiful game. Currently working with tracking data and building novel metrics.
+
+**Recent work:**
+
+- **Active Support Index (ASI)** - A metric for quantifying off-ball movement during pressure situations, developed for the SkillCorner x PySport Analytics Cup
+
+## Contact
+
+- LinkedIn: [ringhilterra](https://www.linkedin.com/in/ryan-inghilterra-017/)
+- GitHub: [ringhilterra](https://github.com/ringhilterra)
+- Twitter: [@ringhilterra](https://x.com/RyanInghilterra)

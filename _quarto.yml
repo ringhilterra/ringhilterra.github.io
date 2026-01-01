@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ryan Inghilterra"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+      - href: blog.qmd
+        text: Blog
+    right:
+      - icon: github
+        href: https://github.com/ringhilterra
+      - icon: linkedin
+        href: https://linkedin.com/in/ringhilterra
+      - icon: twitter
+        href: https://twitter.com/ringhilterra
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
