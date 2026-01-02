@@ -2,7 +2,7 @@
 title: "Active Support Index (ASI)"
 description: "Quantifying off-ball movement during pressure situations"
 date: "2025-12-31"
-categories: [metrics, tracking-data]
+categories: [metrics, tracking-data, events-data, football]
 image: fig2_asi_physical_validation.png
 ---
 
