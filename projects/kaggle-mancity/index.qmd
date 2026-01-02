@@ -3,6 +3,7 @@ title: "Kaggle Manchester City Competition"
 description: "Visualization of simulated football data"
 date: "2025-01-01"
 categories: [visualization, kaggle]
+image: thumbnail.png
 ---
 
 ## Overview

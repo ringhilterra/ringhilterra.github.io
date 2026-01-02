@@ -8,8 +8,8 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/asi.html",
-      "/projects/kaggle-mancity.html"
+      "/projects/asi/index.html",
+      "/projects/kaggle-mancity/index.html"
     ]
   }
 ]

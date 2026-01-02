@@ -22,5 +22,5 @@ about:
 
 ## Featured Projects
 
-- [Active Support Index (ASI)](projects/asi.qmd) - Quantifying off-ball movement during pressure situations
+- [Active Support Index (ASI)](projects/asi/) - Quantifying off-ball movement during pressure situations
 

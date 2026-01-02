@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>notebook – Ryan Inghilterra</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Ryan Inghilterra</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ringhilterra"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/ringhilterra"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/ringhilterra"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-active-support-index-asi" id="toc-the-active-support-index-asi" class="nav-link active" data-scroll-target="#the-active-support-index-asi">The Active Support Index (ASI)</a>
+  <ul class="collapse">
+  <li><a href="#quantifying-off-ball-movement-when-it-matters-most" id="toc-quantifying-off-ball-movement-when-it-matters-most" class="nav-link" data-scroll-target="#quantifying-off-ball-movement-when-it-matters-most">Quantifying Off-Ball Movement When It Matters Most</a></li>
+  <li><a href="#single-match-analysis" id="toc-single-match-analysis" class="nav-link" data-scroll-target="#single-match-analysis">Single Match Analysis</a>
+  <ul class="collapse">
+  <li><a href="#data-loading" id="toc-data-loading" class="nav-link" data-scroll-target="#data-loading">Data Loading</a></li>
+  <li><a href="#calculating-asi-per-pressure-event" id="toc-calculating-asi-per-pressure-event" class="nav-link" data-scroll-target="#calculating-asi-per-pressure-event">Calculating ASI Per Pressure Event</a></li>
+  <li><a href="#pressure-moment-visualization" id="toc-pressure-moment-visualization" class="nav-link" data-scroll-target="#pressure-moment-visualization">Pressure Moment Visualization</a></li>
+  <li><a href="#player-asi-analysis" id="toc-player-asi-analysis" class="nav-link" data-scroll-target="#player-asi-analysis">Player ASI Analysis</a></li>
+  <li><a href="#team-asi-comparison" id="toc-team-asi-comparison" class="nav-link" data-scroll-target="#team-asi-comparison">Team ASI Comparison</a></li>
+  </ul></li>
+  <li><a href="#run-on-all-10-matches" id="toc-run-on-all-10-matches" class="nav-link" data-scroll-target="#run-on-all-10-matches">Run on all 10 matches</a></li>
+  <li><a href="#validation-asi-by-position" id="toc-validation-asi-by-position" class="nav-link" data-scroll-target="#validation-asi-by-position">Validation: ASI by Position</a></li>
+  <li><a href="#validation-season-physical-output" id="toc-validation-season-physical-output" class="nav-link" data-scroll-target="#validation-season-physical-output">Validation: Season Physical Output</a></li>
+  <li><a href="#time-based-asi-analysis" id="toc-time-based-asi-analysis" class="nav-link" data-scroll-target="#time-based-asi-analysis">Time-Based ASI Analysis</a></li>
+  <li><a href="#player-fatigue-analysis" id="toc-player-fatigue-analysis" class="nav-link" data-scroll-target="#player-fatigue-analysis">Player Fatigue Analysis</a></li>
+  <li><a href="#impact-use-cases" id="toc-impact-use-cases" class="nav-link" data-scroll-target="#impact-use-cases">Impact &amp; Use Cases</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">Future Improvements</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<p><em>If running in Google Colab, uncomment the cell below. Skip if running locally.</em></p>
+<div id="a40db36d" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !rm -rf temp_repo src</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># !git clone https://github.com/ringhilterra/analytics_cup_research.git temp_repo</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># !mv temp_repo/src .</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># !rm -rf temp_repo</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># !pip install mplsoccer -q</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="the-active-support-index-asi" class="level1">
+<h1>The Active Support Index (ASI)</h1>
+<section id="quantifying-off-ball-movement-when-it-matters-most" class="level3">
+<h3 class="anchored" data-anchor-id="quantifying-off-ball-movement-when-it-matters-most">Quantifying Off-Ball Movement When It Matters Most</h3>
+<p><strong>Author: Ryan Inghilterra</strong></p>
+<hr>
+<p><strong>Core Question:</strong> When a player is pressured, how actively are teammates moving to provide passing options?</p>
+<p><strong>Metrics Framework:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Metric</th>
+<th>Formula</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Per Event</td>
+<td><strong>Active Support Ratio</strong></td>
+<td><span class="math inline">\(\frac{\text{Active Supporters}}{\text{Nearby Teammates}}\)</span></td>
+<td>Support quality in a single pressure moment</td>
+</tr>
+<tr class="even">
+<td>Per Player</td>
+<td><strong>Player ASI</strong></td>
+<td><span class="math inline">\(\frac{\text{Active Support Count}}{\text{Support Opportunities}}\)</span></td>
+<td>How often a player moves to support under pressure</td>
+</tr>
+<tr class="odd">
+<td>Per Team</td>
+<td><strong>Team ASI</strong></td>
+<td><span class="math inline">\(1 - \text{Static Rate}\)</span></td>
+<td>Team’s off-ball movement culture</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Definitions:</strong> - <strong>Active Supporter</strong>: Teammate within 35m AND moving &gt;2 m/s - <strong>Static Rate</strong>: Proportion of events with zero active supporters</p>
+<p>Higher values = better off-ball support.</p>
+<p><strong>Validation highlights:</strong> - ASI correlates with season-level physical output (r = 0.74, p &lt; 0.001) - ASI aligns with positional demands (midfielders 59% vs defenders 45%, p &lt; 0.001) - Team ASI differentiates playing styles (98.3% Perth Glory to 91.5% Macarthur FC) - 58% of players show declining support in H2 (fatigue signal)</p>
+<div id="16671ab2" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core imports</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display settings</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.max_columns'</span>, <span class="dv">20</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.width'</span>, <span class="dv">200</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'dark_background'</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># src imports - core</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> ASIDataLoader, ASICalculator</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> fetch_match_data, process_all_matches, get_top_players_all_matches, get_team_stats_all_matches, plot_multi_match_team_comparison</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.asi_data_loader <span class="im">import</span> ASIDataLoader, print_match_summary</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.asi_core <span class="im">import</span> ASICalculator, ASIConfig</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.asi_visualizations <span class="im">import</span> ASIVisualizer</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.nb_helper <span class="im">import</span> get_detail_results_summary, team_stat_asi_summary, get_event_by_id, plot_pressure_from_event_id</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># src imports - validation &amp; analysis</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> calculate_position_stats, plot_position_validation, test_position_significance, print_significance_result</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> calculate_time_based_asi, get_time_bin_stats, plot_time_trend, compare_halves, print_half_comparison</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> calculate_player_fatigue, plot_fatigue_comparison, print_fatigue_summary</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> load_physical_aggregates, merge_asi_with_physical, calculate_physical_correlation, plot_asi_physical_correlation, print_physical_validation_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="single-match-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="single-match-analysis">Single Match Analysis</h2>
+<div id="8bf553d8" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>MATCH_ID <span class="op">=</span> <span class="dv">1886347</span> <span class="co"># Auckland (Home) vs Newcastle (Away) - final score: (2, 0)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># MATCH_ID = 1899585 ## &lt;- can easily change match_id</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+<section id="data-loading" class="level3">
+<h3 class="anchored" data-anchor-id="data-loading">Data Loading</h3>
+<div id="3539fae0" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First fetch/download data for single match - tracking and event data from SkillCorner GitHub</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>fetch_match_data(MATCH_ID, verbose<span class="op">=</span><span class="va">True</span>, skip_if_exists<span class="op">=</span><span class="va">True</span>)  <span class="co"># Downloads and processes match data to ./data/1886347/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Match 1886347 data already exists, skipping fetch.</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>PosixPath('data/1886347')</code></pre>
+</div>
+</div>
+<div id="78ed263c" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load match</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>loader <span class="op">=</span> ASIDataLoader(data_dir<span class="op">=</span><span class="st">"./data"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>match_data <span class="op">=</span> loader.load_match(MATCH_ID)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Print summary</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>print_match_summary(match_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>============================================================
+MATCH 1886347
+Auckland FC 2 - 0 Newcastle United Jets FC
+------------------------------------------------------------
+Tracking rows:    956,076
+Event rows:       5,079
+Pressure events:  773
+Pitch:            104m x 68m
+Validated:        Yes
+============================================================</code></pre>
+</div>
+</div>
+<div id="73882cc7" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show processed tracking data with velocity (speed)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>display_cols <span class="op">=</span> [<span class="st">'frame'</span>, <span class="st">'team_id'</span>, <span class="st">'short_name'</span>,<span class="st">'number'</span>, <span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'vx'</span>, <span class="st">'vy'</span>, <span class="st">'speed'</span>, <span class="st">'match_time_min'</span>, <span class="st">'ball_x'</span>, <span class="st">'ball_y'</span>, <span class="st">'player_role.acronym'</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>match_data.tracking_df.head(<span class="dv">3</span>)[display_cols]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">frame</th>
+<th data-quarto-table-cell-role="th">team_id</th>
+<th data-quarto-table-cell-role="th">short_name</th>
+<th data-quarto-table-cell-role="th">number</th>
+<th data-quarto-table-cell-role="th">x</th>
+<th data-quarto-table-cell-role="th">y</th>
+<th data-quarto-table-cell-role="th">vx</th>
+<th data-quarto-table-cell-role="th">vy</th>
+<th data-quarto-table-cell-role="th">speed</th>
+<th data-quarto-table-cell-role="th">match_time_min</th>
+<th data-quarto-table-cell-role="th">ball_x</th>
+<th data-quarto-table-cell-role="th">ball_y</th>
+<th data-quarto-table-cell-role="th">player_role.acronym</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>10</td>
+<td>4177</td>
+<td>L. Verstraete</td>
+<td>6</td>
+<td>11.70</td>
+<td>6.73</td>
+<td>-1.242857</td>
+<td>-0.407143</td>
+<td>1.307845</td>
+<td>0.0</td>
+<td>0.32</td>
+<td>0.38</td>
+<td>DM</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>10</td>
+<td>4177</td>
+<td>F. Gallegos</td>
+<td>28</td>
+<td>10.16</td>
+<td>-2.12</td>
+<td>-0.292857</td>
+<td>-1.042857</td>
+<td>1.083197</td>
+<td>0.0</td>
+<td>0.32</td>
+<td>0.38</td>
+<td>AM</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>10</td>
+<td>4177</td>
+<td>N. Pijnaker</td>
+<td>4</td>
+<td>16.78</td>
+<td>-3.67</td>
+<td>0.257143</td>
+<td>-0.289286</td>
+<td>0.387051</td>
+<td>0.0</td>
+<td>0.32</td>
+<td>0.38</td>
+<td>LCB</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="3a189069" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>match_data.events_df.iloc[:, :<span class="dv">8</span>].tail(<span class="dv">3</span>) <span class="co"># peak at dynamic_events</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">event_id</th>
+<th data-quarto-table-cell-role="th">frame_start</th>
+<th data-quarto-table-cell-role="th">frame_end</th>
+<th data-quarto-table-cell-role="th">event_type</th>
+<th data-quarto-table-cell-role="th">event_subtype</th>
+<th data-quarto-table-cell-role="th">player_id</th>
+<th data-quarto-table-cell-role="th">team_id</th>
+<th data-quarto-table-cell-role="th">player_name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5076</th>
+<td>8_998</td>
+<td>58907</td>
+<td>58932</td>
+<td>player_possession</td>
+<td>NaN</td>
+<td>285188</td>
+<td>4177</td>
+<td>A. Paulsen</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5077</th>
+<td>7_2542</td>
+<td>58907</td>
+<td>58932</td>
+<td>passing_option</td>
+<td>NaN</td>
+<td>43829</td>
+<td>4177</td>
+<td>N. Moreno</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5078</th>
+<td>7_2543</td>
+<td>58907</td>
+<td>58932</td>
+<td>passing_option</td>
+<td>NaN</td>
+<td>163972</td>
+<td>4177</td>
+<td>M. Mata</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="calculating-asi-per-pressure-event" class="level3">
+<h3 class="anchored" data-anchor-id="calculating-asi-per-pressure-event">Calculating ASI Per Pressure Event</h3>
+<p><strong>Configurable Thresholds:</strong> | Parameter | Value | Rationale | |———–|——-|———–| | Proximity | 35m | Maximum realistic passing range under pressure | | Velocity | 2 m/s | Threshold separating walking (~1.4 m/s) from jogging/running |</p>
+<div id="d3feb757" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># can adjust these values</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>PROX_THRESH <span class="op">=</span> <span class="dv">35</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>VELOCITY_THRESH <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>config <span class="op">=</span> ASIConfig(proximity_threshold_m<span class="op">=</span>PROX_THRESH, velocity_threshold_ms<span class="op">=</span>VELOCITY_THRESH)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(config.proximity_threshold_m)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(config.velocity_threshold_ms)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>35
+2</code></pre>
+</div>
+</div>
+<div id="1aa14079" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate ASI metrics for each pressure event</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>calculator <span class="op">=</span> ASICalculator(match_data, config<span class="op">=</span>config)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>results_df <span class="op">=</span> calculator.process_all_pressure_events()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(results_df.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(773, 17)</code></pre>
+</div>
+</div>
+<div id="ea217dd3" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Pressure Event Results (first 8)"</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>display_cols <span class="op">=</span> [<span class="st">'frame_start'</span>, <span class="st">'period'</span>, <span class="st">'pressed_player_name'</span>, <span class="st">'num_teammates_nearby'</span>, <span class="st">'num_active_supporters'</span>, <span class="st">'active_support_ratio'</span>]</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>results_df[display_cols].head(<span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Pressure Event Results (first 8)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">frame_start</th>
+<th data-quarto-table-cell-role="th">period</th>
+<th data-quarto-table-cell-role="th">pressed_player_name</th>
+<th data-quarto-table-cell-role="th">num_teammates_nearby</th>
+<th data-quarto-table-cell-role="th">num_active_supporters</th>
+<th data-quarto-table-cell-role="th">active_support_ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>56</td>
+<td>1</td>
+<td>A. Šušnjar</td>
+<td>8</td>
+<td>4</td>
+<td>0.5000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>74</td>
+<td>1</td>
+<td>M. Natta</td>
+<td>8</td>
+<td>6</td>
+<td>0.7500</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>235</td>
+<td>1</td>
+<td>F. De Vries</td>
+<td>4</td>
+<td>2</td>
+<td>0.5000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>253</td>
+<td>1</td>
+<td>D. Ingham</td>
+<td>9</td>
+<td>8</td>
+<td>0.8889</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>314</td>
+<td>1</td>
+<td>L. Gillion</td>
+<td>5</td>
+<td>5</td>
+<td>1.0000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>345</td>
+<td>1</td>
+<td>F. Gallegos</td>
+<td>6</td>
+<td>3</td>
+<td>0.5000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>499</td>
+<td>1</td>
+<td>A. Šušnjar</td>
+<td>7</td>
+<td>0</td>
+<td>0.0000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>549</td>
+<td>1</td>
+<td>F. Gallegos</td>
+<td>9</td>
+<td>6</td>
+<td>0.6667</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><strong>Example (Row 1):</strong> A. Šušnjar under pressure - 8 teammates within 35m → 4 moving &gt;2 m/s → <strong>Active Support Ratio = 0.50</strong> - Half his nearby teammates were actively creating options; half were static.</p>
+<div id="1f1e0e12" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get detailed result for a single event</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>detailed_results <span class="op">=</span> calculator.get_detailed_results()</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Show one event in detail</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>event <span class="op">=</span> detailed_results[<span class="dv">1</span>]</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>get_detail_results_summary(event)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Detailed Analysis - Single Pressure Event
+============================================================
+Event ID: 9_1
+Frame: 74
+Type: recovery_press
+
+Pressed Player: M. Natta
+Position: (-16.9, 20.6)
+
+Support Metrics:
+  Teammates Nearby (&lt;35m): 8
+  Active Supporters (&gt;2m/s): 6
+  Active Support Ratio: 0.75
+
+Teammate Details:
+  C. Timmins      | Dist:  14.8m | Speed: 3.8 m/s | ACTIVE
+  D. Ingham       | Dist:  56.4m | Speed: 1.6 m/s | FAR
+  R. Scott        | Dist:  30.2m | Speed: 1.6 m/s | STATIC
+  A. Šušnjar      | Dist:  15.9m | Speed: 3.1 m/s | ACTIVE
+  P. Cancar       | Dist:  29.2m | Speed: 1.9 m/s | STATIC</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="pressure-moment-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="pressure-moment-visualization">Pressure Moment Visualization</h3>
+<p>Visualize pressure events with active/static support color coding. Use <code>plot_pressure_from_event_id(event_id, ...)</code> to generate a visualization for any pressure event.</p>
+<section id="high-active-support-example" class="level4">
+<h4 class="anchored" data-anchor-id="high-active-support-example">High Active Support Example</h4>
+<div id="c144227c" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize visualizer</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>visualizer <span class="op">=</span> ASIVisualizer(match_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="7772fe34" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>plot_pressure_from_event_id(<span class="st">"9_3"</span>, detailed_results, match_data, loader)  <span class="co"># frame 253, Player = D.Ingham</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>D. Ingham (#14, Newcastle) pressed while facing his own goal. <strong>Active Support Ratio = 0.89</strong> — 8 of 9 nearby teammates actively moving. Only the goalkeeper was static (already open). Note #4 sprinting back at 3.7 m/s to offer a passing lane.</p>
+</section>
+<section id="low-active-support-example" class="level4">
+<h4 class="anchored" data-anchor-id="low-active-support-example">Low Active Support Example</h4>
+<div id="de73a6b5" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>plot_pressure_from_event_id(<span class="st">"9_790"</span>, detailed_results, match_data, loader)  <span class="co"># frame 47507, Player = L.Gillion</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>L. Gillion (#14, Auckland) pressed near the 18-yard box. <strong>Active Support Ratio = 0.11</strong> — only 1 of 9 nearby teammates moving (#17 at 2.2 m/s). Most teammates were static “ball-watching” rather than creating options. This is exactly the scenario coaches want to identify and correct.</p>
+<hr>
+</section>
+</section>
+<section id="player-asi-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="player-asi-analysis">Player ASI Analysis</h3>
+<p>Calculate and rank players by their Active Support Index.</p>
+<div id="a94ef87e" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate player ASI scores</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>player_scores <span class="op">=</span> calculator.calculate_player_asi_scores(detailed_results)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Player ASI Scores: Total players analyzed: </span><span class="sc">{</span><span class="bu">len</span>(player_scores)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Display top 10 with minimum 20 opportunities</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>top_players <span class="op">=</span> player_scores[player_scores[<span class="st">'opportunities'</span>] <span class="op">&gt;=</span> <span class="dv">20</span>].head(<span class="dv">10</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Top 10 Players (min 20 opportunities):"</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>exclude_cols <span class="op">=</span> [<span class="st">'player_id'</span>, <span class="st">'player_number'</span>, <span class="st">'match_name'</span>, <span class="st">'matches_count'</span>]</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>top_players.drop(columns<span class="op">=</span>exclude_cols).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Player ASI Scores: Total players analyzed: 29
+
+Top 10 Players (min 20 opportunities):</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">player_name</th>
+<th data-quarto-table-cell-role="th">team_name</th>
+<th data-quarto-table-cell-role="th">player_role_acronym</th>
+<th data-quarto-table-cell-role="th">active_support_count</th>
+<th data-quarto-table-cell-role="th">opportunities</th>
+<th data-quarto-table-cell-role="th">asi_score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>C. Timmins</td>
+<td>Newcastle United Jets FC</td>
+<td>LDM</td>
+<td>214</td>
+<td>278</td>
+<td>0.7698</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>D. Wilmering</td>
+<td>Newcastle United Jets FC</td>
+<td>AM</td>
+<td>39</td>
+<td>54</td>
+<td>0.7222</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>F. Gallegos</td>
+<td>Auckland FC</td>
+<td>AM</td>
+<td>231</td>
+<td>330</td>
+<td>0.7000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>M. Scarcella</td>
+<td>Newcastle United Jets FC</td>
+<td>AM</td>
+<td>27</td>
+<td>39</td>
+<td>0.6923</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>L. Gillion</td>
+<td>Auckland FC</td>
+<td>LW</td>
+<td>181</td>
+<td>269</td>
+<td>0.6729</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>L. Verstraete</td>
+<td>Auckland FC</td>
+<td>DM</td>
+<td>227</td>
+<td>345</td>
+<td>0.6580</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>J. Vidic</td>
+<td>Newcastle United Jets FC</td>
+<td>LDM</td>
+<td>25</td>
+<td>38</td>
+<td>0.6579</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>N. Moreno</td>
+<td>Auckland FC</td>
+<td>RW</td>
+<td>46</td>
+<td>70</td>
+<td>0.6571</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>L. Bayliss</td>
+<td>Newcastle United Jets FC</td>
+<td>AM</td>
+<td>136</td>
+<td>210</td>
+<td>0.6476</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>L. Rogerson</td>
+<td>Auckland FC</td>
+<td>RW</td>
+<td>120</td>
+<td>193</td>
+<td>0.6218</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><strong>Player ASI</strong> measures how often a player actively moves to support teammates under pressure — the proportion of support opportunities where they were moving &gt;2 m/s.</p>
+<div id="918eedd9" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Player leaderboard visualization</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> visualizer.plot_player_leaderboard(player_scores, top_n<span class="op">=</span><span class="va">None</span>, min_opportunities<span class="op">=</span><span class="dv">20</span>, show<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-17-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Midfielders cluster at the top — their role demands constant movement. Defenders and goalkeepers rank lower, which is expected given their positional responsibilities. <strong>Standout: C. Timmins (LDM)</strong> leads with 77% ASI, providing active support in 214 of 278 opportunities — the most reliable off-ball mover in this match.</p>
+<hr>
+</section>
+<section id="team-asi-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="team-asi-comparison">Team ASI Comparison</h3>
+<p>Calculate and compare Active Support Index between teams for the match.</p>
+<div id="18c45c8e" class="cell" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate team-level ASI</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>team_stats <span class="op">=</span> calculator.calculate_team_asi_scores(results_df)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># provide summary</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>team_stat_asi_summary(team_stats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Team ASI Comparison
+============================================================
+
+Auckland FC:
+  Total pressure events (when pressed): 402
+  Team ASI (1 - static rate):           96.0%
+  Static Rate (0 active supporters):   4.0%
+  Avg Active Supporters:                3.92
+  Avg Teammates Nearby:                 7.49
+
+Newcastle United Jets FC:
+  Total pressure events (when pressed): 371
+  Team ASI (1 - static rate):           94.6%
+  Static Rate (0 active supporters):   5.4%
+  Avg Active Supporters:                4.13
+  Avg Teammates Nearby:                 7.73</code></pre>
+</div>
+</div>
+<div id="8909b8b0" class="cell" data-execution_count="18">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Team comparison visualization</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> visualizer.plot_team_comparison(team_stats, show<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-19-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 44%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>What it Measures</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Team ASI</td>
+<td>1 - static_rate — Proportion of pressure events where at least one teammate was actively moving</td>
+<td>Higher = Better. A team with 95% ASI means only 5% of pressure moments had zero active support.</td>
+</tr>
+<tr class="even">
+<td>Avg Active Supporters</td>
+<td>Mean number of teammates moving &gt;2 m/s within 35m when ball carrier is pressed</td>
+<td>Higher = Better. More teammates in motion = more passing options and defensive support.</td>
+</tr>
+<tr class="odd">
+<td>Static Rate</td>
+<td>Proportion of pressure events where no nearby teammate was moving &gt;2 m/s</td>
+<td>Lower = Better. High static rate indicates teammates “ball-watching” instead of creating options.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quick Read:</strong> Higher Team ASI + Lower Static Rate = better off-ball support culture. Avg Active Supporters shows intensity — teams averaging 3+ are creating strong movement.</p>
+</section>
+</section>
+<section id="run-on-all-10-matches" class="level2">
+<h2 class="anchored" data-anchor-id="run-on-all-10-matches">Run on all 10 matches</h2>
+<div id="e21419ff" class="cell" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Process all 10 matches (will take a couple of minutes)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>results_all <span class="op">=</span> process_all_matches(verbose<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="496ef992" class="cell" data-execution_count="20">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 10 players across all matches</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>top_players_all <span class="op">=</span> get_top_players_all_matches(results_all[<span class="st">'all_player_scores'</span>], min_opportunities<span class="op">=</span><span class="dv">50</span>, top_n<span class="op">=</span><span class="dv">300</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>exclude_cols <span class="op">=</span> [<span class="st">'player_id'</span>, <span class="st">'player_number'</span>, <span class="st">'match_name'</span>]</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>top_players_all.drop(columns<span class="op">=</span>exclude_cols).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">player_name</th>
+<th data-quarto-table-cell-role="th">team_name</th>
+<th data-quarto-table-cell-role="th">player_role_acronym</th>
+<th data-quarto-table-cell-role="th">active_support_count</th>
+<th data-quarto-table-cell-role="th">opportunities</th>
+<th data-quarto-table-cell-role="th">matches_count</th>
+<th data-quarto-table-cell-role="th">asi_score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>N. Pennington</td>
+<td>Perth Glory Football Club</td>
+<td>LM</td>
+<td>211</td>
+<td>261</td>
+<td>1</td>
+<td>0.8084</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>H. Steele</td>
+<td>Central Coast Mariners Football Club</td>
+<td>LM</td>
+<td>184</td>
+<td>228</td>
+<td>1</td>
+<td>0.8070</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>C. Timmins</td>
+<td>Newcastle United Jets FC</td>
+<td>LDM</td>
+<td>214</td>
+<td>278</td>
+<td>1</td>
+<td>0.7698</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>L. Verstraete</td>
+<td>Auckland FC</td>
+<td>DM</td>
+<td>688</td>
+<td>936</td>
+<td>4</td>
+<td>0.7350</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>D. Wilmering</td>
+<td>Newcastle United Jets FC</td>
+<td>AM</td>
+<td>39</td>
+<td>54</td>
+<td>1</td>
+<td>0.7222</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>P. Makrillos</td>
+<td>Macarthur FC</td>
+<td>CF</td>
+<td>78</td>
+<td>108</td>
+<td>1</td>
+<td>0.7222</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>J. Lauton</td>
+<td>Western United</td>
+<td>RM</td>
+<td>120</td>
+<td>167</td>
+<td>2</td>
+<td>0.7186</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>Z. Schreiber</td>
+<td>Melbourne City FC</td>
+<td>DM</td>
+<td>178</td>
+<td>249</td>
+<td>1</td>
+<td>0.7149</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>T. Gomulka</td>
+<td>Perth Glory Football Club</td>
+<td>RM</td>
+<td>183</td>
+<td>256</td>
+<td>1</td>
+<td>0.7148</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>A. Thurgate</td>
+<td>Western United</td>
+<td>LM</td>
+<td>372</td>
+<td>524</td>
+<td>2</td>
+<td>0.7099</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="20f9757d" class="cell" data-execution_count="21">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> visualizer.plot_player_leaderboard(top_players_all, top_n<span class="op">=</span><span class="dv">25</span>, min_opportunities<span class="op">=</span><span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-22-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Wide midfielders (LM, RM) and central midfielders (DM, AM) dominate the top 25 — positions requiring constant off-ball movement. Only 2 players exceed 80% ASI: <strong>N. Pennington (80.8%)</strong> and <strong>H. Steele (80.7%)</strong>, both left midfielders, marking them as elite off-ball supporters. The 75th percentile threshold (~70%) separates good from exceptional active supporters.</p>
+<div id="382046dd" class="cell" data-execution_count="22">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Team comparison across all matches</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>team_summary <span class="op">=</span> get_team_stats_all_matches(results_all[<span class="st">'all_team_stats'</span>])</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>team_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">team_name</th>
+<th data-quarto-table-cell-role="th">total_pressure_events</th>
+<th data-quarto-table-cell-role="th">total_static_events</th>
+<th data-quarto-table-cell-role="th">avg_active_supporters</th>
+<th data-quarto-table-cell-role="th">avg_teammates_nearby</th>
+<th data-quarto-table-cell-role="th">matches_played</th>
+<th data-quarto-table-cell-role="th">overall_static_rate</th>
+<th data-quarto-table-cell-role="th">overall_team_asi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Perth Glory Football Club</td>
+<td>287</td>
+<td>5</td>
+<td>4.30</td>
+<td>7.66</td>
+<td>1</td>
+<td>0.0174</td>
+<td>0.9826</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Auckland FC</td>
+<td>1368</td>
+<td>37</td>
+<td>4.18</td>
+<td>7.71</td>
+<td>4</td>
+<td>0.0270</td>
+<td>0.9730</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Melbourne City FC</td>
+<td>828</td>
+<td>36</td>
+<td>3.62</td>
+<td>7.22</td>
+<td>2</td>
+<td>0.0435</td>
+<td>0.9565</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Western United</td>
+<td>647</td>
+<td>29</td>
+<td>4.40</td>
+<td>7.60</td>
+<td>2</td>
+<td>0.0448</td>
+<td>0.9552</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Brisbane Roar FC</td>
+<td>453</td>
+<td>21</td>
+<td>3.56</td>
+<td>7.53</td>
+<td>1</td>
+<td>0.0464</td>
+<td>0.9536</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>Wellington Phoenix FC</td>
+<td>598</td>
+<td>28</td>
+<td>3.72</td>
+<td>7.77</td>
+<td>2</td>
+<td>0.0468</td>
+<td>0.9532</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>Adelaide United Football Club</td>
+<td>392</td>
+<td>19</td>
+<td>3.57</td>
+<td>7.49</td>
+<td>1</td>
+<td>0.0485</td>
+<td>0.9515</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>Newcastle United Jets FC</td>
+<td>371</td>
+<td>20</td>
+<td>4.13</td>
+<td>7.73</td>
+<td>1</td>
+<td>0.0539</td>
+<td>0.9461</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>Central Coast Mariners Football Club</td>
+<td>266</td>
+<td>15</td>
+<td>3.63</td>
+<td>7.39</td>
+<td>1</td>
+<td>0.0564</td>
+<td>0.9436</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>Melbourne Victory Football Club</td>
+<td>674</td>
+<td>39</td>
+<td>4.00</td>
+<td>7.91</td>
+<td>2</td>
+<td>0.0579</td>
+<td>0.9421</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
+<td>Sydney Football Club</td>
+<td>862</td>
+<td>50</td>
+<td>3.68</td>
+<td>7.74</td>
+<td>2</td>
+<td>0.0580</td>
+<td>0.9420</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>Macarthur FC</td>
+<td>317</td>
+<td>27</td>
+<td>3.41</td>
+<td>7.39</td>
+<td>1</td>
+<td>0.0852</td>
+<td>0.9148</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="812e9929" class="cell" data-execution_count="23">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plot_multi_match_team_comparison(team_summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-24-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Perth Glory (98.3%) and Auckland (97.3%) lead in Team ASI, demonstrating strong off-ball support cultures. Macarthur FC (91.5%) shows the most room for improvement. The 7-point spread suggests ASI can differentiate team playing styles.</p>
+<hr>
+</section>
+<section id="validation-asi-by-position" class="level2">
+<h2 class="anchored" data-anchor-id="validation-asi-by-position">Validation: ASI by Position</h2>
+<p>To validate that ASI captures meaningful off-ball behavior, we examine whether positions with higher movement demands show correspondingly higher ASI scores.</p>
+<div id="hoiialyfsw4" class="cell" data-execution_count="24">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate ASI stats by position category</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>category_stats <span class="op">=</span> calculate_position_stats(top_players_all)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>category_stats</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">mean_asi</th>
+<th data-quarto-table-cell-role="th">std_asi</th>
+<th data-quarto-table-cell-role="th">num_players</th>
+<th data-quarto-table-cell-role="th">total_opportunities</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">position_category</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Defensive/Central Mid</th>
+<td>0.627</td>
+<td>0.083</td>
+<td>15</td>
+<td>5683</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Attacking Mid/Winger</th>
+<td>0.586</td>
+<td>0.099</td>
+<td>62</td>
+<td>15705</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Forward</th>
+<td>0.515</td>
+<td>0.101</td>
+<td>35</td>
+<td>9023</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Defender</th>
+<td>0.452</td>
+<td>0.079</td>
+<td>61</td>
+<td>20367</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Goalkeeper</th>
+<td>0.113</td>
+<td>0.059</td>
+<td>12</td>
+<td>2334</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="c6u0ph88tl" class="cell" data-execution_count="25">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize ASI by position category</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plot_position_validation(category_stats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-26-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="3msm984lw6l" class="cell" data-execution_count="26">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Statistical significance test</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> test_position_significance(top_players_all)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>print_significance_result(result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Midfielders vs Defenders:
+  Midfielders mean ASI: 59.4% (n=77)
+  Defenders mean ASI: 45.2% (n=61)
+  Mann-Whitney U: 4092, p = 4.00e-14 Significant (p &lt; 0.001)</code></pre>
+</div>
+</div>
+<p><strong>Validation Result</strong>: Position categories rank as expected — attacking midfielders and wingers show significantly higher ASI than defenders (p &lt; 0.001). This confirms ASI captures positional movement demands rather than random variation.</p>
+<hr>
+</section>
+<section id="validation-season-physical-output" class="level2">
+<h2 class="anchored" data-anchor-id="validation-season-physical-output">Validation: Season Physical Output</h2>
+<p>Does ASI from tracking data reflect real physical effort? We validate by comparing player ASI scores (from 10 tracking matches) against season-level physical aggregates (175 matches, A-League 2024/25).</p>
+<div id="byttecu9lje" class="cell" data-execution_count="27">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge ASI scores with physical aggregates</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>merged_physical <span class="op">=</span> merge_asi_with_physical(top_players_all, min_opportunities<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Players with ASI and physical data: </span><span class="sc">{</span><span class="bu">len</span>(merged_physical)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate and display correlation</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>corr_stats <span class="op">=</span> calculate_physical_correlation(merged_physical)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>print_physical_validation_summary(corr_stats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Players with ASI and physical data: 167
+Physical Aggregates Validation
+==================================================
+Players analyzed: 167
+Pearson r: 0.739
+p-value: 4.47e-30
+
+Quartile Comparison (M/min during possession):
+  Low ASI (Q1):  128.8 m/min
+  High ASI (Q4): 153.2 m/min
+  Difference:    +24.4 m/min (+19%)</code></pre>
+</div>
+</div>
+<div id="eduv23iesie" class="cell" data-execution_count="28">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize ASI vs physical output correlation</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plot_asi_physical_correlation(merged_physical)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-29-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Result</strong>: ASI correlates strongly with meters per minute during possession (r = 0.74, p &lt; 0.001). Players in the top ASI quartile cover 24 m/min more than the bottom quartile — a 19% increase in work rate. This external validation confirms ASI captures genuine physical effort: players who actively support teammates under pressure are the same players who cover the most ground when their team has possession.</p>
+<hr>
+</section>
+<section id="time-based-asi-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="time-based-asi-analysis">Time-Based ASI Analysis</h2>
+<p>Does active support decline as the match progresses? We analyze ASI trends over 15-minute intervals to identify potential fatigue patterns.</p>
+<div id="we9q4p08h2" class="cell" data-execution_count="29">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate time-based ASI across all 10 matches</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>all_results_time_df <span class="op">=</span> calculate_time_based_asi(loader, config)</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Total pressure events with time data: </span><span class="sc">{</span><span class="bu">len</span>(all_results_time_df)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Total pressure events with time data: 7063</code></pre>
+</div>
+</div>
+<div id="2s149isqhub" class="cell" data-execution_count="30">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate ASI by time bin</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>time_asi <span class="op">=</span> get_time_bin_stats(all_results_time_df)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>time_asi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">avg_support_ratio</th>
+<th data-quarto-table-cell-role="th">avg_active_supporters</th>
+<th data-quarto-table-cell-role="th">num_events</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">time_bin</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0-15</th>
+<td>0.552</td>
+<td>4.055</td>
+<td>1283</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">15-30</th>
+<td>0.534</td>
+<td>3.784</td>
+<td>990</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">30-45</th>
+<td>0.527</td>
+<td>3.770</td>
+<td>1128</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">45-60</th>
+<td>0.542</td>
+<td>3.956</td>
+<td>1302</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">60-75</th>
+<td>0.548</td>
+<td>3.984</td>
+<td>1013</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">75-90</th>
+<td>0.502</td>
+<td>3.683</td>
+<td>992</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">90+</th>
+<td>0.513</td>
+<td>3.730</td>
+<td>355</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="0mxic66g2v9i" class="cell" data-execution_count="31">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize ASI trend over match time</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plot_time_trend(time_asi)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-32-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="nxv4tgkynah" class="cell" data-execution_count="32">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare First Half vs Second Half</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>half_result <span class="op">=</span> compare_halves(all_results_time_df)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>print_half_comparison(half_result)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>half_result[<span class="st">'half_stats'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+First Half vs Second Half ASI:
+  H1 mean: 53.7%, H2 mean: 53.1%
+  Mann-Whitney U: 6298558, p = 0.459 (not significant)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">avg_ratio</th>
+<th data-quarto-table-cell-role="th">std_ratio</th>
+<th data-quarto-table-cell-role="th">avg_active</th>
+<th data-quarto-table-cell-role="th">num_events</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">half</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">First Half</th>
+<td>0.537</td>
+<td>0.303</td>
+<td>3.877</td>
+<td>3565</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Second Half</th>
+<td>0.531</td>
+<td>0.303</td>
+<td>3.872</td>
+<td>3498</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><strong>Observation</strong>: Active support ratio shows a slight downward trend within each half, with the lowest values appearing in the final 15 minutes (50.2%). However, the overall first half vs second half difference is not statistically significant (p = 0.46). This suggests fatigue-related decline in off-ball support may exist but requires larger sample sizes to confirm. The pattern warrants further investigation with more match data.</p>
+<hr>
+</section>
+<section id="player-fatigue-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="player-fatigue-analysis">Player Fatigue Analysis</h2>
+<p>Which players maintain their off-ball support throughout the match vs those who fade? We compare each player’s ASI in the first half vs second half.</p>
+<div id="cpb6oxtjx06" class="cell" data-execution_count="33">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate player fatigue metrics across all 10 matches</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>qualified <span class="op">=</span> calculate_player_fatigue(loader, config, min_opps<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Players with 15+ opportunities in both halves: </span><span class="sc">{</span><span class="bu">len</span>(qualified)<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Players with 15+ opportunities in both halves: 151</code></pre>
+</div>
+</div>
+<div id="sxpgkwn3ue8" class="cell" data-execution_count="34">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show top maintainers (lowest fatigue drop)</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: Negative fatigue_drop = H2 improvement (player increased ASI after halftime)</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>qualified[[<span class="st">'player_name'</span>, <span class="st">'h1_asi'</span>, <span class="st">'h2_asi'</span>, <span class="st">'fatigue_drop'</span>, <span class="st">'total_opps'</span>]].<span class="bu">round</span>(<span class="dv">3</span>).head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">player_name</th>
+<th data-quarto-table-cell-role="th">h1_asi</th>
+<th data-quarto-table-cell-role="th">h2_asi</th>
+<th data-quarto-table-cell-role="th">fatigue_drop</th>
+<th data-quarto-table-cell-role="th">total_opps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">76</th>
+<td>J. Yull</td>
+<td>0.457</td>
+<td>0.699</td>
+<td>-0.241</td>
+<td>202.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">58</th>
+<td>D. Pierias</td>
+<td>0.231</td>
+<td>0.465</td>
+<td>-0.234</td>
+<td>209.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144</th>
+<td>L. Bayliss</td>
+<td>0.604</td>
+<td>0.784</td>
+<td>-0.181</td>
+<td>210.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">142</th>
+<td>E. Adams</td>
+<td>0.419</td>
+<td>0.595</td>
+<td>-0.176</td>
+<td>215.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">129</th>
+<td>J. Randall</td>
+<td>0.606</td>
+<td>0.777</td>
+<td>-0.171</td>
+<td>202.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">68</th>
+<td>H. Van Der Saag</td>
+<td>0.403</td>
+<td>0.554</td>
+<td>-0.150</td>
+<td>185.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">153</th>
+<td>M. Ruhs</td>
+<td>0.498</td>
+<td>0.643</td>
+<td>-0.145</td>
+<td>313.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">204</th>
+<td>F. Talladira</td>
+<td>0.403</td>
+<td>0.538</td>
+<td>-0.135</td>
+<td>233.0</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">193</th>
+<td>A. Bugarija</td>
+<td>0.667</td>
+<td>0.800</td>
+<td>-0.133</td>
+<td>179.0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">44</th>
+<td>J. Brimmer</td>
+<td>0.525</td>
+<td>0.653</td>
+<td>-0.128</td>
+<td>661.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="zsc3a037en" class="cell" data-execution_count="35">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize: Top 5 Maintainers vs Top 5 Faders</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plot_fatigue_comparison(qualified, top_n<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>print_fatigue_summary(qualified)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="notebook_files/figure-html/cell-36-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Fatigue Analysis Summary (151 players):
+  Players who improved H1→H2: 63
+  Players who declined H1→H2: 87
+  Avg fatigue drop: 1.0%</code></pre>
+</div>
+</div>
+<p><strong>Key Finding</strong>: More players show declining off-ball support in the second half (58%) than improving (42%), with an average 1% drop. However, individual variation is substantial — some players significantly increase their movement after halftime (possibly “warming into” the match), while others show clear fatigue patterns. This player-level analysis could help coaches identify which players need earlier substitution or targeted conditioning work.</p>
+<hr>
+</section>
+<section id="impact-use-cases" class="level2">
+<h2 class="anchored" data-anchor-id="impact-use-cases">Impact &amp; Use Cases</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stakeholder</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Scouts</strong></td>
+<td>Identify “highly-active supporter” players who consistently work off-ball to support teammates under pressure</td>
+</tr>
+<tr class="even">
+<td><strong>Coaches</strong></td>
+<td>Diagnose static tendencies; design training to improve support patterns</td>
+</tr>
+<tr class="odd">
+<td><strong>Analysts</strong></td>
+<td>Compare team playing styles; evaluate support quality by zone</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Objective feedback on off-ball contribution</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="future-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="future-improvements">Future Improvements</h2>
+<ul>
+<li><strong>Context-aware “active support”</strong>: Account for whether a player is already open (opponent proximity). A stationary player in space may be better positioned than one running into traffic.</li>
+<li><strong>Advanced support classification</strong>: Incorporate velocity direction vectors and pass opening angle calculations to distinguish between movement toward useful space versus movement away from the play.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
