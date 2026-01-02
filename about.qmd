@@ -7,13 +7,13 @@ about:
   image-width: 200px
 ---
 
-Experienced Data Scientist leading ML and AI initiatives at CrowdStrike. Currently building Agentic AI and large-scale detection models that enhance SOC workflows.
+Experienced Data Scientist with 10+ years building software and data science solutions across multiple domains. Currently leading ML and AI initiatives at CrowdStrike. 
 
-I also enjoy applying my data science and AI background to football (soccer) in my spare time. Recent work: the Active Support Index (ASI)—a novel metric for quantifying off-ball movement during pressure situations. Developed and validated on 10 A-League 2024/25 matches containing 7,063 pressure events and 8 million+ tracking data points from SkillCorner. Submitted to the SkillCorner x PySport Analytics Cup.
+My latest passion is applying my skills to advanced modeling and analytics on football (soccer) tracking + event data.
 
 **Recent work:**
 
-- **Active Support Index (ASI)** - A metric for quantifying off-ball movement during pressure situations, developed for the SkillCorner x PySport Analytics Cup
+- **Active Support Index (ASI)** - A metric for quantifying off-ball movement during pressure situations, Developed and validated on 10 A-League 2024/25 matches containing 7,063 pressure events and 8 million+ tracking data points from SkillCorner. Submitted to the SkillCorner x PySport Analytics Cup.
 
 ## Contact
 
