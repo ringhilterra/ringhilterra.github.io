@@ -1,14 +1,26 @@
 ---
-title: "Kaggle Manchester City Competition"
-description: "Visualization of simulated football data"
-date: "2019"
-categories: [visualization, kaggle, football]
-image: thumbnail.png
+title: "Google Research Football with Manchester City F.C."
+description: "Kaggle simulation competition — Docker environment, agent implementations, and a local pool play framework"
+date: "2020"
+categories: [kaggle, football, simulation, machine-learning]
+image: gfootball_kaggle.png
 ---
 
 ## Overview
 
-Visualization work for the Kaggle Manchester City competition, analyzing simulated football data.
+Entry for the [Google Research Football with Manchester City F.C.](https://www.kaggle.com/c/google-football/overview) Kaggle simulation competition. The project includes a Dockerized development environment for the Google Research Football simulator, agent implementations, and analysis notebooks.
+
+## Local Agent Play Framework
+
+I built a framework for pool play simulation matches between different agents and published it as a notebook on Kaggle.
+
+![Agent play simulation](agent_play.gif)
+
+## Repository Structure
+
+- **Docker environment** for the Kaggle + Google Football simulation, with Jupyter notebook support
+- **Agent implementations** and ML agent exploration
+- **Analysis notebooks** for match simulation and evaluation
 
 ## Code
 
