@@ -1,0 +1,23 @@
+---
+title: "News-Tweets NLP Linker"
+description: "Link tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard"
+date: "2021-07-16"
+categories: [nlp, distributed-computing, python, data-engineering]
+image: thumbnail.gif
+---
+
+## Overview
+
+Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.
+
+![Interactive dashboard for exploring news-tweet similarity](thumbnail.gif)
+
+**Components:**
+
+- **Similarity pipeline** — NLP-based text similarity scoring between tweets and news articles
+- **Distributed computing** — Mesos and Docker pipeline for parallel processing
+- **Interactive dashboard** — Dash app to view and interact with similarity results
+
+## Code
+
+[GitHub Repository](https://github.com/ringhilterra/news-tweets-nlp-link)

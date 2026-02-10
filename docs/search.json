@@ -63,6 +63,48 @@
     "text": "Future Improvements\n\nContext-aware “active support”: Account for whether a player is already open (opponent proximity). A stationary player in space may be better positioned than one running into traffic.\nAdvanced support classification: Incorporate velocity direction vectors and pass opening angle calculations to distinguish between movement toward useful space versus movement away from the play."
   },
   {
+    "objectID": "projects/news-tweets-nlp/index.html",
+    "href": "projects/news-tweets-nlp/index.html",
+    "title": "News-Tweets NLP Linker",
+    "section": "",
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results"
+  },
+  {
+    "objectID": "projects/news-tweets-nlp/index.html#overview",
+    "href": "projects/news-tweets-nlp/index.html#overview",
+    "title": "News-Tweets NLP Linker",
+    "section": "",
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results"
+  },
+  {
+    "objectID": "projects/news-tweets-nlp/index.html#code",
+    "href": "projects/news-tweets-nlp/index.html#code",
+    "title": "News-Tweets NLP Linker",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html",
+    "href": "projects/enriched-covid19-data/index.html",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#overview",
+    "href": "projects/enriched-covid19-data/index.html#overview",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#code",
+    "href": "projects/enriched-covid19-data/index.html#code",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
     "objectID": "projects/asi/index.html",
     "href": "projects/asi/index.html",
     "title": "Active Support Index (ASI)",
@@ -109,33 +151,75 @@
     "href": "index.html#featured-projects",
     "title": "Ryan Inghilterra",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\nActive Support Index (ASI) - Quantifying off-ball movement during pressure situations"
+    "text": "Featured Projects\n\nActive Support Index (ASI) — Quantifying off-ball movement during pressure situations\nDessert Flavor Pairings — Interactive chord diagram visualization\nEnriched COVID-19 Data — U.S. county-level COVID-19 data pipeline\nNews-Tweets NLP Linker — NLP similarity matching with distributed computing\nTime Series User Classification — Accelerometer-based user identification\nKaggle Google Football — Simulation competition with agent framework"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Manchester City Competition\n\n\n\nvisualization\n\nkaggle\n\nfootball\n\n\n\nVisualization of simulated football data\n\n\n\n\n\nNo matching items"
+    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html",
+    "href": "projects/dessert-flavor-pairings/index.html",
+    "title": "Dessert Flavor Pairings",
+    "section": "",
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html#overview",
+    "href": "projects/dessert-flavor-pairings/index.html#overview",
+    "title": "Dessert Flavor Pairings",
+    "section": "",
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html#code",
+    "href": "projects/dessert-flavor-pairings/index.html#code",
+    "title": "Dessert Flavor Pairings",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
   },
   {
     "objectID": "projects/kaggle-mancity/index.html",
     "href": "projects/kaggle-mancity/index.html",
-    "title": "Kaggle Manchester City Competition",
+    "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "Visualization work for the Kaggle Manchester City competition, analyzing simulated football data."
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nBuilt a Docker setup for the kaggle + Google Football simulation environment with Jupyter notebook integration. Created a framework for pool play simulation matches between different agents, published as a notebook on Kaggle.\n\n\n\nAgent pool play simulation\n\n\nHighlights:\n\nDocker environment for kaggle + Google Football simulation\nLocal agent pool play match framework\nAnalysis notebooks and ML agent exploration"
   },
   {
     "objectID": "projects/kaggle-mancity/index.html#overview",
     "href": "projects/kaggle-mancity/index.html#overview",
-    "title": "Kaggle Manchester City Competition",
+    "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "Visualization work for the Kaggle Manchester City competition, analyzing simulated football data."
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nBuilt a Docker setup for the kaggle + Google Football simulation environment with Jupyter notebook integration. Created a framework for pool play simulation matches between different agents, published as a notebook on Kaggle.\n\n\n\nAgent pool play simulation\n\n\nHighlights:\n\nDocker environment for kaggle + Google Football simulation\nLocal agent pool play match framework\nAnalysis notebooks and ML agent exploration"
   },
   {
     "objectID": "projects/kaggle-mancity/index.html#code",
     "href": "projects/kaggle-mancity/index.html#code",
-    "title": "Kaggle Manchester City Competition",
+    "title": "Kaggle Google Football with Manchester City",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html",
+    "href": "projects/time-series-classification/index.html",
+    "title": "Time Series User Classification",
+    "section": "",
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html#overview",
+    "href": "projects/time-series-classification/index.html#overview",
+    "title": "Time Series User Classification",
+    "section": "",
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html#code",
+    "href": "projects/time-series-classification/index.html#code",
+    "title": "Time Series User Classification",
     "section": "Code",
     "text": "Code\nGitHub Repository"
   }

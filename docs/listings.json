@@ -3,7 +3,11 @@
     "listing": "/projects.html",
     "items": [
       "/projects/asi/index.html",
-      "/projects/kaggle-mancity/index.html"
+      "/projects/dessert-flavor-pairings/index.html",
+      "/projects/enriched-covid19-data/index.html",
+      "/projects/kaggle-mancity/index.html",
+      "/projects/news-tweets-nlp/index.html",
+      "/projects/time-series-classification/index.html"
     ]
   }
 ]

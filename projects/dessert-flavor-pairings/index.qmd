@@ -1,0 +1,21 @@
+---
+title: "Dessert Flavor Pairings"
+description: "Interactive chord diagram visualizing dessert flavor pairings, built in Python"
+date: "2020-04-15"
+categories: [visualization, python, data-analysis]
+image: thumbnail.png
+---
+
+## Overview
+
+Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.
+
+![Dessert flavor chord diagram](thumbnail.png)
+
+**Interactive site:** [ringhilterra.github.io/dessert-flavor-pairings](https://ringhilterra.github.io/dessert-flavor-pairings/)
+
+**Data source:** [Kaggle — Dessert Flavor Combinations](https://www.kaggle.com/keytarrockstar/dessert-flavor-combinations)
+
+## Code
+
+[GitHub Repository](https://github.com/ringhilterra/dessert-flavor-pairings) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ringhilterra/dessert-flavor-pairings/blob/master/recipes_analysis_viz.ipynb)

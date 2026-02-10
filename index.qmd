@@ -22,5 +22,10 @@ about:
 
 ## Featured Projects
 
-- [Active Support Index (ASI)](projects/asi/) - Quantifying off-ball movement during pressure situations
+- [Active Support Index (ASI)](projects/asi/) — Quantifying off-ball movement during pressure situations
+- [Dessert Flavor Pairings](projects/dessert-flavor-pairings/) — Interactive chord diagram visualization
+- [Enriched COVID-19 Data](projects/enriched-covid19-data/) — U.S. county-level COVID-19 data pipeline
+- [News-Tweets NLP Linker](projects/news-tweets-nlp/) — NLP similarity matching with distributed computing
+- [Time Series User Classification](projects/time-series-classification/) — Accelerometer-based user identification
+- [Kaggle Google Football](projects/kaggle-mancity/) — Simulation competition with agent framework
 
