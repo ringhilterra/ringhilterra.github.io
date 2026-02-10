@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "posts/**"
+    - "projects/**"
+    - "!project_refs/"
+    - "!CLAUDE.md"
 
 website:
   title: "Ryan Inghilterra"
@@ -16,9 +22,9 @@ website:
       - icon: github
         href: https://github.com/ringhilterra
       - icon: linkedin
-        href: https://linkedin.com/in/ringhilterra
+        href: https://www.linkedin.com/in/ryan-inghilterra-017/
       - icon: twitter
-        href: https://twitter.com/ringhilterra
+        href: https://x.com/RyanInghilterra
 
 format:
   html:
