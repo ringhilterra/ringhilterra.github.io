@@ -1,0 +1,71 @@
+---
+title: "American Gut Microbiome Analysis"
+description: "Masters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline"
+date: "2018-06-15"
+categories: [machine-learning, bioinformatics, data-engineering, python, research]
+---
+
+## Overview
+
+Masters capstone project analyzing the American Gut Project dataset using advanced embedding techniques and supervised machine learning to classify microbiome samples. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.
+
+**Publication:** [UCSD Library Digital Collections](https://library.ucsd.edu/dc/object/bb2666864s/_4_1.pdf)
+
+**Interactive Dashboard:** [Live Demo](https://github.com/mas-dse-ringhilt/american_gut_capstone_dashboard)
+
+## Key Contributions
+
+### Advanced Embedding Techniques
+- **Hyperbolic embeddings** for hierarchical microbiome taxonomy representation
+- **Word2Vec embeddings** treating microbiome samples as documents and OTUs as words
+- Novel application of NLP techniques to biological sequence data
+
+### Production Data Pipeline
+- Built scalable Luigi-based pipeline for reproducible analysis
+- AWS S3 integration for data artifact management
+- Modular architecture supporting multiple analytical workflows
+
+### Comprehensive Bioinformatics Analysis
+- **Phylogenetic diversity**: Alpha and beta diversity calculations using GreenGenes 97 tree
+- **Principal Coordinates Analysis (PCoA)** on beta diversity matrices
+- **Bloom OTU removal** and rarefaction for data quality
+- Integration of BIOM format microbiome data via Redbiom API
+
+### Data Engineering
+- Cleaned and integrated data from 3 sources: raw metadata, BIOM OTU tables, and drug questionnaires
+- Implemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer
+- Created consistent sample IDs joinable across heterogeneous datasets
+
+### Machine Learning Classification
+- Supervised classification models for microbiome phenotype prediction
+- Hyperparameter tuning framework
+- Comparative analysis of traditional vs. embedding-based feature representations
+
+## Technical Architecture
+
+**Data Pipeline Components:**
+1. **Biom Data Ingestion** — Pulls American Gut Project OTU data from Redbiom API, removes bloom OTUs, applies rarefaction
+2. **Diversity Analysis** — Calculates phylogenetic alpha/beta diversity and runs PCoA
+3. **Data Integration** — Cleans and joins metadata, BIOM, and survey data
+4. **Embedding Layer** — Generates hyperbolic and Word2Vec embeddings
+5. **ML Pipeline** — Preprocessing, feature engineering, hyperparameter tuning, and classification
+
+**Technologies:**
+- Python (Luigi, scikit-learn, pandas, numpy)
+- Bioinformatics tools (QIIME2, BIOM format, Redbiom)
+- AWS S3 for distributed data storage
+- Interactive Plotly dashboard for visualization
+
+## Artifacts
+
+- **Code Repository:** [GitHub](https://github.com/mas-dse-ringhilt/DSE-American-Gut-Project)
+- **Publication:** [Digital Thesis](https://library.ucsd.edu/dc/object/bb2666864s/_4_1.pdf)
+- **Interactive Dashboard:** [Embedding Visualizations](https://github.com/mas-dse-ringhilt/american_gut_capstone_dashboard)
+
+## Impact
+
+This work demonstrates how modern machine learning and embedding techniques from NLP can be successfully adapted to biological data, opening new approaches for microbiome analysis beyond traditional ecological metrics. The production-grade pipeline architecture enables reproducible research and supports future extensions to other microbiome datasets.
+
+---
+
+*Masters in Data Science Capstone Project, UC San Diego (2018)*
