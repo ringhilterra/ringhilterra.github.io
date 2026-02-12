@@ -12,20 +12,33 @@ listing:
     fields: [title, description, date, categories]
 ---
 
-## Published Articles
+## Published Articles & Media
 
 ::: {.pub-entry}
-**Source Code Classification with Deep Learning**
-CrowdStrike Engineering Blog
-TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2.
-[Read article &rarr;](https://www.crowdstrike.com/blog/){.pub-link}
+![](images/yt-falcon-siem.jpg){.pub-thumbnail}
+
+**AI-Powered Risk Scoring with Falcon Next-Gen SIEM**
+CrowdStrike &middot; Feature Video
+DS lead for the ML-powered risk scoring system that helps analysts prioritize the highest-priority threats in Falcon Next-Gen SIEM.
+[Watch video &rarr;](https://www.youtube.com/watch?v=KaIaOXZMVi4){.pub-link}
 :::
 
 ::: {.pub-entry}
-**Anomaly Detection in Cloud Workloads**
-CrowdStrike Engineering Blog
-Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning.
-[Read article &rarr;](https://www.crowdstrike.com/blog/){.pub-link}
+![](images/blog-tensorflow-rust.jpg){.pub-thumbnail}
+
+**How CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust**
+CrowdStrike Engineering Blog &middot; June 2022
+Reduced ML model training time from 227 hours to just 6 hours through Rust-based feature extraction, AWS EC2 P3 GPU instances, and TensorFlow caching/prefetching optimizations.
+[Read article &rarr;](https://www.crowdstrike.com/en-us/blog/how-crowdstrike-achieves-fast-machine-learning-model-training-with-tensorflow-and-rust/){.pub-link}
+:::
+
+::: {.pub-entry}
+![](images/blog-container-workloads.jpg){.pub-thumbnail}
+
+**New CrowdStrike Research Challenges Container Predictability Assumptions**
+CrowdStrike Engineering Blog &middot; October 2024
+Analyzed billions of container events across nine popular applications, demonstrating that detection strategies relying solely on container predictability are ineffective.
+[Read article &rarr;](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-research-challenges-containerized-workload-predictability-assumption/){.pub-link}
 :::
 
 ## Patents

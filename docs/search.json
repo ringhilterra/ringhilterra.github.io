@@ -193,7 +193,7 @@
     "href": "professional.html#crowdstrike-highlights",
     "title": "Professional Work",
     "section": "CrowdStrike — Highlights",
-    "text": "CrowdStrike — Highlights\n\n\nAgentic AI Initiative\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems for cybersecurity defense.\n\n\nML-Powered Detection Scoring\nDS lead for ML-powered detection scoring system — a triage prioritization feature now in production, helping analysts focus on the highest-priority threats.\n\n\nUSB Exfiltration Detection\nFirst production ML model for Data Protection — USB exfiltration detection shipped in Falcon Device Control.\nPublished article →\n\n\nSource Code Classification Pipeline\nTensorFlow model training pipeline on AWS EC2 for automated source code classification at scale.\nPublished article →\n\n\nCloud Workload Anomaly Detection\nResearch on anomaly detection in Cloud Workload Protection, published on the CrowdStrike engineering blog.\nPublished article →\n\n\n7 Pending Patents\nSeven pending patents in Machine Learning and Cybersecurity, spanning detection systems, data pipelines, and AI-driven threat analysis."
+    "text": "CrowdStrike — Highlights\n\n\nAgentic AI Initiative\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems for cybersecurity defense.\n\n\nML-Powered Detection Scoring\n\nDS lead for ML-powered detection scoring system — AI-powered risk scoring feature in Falcon Next-Gen SIEM, now in production.\nWatch feature video →\n\n\nUSB Exfiltration Detection\nFirst production ML model for Data Protection — USB exfiltration detection shipped in Falcon Device Control.\n\n\nSource Code Classification Pipeline\n\nReduced ML model training time from 227 hours to 6 hours using TensorFlow, Rust, and AWS EC2 GPU instances.\nRead article →\n\n\nCloud Workload Anomaly Detection\n\nResearch challenging containerized workload predictability assumptions, analyzing billions of container events.\nRead article →\n\n\n7 Pending Patents\nSeven pending patents in Machine Learning and Cybersecurity, spanning detection systems, data pipelines, and AI-driven threat analysis."
   },
   {
     "objectID": "professional.html#previous-roles",
@@ -354,14 +354,14 @@
     "href": "publications.html",
     "title": "Publications & Patents",
     "section": "",
-    "text": "Source Code Classification with Deep Learning CrowdStrike Engineering Blog TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2. Read article →\n\n\nAnomaly Detection in Cloud Workloads CrowdStrike Engineering Blog Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning. Read article →"
+    "text": "AI-Powered Risk Scoring with Falcon Next-Gen SIEM CrowdStrike · Feature Video DS lead for the ML-powered risk scoring system that helps analysts prioritize the highest-priority threats in Falcon Next-Gen SIEM. Watch video →\n\n\n\nHow CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust CrowdStrike Engineering Blog · June 2022 Reduced ML model training time from 227 hours to just 6 hours through Rust-based feature extraction, AWS EC2 P3 GPU instances, and TensorFlow caching/prefetching optimizations. Read article →\n\n\n\nNew CrowdStrike Research Challenges Container Predictability Assumptions CrowdStrike Engineering Blog · October 2024 Analyzed billions of container events across nine popular applications, demonstrating that detection strategies relying solely on container predictability are ineffective. Read article →"
   },
   {
-    "objectID": "publications.html#published-articles",
-    "href": "publications.html#published-articles",
+    "objectID": "publications.html#published-articles-media",
+    "href": "publications.html#published-articles-media",
     "title": "Publications & Patents",
     "section": "",
-    "text": "Source Code Classification with Deep Learning CrowdStrike Engineering Blog TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2. Read article →\n\n\nAnomaly Detection in Cloud Workloads CrowdStrike Engineering Blog Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning. Read article →"
+    "text": "AI-Powered Risk Scoring with Falcon Next-Gen SIEM CrowdStrike · Feature Video DS lead for the ML-powered risk scoring system that helps analysts prioritize the highest-priority threats in Falcon Next-Gen SIEM. Watch video →\n\n\n\nHow CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust CrowdStrike Engineering Blog · June 2022 Reduced ML model training time from 227 hours to just 6 hours through Rust-based feature extraction, AWS EC2 P3 GPU instances, and TensorFlow caching/prefetching optimizations. Read article →\n\n\n\nNew CrowdStrike Research Challenges Container Predictability Assumptions CrowdStrike Engineering Blog · October 2024 Analyzed billions of container events across nine popular applications, demonstrating that detection strategies relying solely on container predictability are ineffective. Read article →"
   },
   {
     "objectID": "publications.html#patents",

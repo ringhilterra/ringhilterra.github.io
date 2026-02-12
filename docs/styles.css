@@ -357,6 +357,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.work-card .work-card-img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-color);
+}
+
 /* --- Publications Page --- */
 .pub-entry {
   background: var(--bg-subtle);
@@ -364,9 +371,21 @@ a:hover {
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
 }
 
-.pub-entry p:first-of-type {
+.pub-entry .pub-thumbnail {
+  width: 200px;
+  min-width: 200px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+
+.pub-entry p {
   margin-bottom: 0.25rem;
 }
 
@@ -452,6 +471,15 @@ a:hover {
 
   .timeline-item::before {
     left: -1.85rem;
+  }
+
+  .pub-entry {
+    flex-direction: column;
+  }
+
+  .pub-entry .pub-thumbnail {
+    width: 100%;
+    min-width: unset;
   }
 }
 

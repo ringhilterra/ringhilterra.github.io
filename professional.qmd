@@ -18,28 +18,37 @@ Leading one of CrowdStrike's agentic AI initiatives, driving innovation in auton
 
 ::: {.work-card}
 #### ML-Powered Detection Scoring
-DS lead for ML-powered detection scoring system --- a triage prioritization feature now in production, helping analysts focus on the highest-priority threats.
+
+![](images/yt-falcon-siem.jpg){.work-card-img}
+
+DS lead for ML-powered detection scoring system --- AI-powered risk scoring feature in Falcon Next-Gen SIEM, now in production.
+
+[Watch feature video &rarr;](https://www.youtube.com/watch?v=KaIaOXZMVi4){.card-link}
 :::
 
 ::: {.work-card}
 #### USB Exfiltration Detection
 First production ML model for Data Protection --- USB exfiltration detection shipped in Falcon Device Control.
-
-[Published article &rarr;](https://www.crowdstrike.com/blog/){.card-link}
 :::
 
 ::: {.work-card}
 #### Source Code Classification Pipeline
-TensorFlow model training pipeline on AWS EC2 for automated source code classification at scale.
 
-[Published article &rarr;](https://www.crowdstrike.com/blog/){.card-link}
+![](images/blog-tensorflow-rust.jpg){.work-card-img}
+
+Reduced ML model training time from 227 hours to 6 hours using TensorFlow, Rust, and AWS EC2 GPU instances.
+
+[Read article &rarr;](https://www.crowdstrike.com/en-us/blog/how-crowdstrike-achieves-fast-machine-learning-model-training-with-tensorflow-and-rust/){.card-link}
 :::
 
 ::: {.work-card}
 #### Cloud Workload Anomaly Detection
-Research on anomaly detection in Cloud Workload Protection, published on the CrowdStrike engineering blog.
 
-[Published article &rarr;](https://www.crowdstrike.com/blog/){.card-link}
+![](images/blog-container-workloads.jpg){.work-card-img}
+
+Research challenging containerized workload predictability assumptions, analyzing billions of container events.
+
+[Read article &rarr;](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-research-challenges-containerized-workload-predictability-assumption/){.card-link}
 :::
 
 ::: {.work-card}
