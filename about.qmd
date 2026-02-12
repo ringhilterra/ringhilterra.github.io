@@ -1,22 +1,175 @@
 ---
 title: "About"
-image: headshot.JPEG
-about:
-  template: solana
-  image-shape: rectangle
-  image-width: 200px
+toc: true
+toc-depth: 2
+page-layout: article
 ---
 
-Experienced Data Scientist with 10+ years building software and data science solutions across multiple domains. Currently leading ML and AI initiatives at CrowdStrike. 
+::: {.hero-section}
 
-My latest passion is applying my skills to advanced modeling and analytics on football (soccer) tracking + event data.
+![](headshot.JPEG){.hero-headshot}
 
-**Recent work:**
+# Ryan Inghilterra
 
-- **Active Support Index (ASI)** - A metric for quantifying off-ball movement during pressure situations, Developed and validated on 10 A-League 2024/25 matches containing 7,063 pressure events and 8 million+ tracking data points from SkillCorner. Submitted to the SkillCorner x PySport Analytics Cup.
+::: {.hero-subtitle}
+Senior Data Scientist II at CrowdStrike
+:::
 
-## Contact
+::: {.hero-bio}
+10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics --- developing novel metrics from tracking data and building simulation environments.
+:::
 
-- LinkedIn: [ringhilterra](https://www.linkedin.com/in/ryan-inghilterra-017/)
-- GitHub: [ringhilterra](https://github.com/ringhilterra)
-- Twitter: [@ringhilterra](https://x.com/RyanInghilterra)
+:::
+
+## Experience
+
+::: {.timeline}
+
+::: {.timeline-item}
+#### Senior Data Scientist II — CrowdStrike
+::: {.timeline-meta}
+Aug 2022 -- Present &nbsp;|&nbsp; Promoted from Senior Data Scientist I
+:::
+
+- Leading one of CrowdStrike's agentic AI initiatives, driving innovation in autonomous AI systems
+- DS lead for ML-powered detection scoring system --- triage prioritization feature, in production
+- First production ML model for Data Protection (USB exfiltration detection in Falcon Device Control)
+- TensorFlow model training pipeline on AWS EC2 for source code classification ([published article](https://www.crowdstrike.com/blog/))
+- Anomaly detection research in Cloud Workload Protection ([published article](https://www.crowdstrike.com/blog/))
+- 7 pending patents in Machine Learning & Cybersecurity
+:::
+
+::: {.timeline-item}
+#### Data Scientist III — CrowdStrike
+::: {.timeline-meta}
+Aug 2021 -- Aug 2022
+:::
+
+- First full-time hire on the "AI Across CrowdStrike" team
+- Built churn prediction model (XGBoost) with supporting data architecture (S3/Athena)
+- XLR8 "Fanatical About the Customer" Award winner
+:::
+
+::: {.timeline-item}
+#### Senior Data Scientist — Viasat
+::: {.timeline-meta}
+Jul 2019 -- Aug 2021
+:::
+
+- **Global Demand Model**: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis
+- Network planning optimization via linear programming (18% capacity increase)
+- XGBoost model for rural internet speed prediction, deployed across Mexico, Brazil, and Nigeria
+:::
+
+::: {.timeline-item}
+#### Data Scientist — Viasat
+::: {.timeline-meta}
+Sep 2017 -- Jul 2019
+:::
+
+- Flight pattern analysis across 50 airlines and 10M data points, supporting multi-million dollar deals
+- SQL ETL workflows and Python web app for supply/demand forecasting
+- Distributed speed test framework achieving 100x throughput improvement
+:::
+
+::: {.timeline-item}
+#### Software Engineer — Teradata
+::: {.timeline-meta}
+Jan 2015 -- Sep 2017
+:::
+
+- Teradata Studio: Java desktop application for database administration and query development
+- Full-stack NextGen BI platform (TypeScript, Node.js, Java)
+- 1st Prize at Analytics Hackathon
+:::
+
+:::
+
+## Education
+
+::: {.timeline}
+
+::: {.timeline-item}
+#### Stanford University
+::: {.timeline-meta}
+Sep 2020 -- Apr 2022
+:::
+
+Graduate Professional Program, Artificial Intelligence
+:::
+
+::: {.timeline-item}
+#### UC San Diego
+::: {.timeline-meta}
+2017 -- 2019
+:::
+
+M.A.S. Data Science and Engineering — GPA 4.0
+:::
+
+::: {.timeline-item}
+#### UC San Diego
+::: {.timeline-meta}
+2010 -- 2014
+:::
+
+B.S. Computer Science, Minor in Economics
+:::
+
+:::
+
+## Patents & Publications
+
+- **7 pending patents** in Machine Learning and Cybersecurity (CrowdStrike)
+- Published articles on source code classification and anomaly detection in cloud workloads via the [CrowdStrike blog](https://www.crowdstrike.com/blog/)
+
+## Awards
+
+- **CrowdStrike XLR8 '22 Winner** — Fanatical About the Customer, Threat Data Profiler Team
+- **Teradata Analytics Hackathon** — 1st Prize (2017)
+
+## Technical Skills
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### ML / AI
+- Supervised & Unsupervised ML
+- GenAI & LLMs (LangChain, HuggingFace)
+- Graph ML (PyG, NetworkX)
+- NLP (Deep Learning, Transformers)
+- Time Series Analysis
+- PyTorch, TensorFlow, Scikit-learn, XGBoost
+:::
+
+::: {.skill-category}
+#### Data Engineering
+- Python, SQL, Pandas, NumPy
+- ETL Pipelines & Data Architecture
+- Distributed Computing
+- Geospatial Analysis
+:::
+
+::: {.skill-category}
+#### Tools & Infrastructure
+- AWS (S3, EC2, Athena)
+- Docker, Linux, Git
+- Jupyter, VSCode
+- Plotly, Seaborn
+:::
+
+::: {.skill-category}
+#### Football Analytics
+- Tracking Data Analysis
+- Metric Development (ASI)
+- Agent Simulation (Kaggle)
+- Event Data Processing
+:::
+
+:::
+
+## Connect
+
+- **LinkedIn:** [ryan-inghilterra-017](https://www.linkedin.com/in/ryan-inghilterra-017/)
+- **GitHub:** [ringhilterra](https://github.com/ringhilterra)
+- **Twitter:** [@ringhilterra](https://x.com/RyanInghilterra)

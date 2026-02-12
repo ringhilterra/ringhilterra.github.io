@@ -3,7 +3,6 @@ title: "News-Tweets NLP Linker"
 description: "Link tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard"
 date: "2021-07-16"
 categories: [nlp, distributed-computing, python, data-engineering]
-domain: professional
 image: thumbnail.gif
 ---
 

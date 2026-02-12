@@ -130,14 +130,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "News-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ryan Inghilterra",
     "section": "",
-    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nProfessional Work\n\nML/AI systems for endpoint security at CrowdStrike\nNeural embedding pipelines for microbiome classification\nNLP similarity matching with distributed computing\nTime series classification and geospatial data engineering\n\nView all projects →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →"
+    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nCareer Highlights\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\n7 pending patents in ML & Cybersecurity\nStanford AI Graduate Professional Program\n\nMore about me →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →\n\n\n\nBrowse side projects →"
   },
   {
     "objectID": "blog.html",
@@ -151,14 +151,49 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Experienced Data Scientist with 10+ years building software and data science solutions across multiple domains. Currently leading ML and AI initiatives at CrowdStrike.\nMy latest passion is applying my skills to advanced modeling and analytics on football (soccer) tracking + event data.\nRecent work:"
+    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics — developing novel metrics from tracking data and building simulation environments."
   },
   {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
     "title": "About",
-    "section": "Contact",
-    "text": "Contact\n\nLinkedIn: ringhilterra\nGitHub: ringhilterra\nTwitter: @ringhilterra"
+    "section": "Experience",
+    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems\nDS lead for ML-powered detection scoring system — triage prioritization feature, in production\nFirst production ML model for Data Protection (USB exfiltration detection in Falcon Device Control)\nTensorFlow model training pipeline on AWS EC2 for source code classification (published article)\nAnomaly detection research in Cloud Workload Protection (published article)\n7 pending patents in Machine Learning & Cybersecurity\n\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis\nNetwork planning optimization via linear programming (18% capacity increase)\nXGBoost model for rural internet speed prediction, deployed across Mexico, Brazil, and Nigeria\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points, supporting multi-million dollar deals\nSQL ETL workflows and Python web app for supply/demand forecasting\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nTeradata Studio: Java desktop application for database administration and query development\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n\nStanford University\n\nSep 2020 – Apr 2022\n\nGraduate Professional Program, Artificial Intelligence\n\n\nUC San Diego\n\n2017 – 2019\n\nM.A.S. Data Science and Engineering — GPA 4.0\n\n\nUC San Diego\n\n2010 – 2014\n\nB.S. Computer Science, Minor in Economics"
+  },
+  {
+    "objectID": "about.html#patents-publications",
+    "href": "about.html#patents-publications",
+    "title": "About",
+    "section": "Patents & Publications",
+    "text": "Patents & Publications\n\n7 pending patents in Machine Learning and Cybersecurity (CrowdStrike)\nPublished articles on source code classification and anomaly detection in cloud workloads via the CrowdStrike blog"
+  },
+  {
+    "objectID": "about.html#awards",
+    "href": "about.html#awards",
+    "title": "About",
+    "section": "Awards",
+    "text": "Awards\n\nCrowdStrike XLR8 ’22 Winner — Fanatical About the Customer, Threat Data Profiler Team\nTeradata Analytics Hackathon — 1st Prize (2017)"
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\n\nML / AI\n\nSupervised & Unsupervised ML\nGenAI & LLMs (LangChain, HuggingFace)\nGraph ML (PyG, NetworkX)\nNLP (Deep Learning, Transformers)\nTime Series Analysis\nPyTorch, TensorFlow, Scikit-learn, XGBoost\n\n\n\nData Engineering\n\nPython, SQL, Pandas, NumPy\nETL Pipelines & Data Architecture\nDistributed Computing\nGeospatial Analysis\n\n\n\nTools & Infrastructure\n\nAWS (S3, EC2, Athena)\nDocker, Linux, Git\nJupyter, VSCode\nPlotly, Seaborn\n\n\n\nFootball Analytics\n\nTracking Data Analysis\nMetric Development (ASI)\nAgent Simulation (Kaggle)\nEvent Data Processing"
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About",
+    "section": "Connect",
+    "text": "Connect\n\nLinkedIn: ryan-inghilterra-017\nGitHub: ringhilterra\nTwitter: @ringhilterra"
   },
   {
     "objectID": "football-analytics.html",

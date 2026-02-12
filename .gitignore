@@ -3,5 +3,8 @@ project_refs/
 **/*.quarto_ipynb
 CLAUDE.md
 
+# Source materials
+linkedin_snaps/
+
 # Python virtualenv
 .venv/

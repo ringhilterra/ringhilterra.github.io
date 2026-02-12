@@ -21,14 +21,14 @@ I build production ML systems and AI agents at CrowdStrike, protecting millions 
 ::: {.featured-grid}
 
 ::: {.featured-block}
-### Professional Work
+### Career Highlights
 
-- ML/AI systems for endpoint security at CrowdStrike
-- Neural embedding pipelines for microbiome classification
-- NLP similarity matching with distributed computing
-- Time series classification and geospatial data engineering
+- Leading agentic AI initiatives at CrowdStrike
+- ML-powered detection scoring system in production
+- 7 pending patents in ML & Cybersecurity
+- Stanford AI Graduate Professional Program
 
-[View all projects &rarr;](projects.qmd){.block-link}
+[More about me &rarr;](about.qmd){.block-link}
 :::
 
 ::: {.featured-block}
@@ -41,6 +41,10 @@ I build production ML systems and AI agents at CrowdStrike, protecting millions 
 [Explore football work &rarr;](football-analytics.qmd){.block-link}
 :::
 
+:::
+
+::: {style="text-align: center; margin-bottom: 2rem;"}
+[Browse side projects &rarr;](projects.qmd){style="color: var(--accent); font-weight: 500; text-decoration: none;"}
 :::
 
 :::
