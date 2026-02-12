@@ -1,13 +1,16 @@
 ---
-title: "American Gut Microbiome Analysis"
+title: "Neural Embeddings for IGS Microbiome Classification"
 description: "Masters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline"
 date: "2018-06-15"
 categories: [machine-learning, bioinformatics, data-engineering, python, research]
+image: thumbnail.png
 ---
 
 ## Overview
 
-Masters capstone project analyzing the American Gut Project dataset using advanced embedding techniques and supervised machine learning to classify microbiome samples. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.
+Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.
+
+![Research Poster](poster.png)
 
 **Publication:** [UCSD Library Digital Collections](https://library.ucsd.edu/dc/object/bb2666864s/_4_1.pdf)
 
@@ -15,31 +18,35 @@ Masters capstone project analyzing the American Gut Project dataset using advanc
 
 ## Key Contributions
 
-### Advanced Embedding Techniques
-- **Hyperbolic embeddings** for hierarchical microbiome taxonomy representation
+### Neural Embedding Techniques for Microbiome Data
+- **Hyperbolic embeddings** capturing hierarchical structure of microbiome taxonomy
 - **Word2Vec embeddings** treating microbiome samples as documents and OTUs as words
-- Novel application of NLP techniques to biological sequence data
+- **3D visualization** of embedding space showing sample clustering patterns
+- Novel application of NLP neural network architectures to biological sequence data
 
-### Production Data Pipeline
-- Built scalable Luigi-based pipeline for reproducible analysis
-- AWS S3 integration for data artifact management
-- Modular architecture supporting multiple analytical workflows
+### Classification Performance
+Achieved strong predictive performance across multiple embedding approaches and classifiers, with results showing:
+- Comparative evaluation of Random Forest, XGBoost, and neural network classifiers
+- Analysis across different embedding dimensionalities and feature representations
+- Balanced accuracy metrics for microbiome-based phenotype prediction
 
-### Comprehensive Bioinformatics Analysis
-- **Phylogenetic diversity**: Alpha and beta diversity calculations using GreenGenes 97 tree
-- **Principal Coordinates Analysis (PCoA)** on beta diversity matrices
-- **Bloom OTU removal** and rarefaction for data quality
+### Production Data Pipeline Architecture
+- Built scalable **Luigi-based pipeline** for reproducible end-to-end analysis
+- **AWS S3 integration** for distributed data artifact management
+- Modular architecture with distinct stages: data ingestion → preprocessing → embedding → modeling → evaluation
+- Automated dependency management and task orchestration
+
+### Comprehensive Bioinformatics Workflow
+- **Phylogenetic diversity**: Alpha and beta diversity calculations using GreenGenes 97 reference tree
+- **Principal Coordinates Analysis (PCoA)** on weighted/unweighted UniFrac distance matrices
+- **Bloom OTU removal** and rarefaction normalization for data quality control
 - Integration of BIOM format microbiome data via Redbiom API
 
-### Data Engineering
-- Cleaned and integrated data from 3 sources: raw metadata, BIOM OTU tables, and drug questionnaires
-- Implemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer
-- Created consistent sample IDs joinable across heterogeneous datasets
-
-### Machine Learning Classification
-- Supervised classification models for microbiome phenotype prediction
-- Hyperparameter tuning framework
-- Comparative analysis of traditional vs. embedding-based feature representations
+### Data Engineering & Integration
+- Cleaned and integrated data from 3 heterogeneous sources: raw metadata, BIOM OTU tables, and drug questionnaires
+- Implemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer for missing data handling
+- Created consistent sample ID schema joinable across datasets
+- Feature engineering from sparse OTU count matrices
 
 ## Technical Architecture
 

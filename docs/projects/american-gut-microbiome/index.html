@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2018-06-15">
 <meta name="description" content="Masters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline">
 
-<title>American Gut Microbiome Analysis – Ryan Inghilterra</title>
+<title>Neural Embeddings for IGS Microbiome Classification – Ryan Inghilterra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,11 +140,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#key-contributions" id="toc-key-contributions" class="nav-link" data-scroll-target="#key-contributions">Key Contributions</a>
   <ul class="collapse">
-  <li><a href="#advanced-embedding-techniques" id="toc-advanced-embedding-techniques" class="nav-link" data-scroll-target="#advanced-embedding-techniques">Advanced Embedding Techniques</a></li>
-  <li><a href="#production-data-pipeline" id="toc-production-data-pipeline" class="nav-link" data-scroll-target="#production-data-pipeline">Production Data Pipeline</a></li>
-  <li><a href="#comprehensive-bioinformatics-analysis" id="toc-comprehensive-bioinformatics-analysis" class="nav-link" data-scroll-target="#comprehensive-bioinformatics-analysis">Comprehensive Bioinformatics Analysis</a></li>
-  <li><a href="#data-engineering" id="toc-data-engineering" class="nav-link" data-scroll-target="#data-engineering">Data Engineering</a></li>
-  <li><a href="#machine-learning-classification" id="toc-machine-learning-classification" class="nav-link" data-scroll-target="#machine-learning-classification">Machine Learning Classification</a></li>
+  <li><a href="#neural-embedding-techniques-for-microbiome-data" id="toc-neural-embedding-techniques-for-microbiome-data" class="nav-link" data-scroll-target="#neural-embedding-techniques-for-microbiome-data">Neural Embedding Techniques for Microbiome Data</a></li>
+  <li><a href="#classification-performance" id="toc-classification-performance" class="nav-link" data-scroll-target="#classification-performance">Classification Performance</a></li>
+  <li><a href="#production-data-pipeline-architecture" id="toc-production-data-pipeline-architecture" class="nav-link" data-scroll-target="#production-data-pipeline-architecture">Production Data Pipeline Architecture</a></li>
+  <li><a href="#comprehensive-bioinformatics-workflow" id="toc-comprehensive-bioinformatics-workflow" class="nav-link" data-scroll-target="#comprehensive-bioinformatics-workflow">Comprehensive Bioinformatics Workflow</a></li>
+  <li><a href="#data-engineering-integration" id="toc-data-engineering-integration" class="nav-link" data-scroll-target="#data-engineering-integration">Data Engineering &amp; Integration</a></li>
   </ul></li>
   <li><a href="#technical-architecture" id="toc-technical-architecture" class="nav-link" data-scroll-target="#technical-architecture">Technical Architecture</a></li>
   <li><a href="#artifacts" id="toc-artifacts" class="nav-link" data-scroll-target="#artifacts">Artifacts</a></li>
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">American Gut Microbiome Analysis</h1>
+<h1 class="title">Neural Embeddings for IGS Microbiome Classification</h1>
   <div class="quarto-categories">
     <div class="quarto-category">machine-learning</div>
     <div class="quarto-category">bioinformatics</div>
@@ -194,51 +194,56 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Masters capstone project analyzing the American Gut Project dataset using advanced embedding techniques and supervised machine learning to classify microbiome samples. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.</p>
+<p>Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="poster.png" class="img-fluid figure-img"></p>
+<figcaption>Research Poster</figcaption>
+</figure>
+</div>
 <p><strong>Publication:</strong> <a href="https://library.ucsd.edu/dc/object/bb2666864s/_4_1.pdf">UCSD Library Digital Collections</a></p>
 <p><strong>Interactive Dashboard:</strong> <a href="https://github.com/mas-dse-ringhilt/american_gut_capstone_dashboard">Live Demo</a></p>
 </section>
 <section id="key-contributions" class="level2">
 <h2 class="anchored" data-anchor-id="key-contributions">Key Contributions</h2>
-<section id="advanced-embedding-techniques" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-embedding-techniques">Advanced Embedding Techniques</h3>
+<section id="neural-embedding-techniques-for-microbiome-data" class="level3">
+<h3 class="anchored" data-anchor-id="neural-embedding-techniques-for-microbiome-data">Neural Embedding Techniques for Microbiome Data</h3>
 <ul>
-<li><strong>Hyperbolic embeddings</strong> for hierarchical microbiome taxonomy representation</li>
+<li><strong>Hyperbolic embeddings</strong> capturing hierarchical structure of microbiome taxonomy</li>
 <li><strong>Word2Vec embeddings</strong> treating microbiome samples as documents and OTUs as words</li>
-<li>Novel application of NLP techniques to biological sequence data</li>
+<li><strong>3D visualization</strong> of embedding space showing sample clustering patterns</li>
+<li>Novel application of NLP neural network architectures to biological sequence data</li>
 </ul>
 </section>
-<section id="production-data-pipeline" class="level3">
-<h3 class="anchored" data-anchor-id="production-data-pipeline">Production Data Pipeline</h3>
+<section id="classification-performance" class="level3">
+<h3 class="anchored" data-anchor-id="classification-performance">Classification Performance</h3>
+<p>Achieved strong predictive performance across multiple embedding approaches and classifiers, with results showing: - Comparative evaluation of Random Forest, XGBoost, and neural network classifiers - Analysis across different embedding dimensionalities and feature representations - Balanced accuracy metrics for microbiome-based phenotype prediction</p>
+</section>
+<section id="production-data-pipeline-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="production-data-pipeline-architecture">Production Data Pipeline Architecture</h3>
 <ul>
-<li>Built scalable Luigi-based pipeline for reproducible analysis</li>
-<li>AWS S3 integration for data artifact management</li>
-<li>Modular architecture supporting multiple analytical workflows</li>
+<li>Built scalable <strong>Luigi-based pipeline</strong> for reproducible end-to-end analysis</li>
+<li><strong>AWS S3 integration</strong> for distributed data artifact management</li>
+<li>Modular architecture with distinct stages: data ingestion → preprocessing → embedding → modeling → evaluation</li>
+<li>Automated dependency management and task orchestration</li>
 </ul>
 </section>
-<section id="comprehensive-bioinformatics-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="comprehensive-bioinformatics-analysis">Comprehensive Bioinformatics Analysis</h3>
+<section id="comprehensive-bioinformatics-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="comprehensive-bioinformatics-workflow">Comprehensive Bioinformatics Workflow</h3>
 <ul>
-<li><strong>Phylogenetic diversity</strong>: Alpha and beta diversity calculations using GreenGenes 97 tree</li>
-<li><strong>Principal Coordinates Analysis (PCoA)</strong> on beta diversity matrices</li>
-<li><strong>Bloom OTU removal</strong> and rarefaction for data quality</li>
+<li><strong>Phylogenetic diversity</strong>: Alpha and beta diversity calculations using GreenGenes 97 reference tree</li>
+<li><strong>Principal Coordinates Analysis (PCoA)</strong> on weighted/unweighted UniFrac distance matrices</li>
+<li><strong>Bloom OTU removal</strong> and rarefaction normalization for data quality control</li>
 <li>Integration of BIOM format microbiome data via Redbiom API</li>
 </ul>
 </section>
-<section id="data-engineering" class="level3">
-<h3 class="anchored" data-anchor-id="data-engineering">Data Engineering</h3>
+<section id="data-engineering-integration" class="level3">
+<h3 class="anchored" data-anchor-id="data-engineering-integration">Data Engineering &amp; Integration</h3>
 <ul>
-<li>Cleaned and integrated data from 3 sources: raw metadata, BIOM OTU tables, and drug questionnaires</li>
-<li>Implemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer</li>
-<li>Created consistent sample IDs joinable across heterogeneous datasets</li>
-</ul>
-</section>
-<section id="machine-learning-classification" class="level3">
-<h3 class="anchored" data-anchor-id="machine-learning-classification">Machine Learning Classification</h3>
-<ul>
-<li>Supervised classification models for microbiome phenotype prediction</li>
-<li>Hyperparameter tuning framework</li>
-<li>Comparative analysis of traditional vs.&nbsp;embedding-based feature representations</li>
+<li>Cleaned and integrated data from 3 heterogeneous sources: raw metadata, BIOM OTU tables, and drug questionnaires</li>
+<li>Implemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer for missing data handling</li>
+<li>Created consistent sample ID schema joinable across datasets</li>
+<li>Feature engineering from sparse OTU count matrices</li>
 </ul>
 </section>
 </section>

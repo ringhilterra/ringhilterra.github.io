@@ -130,7 +130,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\nAmerican Gut Microbiome Analysis\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#featured-projects",
@@ -163,42 +163,42 @@
   {
     "objectID": "projects/american-gut-microbiome/index.html",
     "href": "projects/american-gut-microbiome/index.html",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced embedding techniques and supervised machine learning to classify microbiome samples. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\nResearch Poster\n\n\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#overview",
     "href": "projects/american-gut-microbiome/index.html#overview",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced embedding techniques and supervised machine learning to classify microbiome samples. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\nResearch Poster\n\n\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#key-contributions",
     "href": "projects/american-gut-microbiome/index.html#key-contributions",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "Key Contributions",
-    "text": "Key Contributions\n\nAdvanced Embedding Techniques\n\nHyperbolic embeddings for hierarchical microbiome taxonomy representation\nWord2Vec embeddings treating microbiome samples as documents and OTUs as words\nNovel application of NLP techniques to biological sequence data\n\n\n\nProduction Data Pipeline\n\nBuilt scalable Luigi-based pipeline for reproducible analysis\nAWS S3 integration for data artifact management\nModular architecture supporting multiple analytical workflows\n\n\n\nComprehensive Bioinformatics Analysis\n\nPhylogenetic diversity: Alpha and beta diversity calculations using GreenGenes 97 tree\nPrincipal Coordinates Analysis (PCoA) on beta diversity matrices\nBloom OTU removal and rarefaction for data quality\nIntegration of BIOM format microbiome data via Redbiom API\n\n\n\nData Engineering\n\nCleaned and integrated data from 3 sources: raw metadata, BIOM OTU tables, and drug questionnaires\nImplemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer\nCreated consistent sample IDs joinable across heterogeneous datasets\n\n\n\nMachine Learning Classification\n\nSupervised classification models for microbiome phenotype prediction\nHyperparameter tuning framework\nComparative analysis of traditional vs. embedding-based feature representations"
+    "text": "Key Contributions\n\nNeural Embedding Techniques for Microbiome Data\n\nHyperbolic embeddings capturing hierarchical structure of microbiome taxonomy\nWord2Vec embeddings treating microbiome samples as documents and OTUs as words\n3D visualization of embedding space showing sample clustering patterns\nNovel application of NLP neural network architectures to biological sequence data\n\n\n\nClassification Performance\nAchieved strong predictive performance across multiple embedding approaches and classifiers, with results showing: - Comparative evaluation of Random Forest, XGBoost, and neural network classifiers - Analysis across different embedding dimensionalities and feature representations - Balanced accuracy metrics for microbiome-based phenotype prediction\n\n\nProduction Data Pipeline Architecture\n\nBuilt scalable Luigi-based pipeline for reproducible end-to-end analysis\nAWS S3 integration for distributed data artifact management\nModular architecture with distinct stages: data ingestion → preprocessing → embedding → modeling → evaluation\nAutomated dependency management and task orchestration\n\n\n\nComprehensive Bioinformatics Workflow\n\nPhylogenetic diversity: Alpha and beta diversity calculations using GreenGenes 97 reference tree\nPrincipal Coordinates Analysis (PCoA) on weighted/unweighted UniFrac distance matrices\nBloom OTU removal and rarefaction normalization for data quality control\nIntegration of BIOM format microbiome data via Redbiom API\n\n\n\nData Engineering & Integration\n\nCleaned and integrated data from 3 heterogeneous sources: raw metadata, BIOM OTU tables, and drug questionnaires\nImplemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer for missing data handling\nCreated consistent sample ID schema joinable across datasets\nFeature engineering from sparse OTU count matrices"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#technical-architecture",
     "href": "projects/american-gut-microbiome/index.html#technical-architecture",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "Technical Architecture",
     "text": "Technical Architecture\nData Pipeline Components: 1. Biom Data Ingestion — Pulls American Gut Project OTU data from Redbiom API, removes bloom OTUs, applies rarefaction 2. Diversity Analysis — Calculates phylogenetic alpha/beta diversity and runs PCoA 3. Data Integration — Cleans and joins metadata, BIOM, and survey data 4. Embedding Layer — Generates hyperbolic and Word2Vec embeddings 5. ML Pipeline — Preprocessing, feature engineering, hyperparameter tuning, and classification\nTechnologies: - Python (Luigi, scikit-learn, pandas, numpy) - Bioinformatics tools (QIIME2, BIOM format, Redbiom) - AWS S3 for distributed data storage - Interactive Plotly dashboard for visualization"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#artifacts",
     "href": "projects/american-gut-microbiome/index.html#artifacts",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "Artifacts",
     "text": "Artifacts\n\nCode Repository: GitHub\nPublication: Digital Thesis\nInteractive Dashboard: Embedding Visualizations"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#impact",
     "href": "projects/american-gut-microbiome/index.html#impact",
-    "title": "American Gut Microbiome Analysis",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "Impact",
     "text": "Impact\nThis work demonstrates how modern machine learning and embedding techniques from NLP can be successfully adapted to biological data, opening new approaches for microbiome analysis beyond traditional ecological metrics. The production-grade pipeline architecture enables reproducible research and supports future extensions to other microbiome datasets.\n\nMasters in Data Science Capstone Project, UC San Diego (2018)"
   },
