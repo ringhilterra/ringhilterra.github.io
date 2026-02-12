@@ -21,14 +21,14 @@ I build production ML systems and AI agents at CrowdStrike, protecting millions 
 ::: {.featured-grid}
 
 ::: {.featured-block}
-### Career Highlights
+### Professional Work
 
 - Leading agentic AI initiatives at CrowdStrike
 - ML-powered detection scoring system in production
 - 7 pending patents in ML & Cybersecurity
 - Stanford AI Graduate Professional Program
 
-[More about me &rarr;](about.qmd){.block-link}
+[Explore professional work &rarr;](professional.qmd){.block-link}
 :::
 
 ::: {.featured-block}
@@ -41,10 +41,16 @@ I build production ML systems and AI agents at CrowdStrike, protecting millions 
 [Explore football work &rarr;](football-analytics.qmd){.block-link}
 :::
 
+::: {.featured-block}
+### Publications & Patents
+
+- Published technical articles on CrowdStrike blog
+- 7 pending ML & Cybersecurity patents
+- Research in anomaly detection and source code classification
+
+[View publications &rarr;](publications.qmd){.block-link}
 :::
 
-::: {style="text-align: center; margin-bottom: 2rem;"}
-[Browse side projects &rarr;](projects.qmd){style="color: var(--accent); font-weight: 500; text-decoration: none;"}
 :::
 
 :::

@@ -8,3 +8,7 @@ listing:
   fields: [image, title, description, date, categories]
   image-height: 200px
 ---
+
+::: {style="margin-bottom: 1.5rem; padding: 1rem; background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: var(--radius);"}
+Looking for professional work? Visit the [Professional](professional.qmd) page.
+:::

@@ -7,3 +7,7 @@ listing:
   categories: true
   fields: [title, description, date, categories]
 ---
+
+::: {style="margin-bottom: 1.5rem; padding: 1rem; background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: var(--radius);"}
+Blog posts are now part of the [Publications & Patents](publications.qmd) page.
+:::

@@ -12,7 +12,7 @@ listing:
     domain: "football"
 ---
 
-I bring 10+ years of professional data science and machine learning experience to football analytics. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines --- skills that translate directly to working with tracking data, event data, and advanced football metrics.
+I bring 10+ years of professional data science and machine learning experience to football analytics, backed by a Stanford AI Graduate Program and a Master's in Data Science from UC San Diego. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines --- skills that translate directly to working with tracking data, event data, and advanced football metrics.
 
 My current research focuses on **off-ball movement quantification**. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure --- a dimension of play that's critical to team performance but difficult to capture with traditional metrics.
 

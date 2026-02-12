@@ -1,0 +1,49 @@
+---
+title: "Publications & Patents"
+toc: true
+toc-depth: 2
+page-layout: article
+listing:
+  - id: blog-posts
+    contents: posts/**/*.qmd
+    type: default
+    sort: date desc
+    categories: true
+    fields: [title, description, date, categories]
+---
+
+## Published Articles
+
+::: {.pub-entry}
+**Source Code Classification with Deep Learning**
+CrowdStrike Engineering Blog
+TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2.
+[Read article &rarr;](https://www.crowdstrike.com/blog/){.pub-link}
+:::
+
+::: {.pub-entry}
+**Anomaly Detection in Cloud Workloads**
+CrowdStrike Engineering Blog
+Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning.
+[Read article &rarr;](https://www.crowdstrike.com/blog/){.pub-link}
+:::
+
+## Patents
+
+::: {.patent-list}
+**7 Pending Patents in Machine Learning & Cybersecurity**
+
+Patent applications spanning ML-powered detection systems, data processing pipelines, and AI-driven threat analysis at CrowdStrike. Topics include:
+
+- Machine learning for threat detection and triage prioritization
+- Data protection and exfiltration detection
+- Anomaly detection in cloud environments
+- Source code analysis and classification
+
+*All patents pending --- titles available upon request.*
+:::
+
+## Blog Posts
+
+:::{#blog-posts}
+:::

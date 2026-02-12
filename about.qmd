@@ -31,12 +31,11 @@ Senior Data Scientist II at CrowdStrike
 Aug 2022 -- Present &nbsp;|&nbsp; Promoted from Senior Data Scientist I
 :::
 
-- Leading one of CrowdStrike's agentic AI initiatives, driving innovation in autonomous AI systems
-- DS lead for ML-powered detection scoring system --- triage prioritization feature, in production
-- First production ML model for Data Protection (USB exfiltration detection in Falcon Device Control)
-- TensorFlow model training pipeline on AWS EC2 for source code classification ([published article](https://www.crowdstrike.com/blog/))
-- Anomaly detection research in Cloud Workload Protection ([published article](https://www.crowdstrike.com/blog/))
-- 7 pending patents in Machine Learning & Cybersecurity
+- Leading agentic AI initiatives and shipping ML-powered detection scoring to production
+- 7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection
+- First production ML model for Data Protection (USB exfiltration detection)
+
+[See full professional work &rarr;](professional.qmd){.timeline-link}
 :::
 
 ::: {.timeline-item}
@@ -56,9 +55,8 @@ Aug 2021 -- Aug 2022
 Jul 2019 -- Aug 2021
 :::
 
-- **Global Demand Model**: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis
-- Network planning optimization via linear programming (18% capacity increase)
-- XGBoost model for rural internet speed prediction, deployed across Mexico, Brazil, and Nigeria
+- Global Demand Model: 2M new target communities from 1B+ data points using unsupervised ML
+- Network optimization via linear programming (18% capacity increase)
 :::
 
 ::: {.timeline-item}
@@ -67,8 +65,7 @@ Jul 2019 -- Aug 2021
 Sep 2017 -- Jul 2019
 :::
 
-- Flight pattern analysis across 50 airlines and 10M data points, supporting multi-million dollar deals
-- SQL ETL workflows and Python web app for supply/demand forecasting
+- Flight pattern analysis across 50 airlines and 10M data points
 - Distributed speed test framework achieving 100x throughput improvement
 :::
 
@@ -78,9 +75,8 @@ Sep 2017 -- Jul 2019
 Jan 2015 -- Sep 2017
 :::
 
-- Teradata Studio: Java desktop application for database administration and query development
 - Full-stack NextGen BI platform (TypeScript, Node.js, Java)
-- 1st Prize at Analytics Hackathon
+- 1st Prize at Analytics Hackathon (2017)
 :::
 
 :::
@@ -114,56 +110,6 @@ M.A.S. Data Science and Engineering — GPA 4.0
 :::
 
 B.S. Computer Science, Minor in Economics
-:::
-
-:::
-
-## Patents & Publications
-
-- **7 pending patents** in Machine Learning and Cybersecurity (CrowdStrike)
-- Published articles on source code classification and anomaly detection in cloud workloads via the [CrowdStrike blog](https://www.crowdstrike.com/blog/)
-
-## Awards
-
-- **CrowdStrike XLR8 '22 Winner** — Fanatical About the Customer, Threat Data Profiler Team
-- **Teradata Analytics Hackathon** — 1st Prize (2017)
-
-## Technical Skills
-
-::: {.skills-grid}
-
-::: {.skill-category}
-#### ML / AI
-- Supervised & Unsupervised ML
-- GenAI & LLMs (LangChain, HuggingFace)
-- Graph ML (PyG, NetworkX)
-- NLP (Deep Learning, Transformers)
-- Time Series Analysis
-- PyTorch, TensorFlow, Scikit-learn, XGBoost
-:::
-
-::: {.skill-category}
-#### Data Engineering
-- Python, SQL, Pandas, NumPy
-- ETL Pipelines & Data Architecture
-- Distributed Computing
-- Geospatial Analysis
-:::
-
-::: {.skill-category}
-#### Tools & Infrastructure
-- AWS (S3, EC2, Athena)
-- Docker, Linux, Git
-- Jupyter, VSCode
-- Plotly, Seaborn
-:::
-
-::: {.skill-category}
-#### Football Analytics
-- Tracking Data Analysis
-- Metric Development (ASI)
-- Agent Simulation (Kaggle)
-- Event Data Processing
 :::
 
 :::

@@ -16,12 +16,12 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: projects.qmd
-        text: Projects
+      - href: professional.qmd
+        text: Professional
       - href: football-analytics.qmd
         text: Football Analytics
-      - href: blog.qmd
-        text: Blog
+      - href: publications.qmd
+        text: Publications
     right:
       - icon: github
         href: https://github.com/ringhilterra

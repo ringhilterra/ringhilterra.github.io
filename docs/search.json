@@ -63,158 +63,81 @@
     "text": "Future Improvements\n\nContext-aware “active support”: Account for whether a player is already open (opponent proximity). A stationary player in space may be better positioned than one running into traffic.\nAdvanced support classification: Incorporate velocity direction vectors and pass opening angle calculations to distinguish between movement toward useful space versus movement away from the play."
   },
   {
-    "objectID": "projects/news-tweets-nlp/index.html",
-    "href": "projects/news-tweets-nlp/index.html",
-    "title": "News-Tweets NLP Linker",
+    "objectID": "projects/time-series-classification/index.html",
+    "href": "projects/time-series-classification/index.html",
+    "title": "Time Series User Classification",
     "section": "",
-    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
   },
   {
-    "objectID": "projects/news-tweets-nlp/index.html#overview",
-    "href": "projects/news-tweets-nlp/index.html#overview",
-    "title": "News-Tweets NLP Linker",
+    "objectID": "projects/time-series-classification/index.html#overview",
+    "href": "projects/time-series-classification/index.html#overview",
+    "title": "Time Series User Classification",
     "section": "",
-    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
   },
   {
-    "objectID": "projects/news-tweets-nlp/index.html#code",
-    "href": "projects/news-tweets-nlp/index.html#code",
-    "title": "News-Tweets NLP Linker",
+    "objectID": "projects/time-series-classification/index.html#code",
+    "href": "projects/time-series-classification/index.html#code",
+    "title": "Time Series User Classification",
     "section": "Code",
     "text": "Code\nGitHub Repository"
   },
   {
-    "objectID": "projects/enriched-covid19-data/index.html",
-    "href": "projects/enriched-covid19-data/index.html",
-    "title": "Enriched COVID-19 U.S. County Data",
+    "objectID": "projects/kaggle-mancity/index.html",
+    "href": "projects/kaggle-mancity/index.html",
+    "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
   },
   {
-    "objectID": "projects/enriched-covid19-data/index.html#overview",
-    "href": "projects/enriched-covid19-data/index.html#overview",
-    "title": "Enriched COVID-19 U.S. County Data",
+    "objectID": "projects/kaggle-mancity/index.html#overview",
+    "href": "projects/kaggle-mancity/index.html#overview",
+    "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
   },
   {
-    "objectID": "projects/enriched-covid19-data/index.html#code",
-    "href": "projects/enriched-covid19-data/index.html#code",
-    "title": "Enriched COVID-19 U.S. County Data",
+    "objectID": "projects/kaggle-mancity/index.html#what-i-built",
+    "href": "projects/kaggle-mancity/index.html#what-i-built",
+    "title": "Kaggle Google Football with Manchester City",
+    "section": "What I Built",
+    "text": "What I Built\n\nDocker Environment\nCreated a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.\n\n\nAgent Pool Play Framework\nBuilt a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.\n\n\nML Agent Exploration\nExperimented with multiple approaches to agent design:\n\nRule-based agents with handcrafted game state heuristics (positioning, ball possession, pass selection)\nReinforcement learning approaches using the environment’s reward signal\nImitation learning from high-performing rule-based agents as training signal\nAnalysis of game state representations and action space design choices"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#technical-details",
+    "href": "projects/kaggle-mancity/index.html#technical-details",
+    "title": "Kaggle Google Football with Manchester City",
+    "section": "Technical Details",
+    "text": "Technical Details\nEnvironment: Google Research Football Environment (OpenAI Gym compatible)\nStack: Python, Docker, Jupyter, TensorFlow, OpenAI Gym\nKey challenges:\n\nGame state representation: 115-dimensional vector encoding player positions, ball state, and game context\nAction space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing\nReward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#code",
+    "href": "projects/kaggle-mancity/index.html#code",
+    "title": "Kaggle Google Football with Manchester City",
     "section": "Code",
     "text": "Code\nGitHub Repository"
   },
   {
-    "objectID": "projects/asi/index.html",
-    "href": "projects/asi/index.html",
-    "title": "Active Support Index (ASI)",
+    "objectID": "projects/dessert-flavor-pairings/index.html",
+    "href": "projects/dessert-flavor-pairings/index.html",
+    "title": "Dessert Flavor Pairings",
     "section": "",
-    "text": "TipWant the full technical details?\n\n\n\nView the complete analysis notebook with all code and methodology."
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
   },
   {
-    "objectID": "projects/asi/index.html#abstract",
-    "href": "projects/asi/index.html#abstract",
-    "title": "Active Support Index (ASI)",
-    "section": "Abstract",
-    "text": "Abstract\n\nIntroduction\nOn average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.\nCore Question: When a ball carrier is pressured, how actively do teammates move to provide passing options?\nThis research introduces the Active Support Index (ASI), a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.\n\n\nMethods\nWe analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner’s 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.\nMetric Definitions:\n\n\n\n\n\n\n\n\nLevel\nMetric\nFormula\n\n\n\n\nPer Event\nActive Support Ratio\n\\(\\frac{\\text{Active Supporters}}{\\text{Nearby Teammates}}\\)\n\n\nPer Player\nPlayer ASI\n\\(\\frac{\\text{Active Support Count}}{\\text{Support Opportunities}}\\)\n\n\nPer Team\nTeam ASI\n\\(1 - \\text{Static Rate}\\)\n\n\n\nKey Definitions: - Active Supporter: Teammate within 35m of the pressed player AND moving &gt;2 m/s - Static Rate: Proportion of pressure events with zero active supporters - Proximity threshold (35m): Maximum realistic passing range under pressure - Velocity threshold (2 m/s): Boundary separating walking from jogging/running\nFor validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (total_metersperminute_full_tip).\n\n\nResults\nSingle Event Analysis\nFigure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.\n\n\n\nFigure 1\n\n\nValidation with Physical Aggregates\nASI correlates strongly with season-level physical output (r = 0.74, p &lt; 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).\n\n\n\nFigure 2\n\n\nAdditional Findings\n\nPosition Validation: ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p &lt; 0.001).\nTeam Differentiation: Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.\nFatigue Analysis: 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).\n\n\n\nConclusion\nThe Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles."
-  },
-  {
-    "objectID": "projects/asi/index.html#installation-usage",
-    "href": "projects/asi/index.html#installation-usage",
-    "title": "Active Support Index (ASI)",
-    "section": "Installation & Usage",
-    "text": "Installation & Usage\n\nOption 1: Run in Google Colab\nNo setup required. Simply click the badge below to open and run the notebook directly in Google Colab:\n\n\n\nOpen In Colab\n\n\n\n\nOption 2: Run Locally\nTested on Python 3.12 (macOS)\n\nClone the repository:\ngit clone https://github.com/ringhilterra/analytics_cup_research.git\ncd analytics_cup_research\nInstall dependencies:\npip install -r requirements.txt\nRun the notebook:\njupyter notebook submission.ipynb"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "projects/dessert-flavor-pairings/index.html#overview",
+    "href": "projects/dessert-flavor-pairings/index.html#overview",
+    "title": "Dessert Flavor Pairings",
     "section": "",
-    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ryan Inghilterra",
-    "section": "",
-    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nCareer Highlights\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\n7 pending patents in ML & Cybersecurity\nStanford AI Graduate Professional Program\n\nMore about me →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →\n\n\n\nBrowse side projects →"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Welcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics — developing novel metrics from tracking data and building simulation environments."
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About",
-    "section": "Experience",
-    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems\nDS lead for ML-powered detection scoring system — triage prioritization feature, in production\nFirst production ML model for Data Protection (USB exfiltration detection in Falcon Device Control)\nTensorFlow model training pipeline on AWS EC2 for source code classification (published article)\nAnomaly detection research in Cloud Workload Protection (published article)\n7 pending patents in Machine Learning & Cybersecurity\n\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis\nNetwork planning optimization via linear programming (18% capacity increase)\nXGBoost model for rural internet speed prediction, deployed across Mexico, Brazil, and Nigeria\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points, supporting multi-million dollar deals\nSQL ETL workflows and Python web app for supply/demand forecasting\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nTeradata Studio: Java desktop application for database administration and query development\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n\n\nStanford University\n\nSep 2020 – Apr 2022\n\nGraduate Professional Program, Artificial Intelligence\n\n\nUC San Diego\n\n2017 – 2019\n\nM.A.S. Data Science and Engineering — GPA 4.0\n\n\nUC San Diego\n\n2010 – 2014\n\nB.S. Computer Science, Minor in Economics"
-  },
-  {
-    "objectID": "about.html#patents-publications",
-    "href": "about.html#patents-publications",
-    "title": "About",
-    "section": "Patents & Publications",
-    "text": "Patents & Publications\n\n7 pending patents in Machine Learning and Cybersecurity (CrowdStrike)\nPublished articles on source code classification and anomaly detection in cloud workloads via the CrowdStrike blog"
-  },
-  {
-    "objectID": "about.html#awards",
-    "href": "about.html#awards",
-    "title": "About",
-    "section": "Awards",
-    "text": "Awards\n\nCrowdStrike XLR8 ’22 Winner — Fanatical About the Customer, Threat Data Profiler Team\nTeradata Analytics Hackathon — 1st Prize (2017)"
-  },
-  {
-    "objectID": "about.html#technical-skills",
-    "href": "about.html#technical-skills",
-    "title": "About",
-    "section": "Technical Skills",
-    "text": "Technical Skills\n\n\nML / AI\n\nSupervised & Unsupervised ML\nGenAI & LLMs (LangChain, HuggingFace)\nGraph ML (PyG, NetworkX)\nNLP (Deep Learning, Transformers)\nTime Series Analysis\nPyTorch, TensorFlow, Scikit-learn, XGBoost\n\n\n\nData Engineering\n\nPython, SQL, Pandas, NumPy\nETL Pipelines & Data Architecture\nDistributed Computing\nGeospatial Analysis\n\n\n\nTools & Infrastructure\n\nAWS (S3, EC2, Athena)\nDocker, Linux, Git\nJupyter, VSCode\nPlotly, Seaborn\n\n\n\nFootball Analytics\n\nTracking Data Analysis\nMetric Development (ASI)\nAgent Simulation (Kaggle)\nEvent Data Processing"
-  },
-  {
-    "objectID": "about.html#connect",
-    "href": "about.html#connect",
-    "title": "About",
-    "section": "Connect",
-    "text": "Connect\n\nLinkedIn: ryan-inghilterra-017\nGitHub: ringhilterra\nTwitter: @ringhilterra"
-  },
-  {
-    "objectID": "football-analytics.html",
-    "href": "football-analytics.html",
-    "title": "Football Analytics",
-    "section": "",
-    "text": "I bring 10+ years of professional data science and machine learning experience to football analytics. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines — skills that translate directly to working with tracking data, event data, and advanced football metrics.\nMy current research focuses on off-ball movement quantification. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure — a dimension of play that’s critical to team performance but difficult to capture with traditional metrics.\nI’m also interested in simulation environments for tactical analysis, agent-based modeling for player decision-making, and applying modern ML techniques (embeddings, graph neural networks, transformers) to match event sequences.\nI’m open to collaborations, consulting opportunities, and conversations with clubs, analytics companies, and fellow researchers. Feel free to reach out via LinkedIn or X/Twitter."
-  },
-  {
-    "objectID": "football-analytics.html#projects",
-    "href": "football-analytics.html#projects",
-    "title": "Football Analytics",
-    "section": "Projects",
-    "text": "Projects"
-  },
-  {
-    "objectID": "posts/welcome.html",
-    "href": "posts/welcome.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
+    "objectID": "projects/dessert-flavor-pairings/index.html#code",
+    "href": "projects/dessert-flavor-pairings/index.html#code",
+    "title": "Dessert Flavor Pairings",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html",
@@ -259,80 +182,199 @@
     "text": "Impact\nThis work demonstrates how modern machine learning and embedding techniques from NLP can be successfully adapted to biological data, opening new approaches for microbiome analysis beyond traditional ecological metrics. The production-grade pipeline architecture enables reproducible research and supports future extensions to other microbiome datasets.\n\nMasters in Data Science Capstone Project, UC San Diego (2018)"
   },
   {
-    "objectID": "projects/dessert-flavor-pairings/index.html",
-    "href": "projects/dessert-flavor-pairings/index.html",
-    "title": "Dessert Flavor Pairings",
+    "objectID": "professional.html",
+    "href": "professional.html",
+    "title": "Professional Work",
     "section": "",
-    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+    "text": "Senior ML/AI professional with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, protecting millions of endpoints worldwide."
   },
   {
-    "objectID": "projects/dessert-flavor-pairings/index.html#overview",
-    "href": "projects/dessert-flavor-pairings/index.html#overview",
-    "title": "Dessert Flavor Pairings",
-    "section": "",
-    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+    "objectID": "professional.html#crowdstrike-highlights",
+    "href": "professional.html#crowdstrike-highlights",
+    "title": "Professional Work",
+    "section": "CrowdStrike — Highlights",
+    "text": "CrowdStrike — Highlights\n\n\nAgentic AI Initiative\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems for cybersecurity defense.\n\n\nML-Powered Detection Scoring\nDS lead for ML-powered detection scoring system — a triage prioritization feature now in production, helping analysts focus on the highest-priority threats.\n\n\nUSB Exfiltration Detection\nFirst production ML model for Data Protection — USB exfiltration detection shipped in Falcon Device Control.\nPublished article →\n\n\nSource Code Classification Pipeline\nTensorFlow model training pipeline on AWS EC2 for automated source code classification at scale.\nPublished article →\n\n\nCloud Workload Anomaly Detection\nResearch on anomaly detection in Cloud Workload Protection, published on the CrowdStrike engineering blog.\nPublished article →\n\n\n7 Pending Patents\nSeven pending patents in Machine Learning and Cybersecurity, spanning detection systems, data pipelines, and AI-driven threat analysis."
   },
   {
-    "objectID": "projects/dessert-flavor-pairings/index.html#code",
-    "href": "projects/dessert-flavor-pairings/index.html#code",
-    "title": "Dessert Flavor Pairings",
+    "objectID": "professional.html#previous-roles",
+    "href": "professional.html#previous-roles",
+    "title": "Professional Work",
+    "section": "Previous Roles",
+    "text": "Previous Roles\n\nViasat — Senior Data Scientist\n\nGlobal Demand Model: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis\nNetwork planning optimization via linear programming (18% capacity increase)\nXGBoost model for rural internet speed prediction deployed across Mexico, Brazil, and Nigeria\n\n\n\nTeradata — Software Engineer\n\nFull-stack development on NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Teradata Analytics Hackathon (2017)"
+  },
+  {
+    "objectID": "professional.html#technical-skills",
+    "href": "professional.html#technical-skills",
+    "title": "Professional Work",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\n\nML / AI\n\nSupervised & Unsupervised ML\nGenAI & LLMs (LangChain, HuggingFace)\nGraph ML (PyG, NetworkX)\nNLP (Deep Learning, Transformers)\nTime Series Analysis\nPyTorch, TensorFlow, Scikit-learn, XGBoost\n\n\n\nData Engineering\n\nPython, SQL, Pandas, NumPy\nETL Pipelines & Data Architecture\nDistributed Computing\nGeospatial Analysis\n\n\n\nTools & Infrastructure\n\nAWS (S3, EC2, Athena)\nDocker, Linux, Git\nJupyter, VSCode\nPlotly, Seaborn\n\n\n\nFootball Analytics\n\nTracking Data Analysis\nMetric Development (ASI)\nAgent Simulation (Kaggle)\nEvent Data Processing"
+  },
+  {
+    "objectID": "professional.html#personal-academic-projects",
+    "href": "professional.html#personal-academic-projects",
+    "title": "Professional Work",
+    "section": "Personal & Academic Projects",
+    "text": "Personal & Academic Projects\nThese side projects showcase range across data visualization, NLP, time series analysis, and more.\nBrowse all projects →"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ryan Inghilterra",
+    "section": "",
+    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nProfessional Work\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\n7 pending patents in ML & Cybersecurity\nStanford AI Graduate Professional Program\n\nExplore professional work →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →\n\n\nPublications & Patents\n\nPublished technical articles on CrowdStrike blog\n7 pending ML & Cybersecurity patents\nResearch in anomaly detection and source code classification\n\nView publications →"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts are now part of the Publications & Patents page.\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics — developing novel metrics from tracking data and building simulation environments."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading agentic AI initiatives and shipping ML-powered detection scoring to production\n7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection\nFirst production ML model for Data Protection (USB exfiltration detection)\n\nSee full professional work →\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: 2M new target communities from 1B+ data points using unsupervised ML\nNetwork optimization via linear programming (18% capacity increase)\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon (2017)"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n\nStanford University\n\nSep 2020 – Apr 2022\n\nGraduate Professional Program, Artificial Intelligence\n\n\nUC San Diego\n\n2017 – 2019\n\nM.A.S. Data Science and Engineering — GPA 4.0\n\n\nUC San Diego\n\n2010 – 2014\n\nB.S. Computer Science, Minor in Economics"
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About",
+    "section": "Connect",
+    "text": "Connect\n\nLinkedIn: ryan-inghilterra-017\nGitHub: ringhilterra\nTwitter: @ringhilterra"
+  },
+  {
+    "objectID": "football-analytics.html",
+    "href": "football-analytics.html",
+    "title": "Football Analytics",
+    "section": "",
+    "text": "I bring 10+ years of professional data science and machine learning experience to football analytics, backed by a Stanford AI Graduate Program and a Master’s in Data Science from UC San Diego. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines — skills that translate directly to working with tracking data, event data, and advanced football metrics.\nMy current research focuses on off-ball movement quantification. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure — a dimension of play that’s critical to team performance but difficult to capture with traditional metrics.\nI’m also interested in simulation environments for tactical analysis, agent-based modeling for player decision-making, and applying modern ML techniques (embeddings, graph neural networks, transformers) to match event sequences.\nI’m open to collaborations, consulting opportunities, and conversations with clubs, analytics companies, and fellow researchers. Feel free to reach out via LinkedIn or X/Twitter."
+  },
+  {
+    "objectID": "football-analytics.html#projects",
+    "href": "football-analytics.html#projects",
+    "title": "Football Analytics",
+    "section": "Projects",
+    "text": "Projects"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Looking for professional work? Visit the Professional page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/asi/index.html",
+    "href": "projects/asi/index.html",
+    "title": "Active Support Index (ASI)",
+    "section": "",
+    "text": "TipWant the full technical details?\n\n\n\nView the complete analysis notebook with all code and methodology."
+  },
+  {
+    "objectID": "projects/asi/index.html#abstract",
+    "href": "projects/asi/index.html#abstract",
+    "title": "Active Support Index (ASI)",
+    "section": "Abstract",
+    "text": "Abstract\n\nIntroduction\nOn average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.\nCore Question: When a ball carrier is pressured, how actively do teammates move to provide passing options?\nThis research introduces the Active Support Index (ASI), a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.\n\n\nMethods\nWe analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner’s 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.\nMetric Definitions:\n\n\n\n\n\n\n\n\nLevel\nMetric\nFormula\n\n\n\n\nPer Event\nActive Support Ratio\n\\(\\frac{\\text{Active Supporters}}{\\text{Nearby Teammates}}\\)\n\n\nPer Player\nPlayer ASI\n\\(\\frac{\\text{Active Support Count}}{\\text{Support Opportunities}}\\)\n\n\nPer Team\nTeam ASI\n\\(1 - \\text{Static Rate}\\)\n\n\n\nKey Definitions: - Active Supporter: Teammate within 35m of the pressed player AND moving &gt;2 m/s - Static Rate: Proportion of pressure events with zero active supporters - Proximity threshold (35m): Maximum realistic passing range under pressure - Velocity threshold (2 m/s): Boundary separating walking from jogging/running\nFor validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (total_metersperminute_full_tip).\n\n\nResults\nSingle Event Analysis\nFigure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.\n\n\n\nFigure 1\n\n\nValidation with Physical Aggregates\nASI correlates strongly with season-level physical output (r = 0.74, p &lt; 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).\n\n\n\nFigure 2\n\n\nAdditional Findings\n\nPosition Validation: ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p &lt; 0.001).\nTeam Differentiation: Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.\nFatigue Analysis: 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).\n\n\n\nConclusion\nThe Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles."
+  },
+  {
+    "objectID": "projects/asi/index.html#installation-usage",
+    "href": "projects/asi/index.html#installation-usage",
+    "title": "Active Support Index (ASI)",
+    "section": "Installation & Usage",
+    "text": "Installation & Usage\n\nOption 1: Run in Google Colab\nNo setup required. Simply click the badge below to open and run the notebook directly in Google Colab:\n\n\n\nOpen In Colab\n\n\n\n\nOption 2: Run Locally\nTested on Python 3.12 (macOS)\n\nClone the repository:\ngit clone https://github.com/ringhilterra/analytics_cup_research.git\ncd analytics_cup_research\nInstall dependencies:\npip install -r requirements.txt\nRun the notebook:\njupyter notebook submission.ipynb"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html",
+    "href": "projects/enriched-covid19-data/index.html",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#overview",
+    "href": "projects/enriched-covid19-data/index.html#overview",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#code",
+    "href": "projects/enriched-covid19-data/index.html#code",
+    "title": "Enriched COVID-19 U.S. County Data",
     "section": "Code",
     "text": "Code\nGitHub Repository"
   },
   {
-    "objectID": "projects/kaggle-mancity/index.html",
-    "href": "projects/kaggle-mancity/index.html",
-    "title": "Kaggle Google Football with Manchester City",
+    "objectID": "projects/news-tweets-nlp/index.html",
+    "href": "projects/news-tweets-nlp/index.html",
+    "title": "News-Tweets NLP Linker",
     "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
   },
   {
-    "objectID": "projects/kaggle-mancity/index.html#overview",
-    "href": "projects/kaggle-mancity/index.html#overview",
-    "title": "Kaggle Google Football with Manchester City",
+    "objectID": "projects/news-tweets-nlp/index.html#overview",
+    "href": "projects/news-tweets-nlp/index.html#overview",
+    "title": "News-Tweets NLP Linker",
     "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
   },
   {
-    "objectID": "projects/kaggle-mancity/index.html#what-i-built",
-    "href": "projects/kaggle-mancity/index.html#what-i-built",
-    "title": "Kaggle Google Football with Manchester City",
-    "section": "What I Built",
-    "text": "What I Built\n\nDocker Environment\nCreated a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.\n\n\nAgent Pool Play Framework\nBuilt a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.\n\n\nML Agent Exploration\nExperimented with multiple approaches to agent design:\n\nRule-based agents with handcrafted game state heuristics (positioning, ball possession, pass selection)\nReinforcement learning approaches using the environment’s reward signal\nImitation learning from high-performing rule-based agents as training signal\nAnalysis of game state representations and action space design choices"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#technical-details",
-    "href": "projects/kaggle-mancity/index.html#technical-details",
-    "title": "Kaggle Google Football with Manchester City",
-    "section": "Technical Details",
-    "text": "Technical Details\nEnvironment: Google Research Football Environment (OpenAI Gym compatible)\nStack: Python, Docker, Jupyter, TensorFlow, OpenAI Gym\nKey challenges:\n\nGame state representation: 115-dimensional vector encoding player positions, ball state, and game context\nAction space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing\nReward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#code",
-    "href": "projects/kaggle-mancity/index.html#code",
-    "title": "Kaggle Google Football with Manchester City",
+    "objectID": "projects/news-tweets-nlp/index.html#code",
+    "href": "projects/news-tweets-nlp/index.html#code",
+    "title": "News-Tweets NLP Linker",
     "section": "Code",
     "text": "Code\nGitHub Repository"
   },
   {
-    "objectID": "projects/time-series-classification/index.html",
-    "href": "projects/time-series-classification/index.html",
-    "title": "Time Series User Classification",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications & Patents",
     "section": "",
-    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+    "text": "Source Code Classification with Deep Learning CrowdStrike Engineering Blog TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2. Read article →\n\n\nAnomaly Detection in Cloud Workloads CrowdStrike Engineering Blog Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning. Read article →"
   },
   {
-    "objectID": "projects/time-series-classification/index.html#overview",
-    "href": "projects/time-series-classification/index.html#overview",
-    "title": "Time Series User Classification",
+    "objectID": "publications.html#published-articles",
+    "href": "publications.html#published-articles",
+    "title": "Publications & Patents",
     "section": "",
-    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+    "text": "Source Code Classification with Deep Learning CrowdStrike Engineering Blog TensorFlow-based pipeline for automated source code classification at scale. Designed and implemented the model training infrastructure on AWS EC2. Read article →\n\n\nAnomaly Detection in Cloud Workloads CrowdStrike Engineering Blog Research on detecting anomalous behavior in Cloud Workload Protection environments using machine learning. Read article →"
   },
   {
-    "objectID": "projects/time-series-classification/index.html#code",
-    "href": "projects/time-series-classification/index.html#code",
-    "title": "Time Series User Classification",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
+    "objectID": "publications.html#patents",
+    "href": "publications.html#patents",
+    "title": "Publications & Patents",
+    "section": "Patents",
+    "text": "Patents\n\n7 Pending Patents in Machine Learning & Cybersecurity\nPatent applications spanning ML-powered detection systems, data processing pipelines, and AI-driven threat analysis at CrowdStrike. Topics include:\n\nMachine learning for threat detection and triage prioritization\nData protection and exfiltration detection\nAnomaly detection in cloud environments\nSource code analysis and classification\n\nAll patents pending — titles available upon request."
+  },
+  {
+    "objectID": "publications.html#blog-posts",
+    "href": "publications.html#blog-posts",
+    "title": "Publications & Patents",
+    "section": "Blog Posts",
+    "text": "Blog Posts\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
