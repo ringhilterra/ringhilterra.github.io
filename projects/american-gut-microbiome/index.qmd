@@ -10,7 +10,11 @@ image: thumbnail.png
 
 Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.
 
-![Research Poster](poster.png)
+### Research Poster
+
+[![Research Poster - Click to view full size](poster.png)](poster.png)
+
+*Click poster to view full resolution*
 
 **Publication:** [UCSD Library Digital Collections](https://library.ucsd.edu/dc/object/bb2666864s/_4_1.pdf)
 
