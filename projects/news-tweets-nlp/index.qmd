@@ -18,6 +18,8 @@ Links tweets with news articles based on text content similarity using NLP techn
 - **Distributed computing** — Mesos and Docker pipeline for parallel processing
 - **Interactive dashboard** — Dash app to view and interact with similarity results
 
+![Distributed computing architecture using Mesos and Docker](mesos2.png)
+
 ## Code
 
 [GitHub Repository](https://github.com/ringhilterra/news-tweets-nlp-link)

@@ -2,3 +2,6 @@
 project_refs/
 **/*.quarto_ipynb
 CLAUDE.md
+
+# Python virtualenv
+.venv/

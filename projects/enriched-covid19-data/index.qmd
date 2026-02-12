@@ -3,11 +3,14 @@ title: "Enriched COVID-19 U.S. County Data"
 description: "NYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics"
 date: "2020-04-08"
 categories: [data-engineering, python, geospatial, data-analysis]
+image: covid-viz.gif
 ---
 
 ## Overview
 
 An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.
+
+![COVID-19 cases per capita time-lapse visualization](covid-viz.gif)
 
 **Enrichments include:**
 
