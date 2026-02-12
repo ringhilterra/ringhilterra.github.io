@@ -1,1 +1,355 @@
-/* css styles */
+/* ============================================
+   Portfolio Site — Custom Styles
+   Extends Cosmo (Bootstrap) theme
+   ============================================ */
+
+/* --- Custom Properties --- */
+:root {
+  --accent: #2563EB;
+  --accent-light: #3b82f6;
+  --accent-dark: #1d4ed8;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --bg-subtle: #f8fafc;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+/* --- Navbar --- */
+.navbar {
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* --- Card Hover Effects (Project Grid) --- */
+.quarto-grid-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.quarto-grid-item .card-img-top {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quarto-grid-item .card-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.quarto-grid-item .card-text {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section .hero-headshot {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.5rem;
+}
+
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .hero-bio {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+}
+
+/* --- Featured Blocks (Home Page) --- */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.featured-block {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: left;
+}
+
+.featured-block h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.featured-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+
+.featured-block ul li {
+  padding: 0.3rem 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.featured-block ul li::before {
+  content: ">";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.featured-block .block-link {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.featured-block .block-link:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+/* --- About Page: Experience Timeline --- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.35rem;
+  top: 0.4rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline-item h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.timeline-item .timeline-meta {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* --- Skills Grid --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.skill-category {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.skill-category h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category ul li {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* --- Category Badges --- */
+.quarto-category {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.quarto-category:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* --- Typography Refinements --- */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.content p {
+  line-height: 1.7;
+}
+
+/* --- Links --- */
+a {
+  color: var(--accent);
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* --- Football Analytics Page Intro --- */
+.football-intro {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* --- Blog Listing --- */
+.quarto-listing .listing-title {
+  font-weight: 600;
+}
+
+/* --- Mobile Breakpoints --- */
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .hero-headshot {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .featured-block {
+    padding: 1.25rem;
+  }
+}

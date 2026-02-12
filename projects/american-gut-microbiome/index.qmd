@@ -3,6 +3,7 @@ title: "Neural Embeddings for IGS Microbiome Classification"
 description: "Masters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline"
 date: "2018-06-15"
 categories: [machine-learning, bioinformatics, data-engineering, python, research]
+domain: professional
 image: thumbnail.png
 ---
 

@@ -7,4 +7,6 @@ listing:
   sort: date desc
   fields: [image, title, description, date, categories]
   image-height: 200px
+  include:
+    domain: "professional"
 ---

@@ -1,31 +1,46 @@
 ---
 title: "Ryan Inghilterra"
-subtitle: "Senior Data Scientist"
-image: headshot.JPEG
-about:
-  template: trestles
-  image-shape: rectangle
-  image-width: 200px
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/ryan-inghilterra-017/
-    - icon: github
-      text: GitHub
-      href: https://github.com/ringhilterra
-    - icon: twitter
-      text: X/Twitter
-      href: https://x.com/RyanInghilterra
+toc: false
+page-layout: full
 ---
 
-![](X_header_img.png){fig-align="center" width="80%"}
+::: {.hero-section}
 
-## Featured Projects
+![](headshot.JPEG){.hero-headshot}
 
-- [Active Support Index (ASI)](projects/asi/) — Quantifying off-ball movement during pressure situations
-- [Dessert Flavor Pairings](projects/dessert-flavor-pairings/) — Interactive chord diagram visualization
-- [Enriched COVID-19 Data](projects/enriched-covid19-data/) — U.S. county-level COVID-19 data pipeline
-- [News-Tweets NLP Linker](projects/news-tweets-nlp/) — NLP similarity matching with distributed computing
-- [Time Series User Classification](projects/time-series-classification/) — Accelerometer-based user identification
-- [Kaggle Google Football](projects/kaggle-mancity/) — Simulation competition with agent framework
+# Ryan Inghilterra
 
+::: {.hero-subtitle}
+Senior Data Scientist | ML/AI Engineer | Football Analytics Researcher
+:::
+
+::: {.hero-bio}
+I build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics --- developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.
+:::
+
+::: {.featured-grid}
+
+::: {.featured-block}
+### Professional Work
+
+- ML/AI systems for endpoint security at CrowdStrike
+- Neural embedding pipelines for microbiome classification
+- NLP similarity matching with distributed computing
+- Time series classification and geospatial data engineering
+
+[View all projects &rarr;](projects.qmd){.block-link}
+:::
+
+::: {.featured-block}
+### Football Analytics
+
+- **Active Support Index** --- quantifying off-ball movement under pressure
+- Kaggle simulation competition with agent framework
+- Tracking data analysis and metrics development
+
+[Explore football work &rarr;](football-analytics.qmd){.block-link}
+:::
+
+:::
+
+:::

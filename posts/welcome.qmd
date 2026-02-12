@@ -1,13 +1,16 @@
 ---
 title: "Welcome"
+description: "Introducing this blog — where cybersecurity ML meets football analytics"
 date: "2025-01-01"
 categories: [news]
 ---
 
-Welcome to my blog on football analytics.
+Welcome to my blog.
 
-I'm a Senior Data Scientist at CrowdStrike by day, building AI/ML systems for cybersecurity. By night and on weekends, I apply those same data science skills to my passion: football (soccer) analytics.
+I'm a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit --- machine learning, data engineering, statistical modeling --- to my passion: football (soccer) analytics.
 
-Here I'll share technical write-ups, analysis, and insights from my work with tracking data, metrics development, and more.
+This space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.
 
-Stay tuned for deep dives into projects like the Active Support Index (ASI) and other football analytics explorations.
+Coming up, I'll be writing about the development of the [Active Support Index (ASI)](../projects/asi/) --- a metric for quantifying off-ball movement under pressure --- and sharing other football analytics explorations along the way.
+
+Stay tuned.

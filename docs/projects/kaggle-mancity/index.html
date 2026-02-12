@@ -104,6 +104,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../football-analytics.html"> 
+<span class="menu-text">Football Analytics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -138,6 +146,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link" data-scroll-target="#what-i-built">What I Built</a>
+  <ul class="collapse">
+  <li><a href="#docker-environment" id="toc-docker-environment" class="nav-link" data-scroll-target="#docker-environment">Docker Environment</a></li>
+  <li><a href="#agent-pool-play-framework" id="toc-agent-pool-play-framework" class="nav-link" data-scroll-target="#agent-pool-play-framework">Agent Pool Play Framework</a></li>
+  <li><a href="#ml-agent-exploration" id="toc-ml-agent-exploration" class="nav-link" data-scroll-target="#ml-agent-exploration">ML Agent Exploration</a></li>
+  </ul></li>
+  <li><a href="#technical-details" id="toc-technical-details" class="nav-link" data-scroll-target="#technical-details">Technical Details</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   </ul>
 </nav>
@@ -184,18 +199,44 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Kaggle Simulation Competition — <a href="https://www.kaggle.com/c/google-football/overview">Google Research Football with Manchester City F.C.</a></p>
-<p>Built a Docker setup for the kaggle + Google Football simulation environment with Jupyter notebook integration. Created a framework for pool play simulation matches between different agents, published as a notebook on Kaggle.</p>
+<p>This competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="thumbnail.gif" class="img-fluid figure-img"></p>
 <figcaption>Agent pool play simulation</figcaption>
 </figure>
 </div>
-<p><strong>Highlights:</strong></p>
+</section>
+<section id="what-i-built" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built">What I Built</h2>
+<section id="docker-environment" class="level3">
+<h3 class="anchored" data-anchor-id="docker-environment">Docker Environment</h3>
+<p>Created a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.</p>
+</section>
+<section id="agent-pool-play-framework" class="level3">
+<h3 class="anchored" data-anchor-id="agent-pool-play-framework">Agent Pool Play Framework</h3>
+<p>Built a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.</p>
+</section>
+<section id="ml-agent-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="ml-agent-exploration">ML Agent Exploration</h3>
+<p>Experimented with multiple approaches to agent design:</p>
 <ul>
-<li>Docker environment for kaggle + Google Football simulation</li>
-<li>Local agent pool play match framework</li>
-<li>Analysis notebooks and ML agent exploration</li>
+<li><strong>Rule-based agents</strong> with handcrafted game state heuristics (positioning, ball possession, pass selection)</li>
+<li><strong>Reinforcement learning</strong> approaches using the environment’s reward signal</li>
+<li><strong>Imitation learning</strong> from high-performing rule-based agents as training signal</li>
+<li>Analysis of game state representations and action space design choices</li>
+</ul>
+</section>
+</section>
+<section id="technical-details" class="level2">
+<h2 class="anchored" data-anchor-id="technical-details">Technical Details</h2>
+<p><strong>Environment:</strong> Google Research Football Environment (OpenAI Gym compatible)</p>
+<p><strong>Stack:</strong> Python, Docker, Jupyter, TensorFlow, OpenAI Gym</p>
+<p><strong>Key challenges:</strong></p>
+<ul>
+<li>Game state representation: 115-dimensional vector encoding player positions, ball state, and game context</li>
+<li>Action space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing</li>
+<li>Reward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning</li>
 </ul>
 </section>
 <section id="code" class="level2">

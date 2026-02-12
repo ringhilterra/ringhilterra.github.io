@@ -130,14 +130,21 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Active Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+    "text": "News-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Ryan Inghilterra",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\nActive Support Index (ASI) — Quantifying off-ball movement during pressure situations\nDessert Flavor Pairings — Interactive chord diagram visualization\nEnriched COVID-19 Data — U.S. county-level COVID-19 data pipeline\nNews-Tweets NLP Linker — NLP similarity matching with distributed computing\nTime Series User Classification — Accelerometer-based user identification\nKaggle Google Football — Simulation competition with agent framework"
+    "section": "",
+    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nProfessional Work\n\nML/AI systems for endpoint security at CrowdStrike\nNeural embedding pipelines for microbiome classification\nNLP similarity matching with distributed computing\nTime series classification and geospatial data engineering\n\nView all projects →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -154,25 +161,39 @@
     "text": "Contact\n\nLinkedIn: ringhilterra\nGitHub: ringhilterra\nTwitter: @ringhilterra"
   },
   {
+    "objectID": "football-analytics.html",
+    "href": "football-analytics.html",
+    "title": "Football Analytics",
+    "section": "",
+    "text": "I bring 10+ years of professional data science and machine learning experience to football analytics. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines — skills that translate directly to working with tracking data, event data, and advanced football metrics.\nMy current research focuses on off-ball movement quantification. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure — a dimension of play that’s critical to team performance but difficult to capture with traditional metrics.\nI’m also interested in simulation environments for tactical analysis, agent-based modeling for player decision-making, and applying modern ML techniques (embeddings, graph neural networks, transformers) to match event sequences.\nI’m open to collaborations, consulting opportunities, and conversations with clubs, analytics companies, and fellow researchers. Feel free to reach out via LinkedIn or X/Twitter."
+  },
+  {
+    "objectID": "football-analytics.html#projects",
+    "href": "football-analytics.html#projects",
+    "title": "Football Analytics",
+    "section": "Projects",
+    "text": "Projects"
+  },
+  {
     "objectID": "posts/welcome.html",
     "href": "posts/welcome.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome to my blog on football analytics.\nI’m a Senior Data Scientist at CrowdStrike by day, building AI/ML systems for cybersecurity. By night and on weekends, I apply those same data science skills to my passion: football (soccer) analytics.\nHere I’ll share technical write-ups, analysis, and insights from my work with tracking data, metrics development, and more.\nStay tuned for deep dives into projects like the Active Support Index (ASI) and other football analytics explorations."
+    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html",
     "href": "projects/american-gut-microbiome/index.html",
     "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\nResearch Poster\n\n\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#overview",
     "href": "projects/american-gut-microbiome/index.html#overview",
     "title": "Neural Embeddings for IGS Microbiome Classification",
     "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\nResearch Poster\n\n\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html#key-contributions",
@@ -228,14 +249,28 @@
     "href": "projects/kaggle-mancity/index.html",
     "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nBuilt a Docker setup for the kaggle + Google Football simulation environment with Jupyter notebook integration. Created a framework for pool play simulation matches between different agents, published as a notebook on Kaggle.\n\n\n\nAgent pool play simulation\n\n\nHighlights:\n\nDocker environment for kaggle + Google Football simulation\nLocal agent pool play match framework\nAnalysis notebooks and ML agent exploration"
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
   },
   {
     "objectID": "projects/kaggle-mancity/index.html#overview",
     "href": "projects/kaggle-mancity/index.html#overview",
     "title": "Kaggle Google Football with Manchester City",
     "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nBuilt a Docker setup for the kaggle + Google Football simulation environment with Jupyter notebook integration. Created a framework for pool play simulation matches between different agents, published as a notebook on Kaggle.\n\n\n\nAgent pool play simulation\n\n\nHighlights:\n\nDocker environment for kaggle + Google Football simulation\nLocal agent pool play match framework\nAnalysis notebooks and ML agent exploration"
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#what-i-built",
+    "href": "projects/kaggle-mancity/index.html#what-i-built",
+    "title": "Kaggle Google Football with Manchester City",
+    "section": "What I Built",
+    "text": "What I Built\n\nDocker Environment\nCreated a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.\n\n\nAgent Pool Play Framework\nBuilt a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.\n\n\nML Agent Exploration\nExperimented with multiple approaches to agent design:\n\nRule-based agents with handcrafted game state heuristics (positioning, ball possession, pass selection)\nReinforcement learning approaches using the environment’s reward signal\nImitation learning from high-performing rule-based agents as training signal\nAnalysis of game state representations and action space design choices"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#technical-details",
+    "href": "projects/kaggle-mancity/index.html#technical-details",
+    "title": "Kaggle Google Football with Manchester City",
+    "section": "Technical Details",
+    "text": "Technical Details\nEnvironment: Google Research Football Environment (OpenAI Gym compatible)\nStack: Python, Docker, Jupyter, TensorFlow, OpenAI Gym\nKey challenges:\n\nGame state representation: 115-dimensional vector encoding player positions, ball state, and game context\nAction space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing\nReward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning"
   },
   {
     "objectID": "projects/kaggle-mancity/index.html#code",

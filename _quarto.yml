@@ -18,6 +18,10 @@ website:
         text: About
       - href: projects.qmd
         text: Projects
+      - href: football-analytics.qmd
+        text: Football Analytics
+      - href: blog.qmd
+        text: Blog
     right:
       - icon: github
         href: https://github.com/ringhilterra

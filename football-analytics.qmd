@@ -1,0 +1,23 @@
+---
+title: "Football Analytics"
+toc: false
+listing:
+  contents: projects/*/index.qmd
+  type: grid
+  categories: true
+  sort: date desc
+  fields: [image, title, description, date, categories]
+  image-height: 200px
+  include:
+    domain: "football"
+---
+
+I bring 10+ years of professional data science and machine learning experience to football analytics. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines --- skills that translate directly to working with tracking data, event data, and advanced football metrics.
+
+My current research focuses on **off-ball movement quantification**. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure --- a dimension of play that's critical to team performance but difficult to capture with traditional metrics.
+
+I'm also interested in simulation environments for tactical analysis, agent-based modeling for player decision-making, and applying modern ML techniques (embeddings, graph neural networks, transformers) to match event sequences.
+
+**I'm open to collaborations, consulting opportunities, and conversations with clubs, analytics companies, and fellow researchers.** Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/) or [X/Twitter](https://x.com/RyanInghilterra).
+
+## Projects

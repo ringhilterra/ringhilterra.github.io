@@ -3,6 +3,7 @@ title: "Time Series User Classification"
 description: "User identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers"
 date: "2021-07-14"
 categories: [machine-learning, time-series, python, classification]
+domain: professional
 image: thumbnail.png
 ---
 
