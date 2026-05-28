@@ -4,7 +4,7 @@ toc: false
 listing:
   contents: projects/*/index.qmd
   type: grid
-  categories: true
+  categories: false
   sort: date desc
   fields: [image, title, description, date, categories]
   image-height: 200px
