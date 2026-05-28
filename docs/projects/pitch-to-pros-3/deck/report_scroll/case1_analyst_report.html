@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Passing Window Review - Case 1</title>
+  <style>
+    :root {
+      --bg: #0a0d0f;
+      --panel: #11171c;
+      --panel-2: #161e24;
+      --line: rgba(224, 234, 241, 0.13);
+      --line-strong: rgba(224, 234, 241, 0.22);
+      --text: #edf4f1;
+      --muted: #9aa8b4;
+      --soft: #c9d5dd;
+      --green: #47e6a2;
+      --cyan: #48d3ff;
+      --amber: #f1c96b;
+      --red: #ff756f;
+      --shadow: rgba(0, 0, 0, 0.38);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(71, 230, 162, 0.11), transparent 30%),
+        radial-gradient(circle at 88% 8%, rgba(72, 211, 255, 0.09), transparent 32%),
+        linear-gradient(180deg, #0a0d0f 0%, #0d1115 46%, #080a0d 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .report-shell {
+      width: min(1120px, calc(100vw - 56px));
+      margin: 0 auto;
+      padding: 38px 0 72px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      margin: 0 -2px 30px;
+      padding: 12px 2px;
+      background: linear-gradient(180deg, rgba(10, 13, 15, 0.97), rgba(10, 13, 15, 0.72));
+      backdrop-filter: blur(14px);
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(71, 230, 162, 0.55);
+      border-radius: 8px;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        rgba(71, 230, 162, 0.08);
+      background-size: 12px 12px;
+      box-shadow: 0 12px 32px rgba(71, 230, 162, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(71, 230, 162, 0.36);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--green);
+      background: rgba(71, 230, 162, 0.08);
+      font-size: 12px;
+      font-weight: 820;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .status-chip:hover {
+      border-color: rgba(71, 230, 162, 0.58);
+      background: rgba(71, 230, 162, 0.14);
+      color: #d8ffef;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.035));
+      box-shadow: 0 34px 90px var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-copy {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 30px;
+      padding: 34px 34px 28px;
+    }
+
+    .kicker {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 860;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-top: 14px;
+      font-size: clamp(42px, 6.4vw, 72px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .dek {
+      max-width: 760px;
+      margin-top: 18px;
+      color: #d7e1e7;
+      font-size: 22px;
+      font-weight: 620;
+      line-height: 1.22;
+    }
+
+    .meta-panel {
+      align-self: end;
+      display: grid;
+      gap: 1px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--line);
+    }
+
+    .meta-row {
+      display: grid;
+      grid-template-columns: 98px minmax(0, 1fr);
+      gap: 12px;
+      padding: 12px 14px;
+      background: rgba(17, 23, 28, 0.92);
+    }
+
+    .meta-row span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 820;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .meta-row strong {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 730;
+      line-height: 1.15;
+    }
+
+    .hero-media {
+      border-top: 1px solid var(--line);
+      background: #080b0d;
+    }
+
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 18px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 680;
+    }
+
+    .section {
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(17, 23, 28, 0.78);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+      overflow: hidden;
+    }
+
+    .section.pad {
+      padding: 28px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      padding: 24px 28px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin-top: 8px;
+      font-size: 30px;
+      line-height: 1.05;
+    }
+
+    .section-head p {
+      max-width: 450px;
+      color: var(--soft);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.16fr) minmax(310px, 0.84fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .callout {
+      border-left: 4px solid var(--green);
+      padding: 4px 0 4px 18px;
+      color: #e8f2ef;
+      font-size: 25px;
+      font-weight: 760;
+      line-height: 1.18;
+    }
+
+    .body-copy {
+      margin-top: 18px;
+      color: #d1dce3;
+      font-size: 18px;
+      font-weight: 590;
+    }
+
+    .compact-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .compact-list div {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 16px;
+      align-items: center;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .compact-list span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 820;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .compact-list strong {
+      color: var(--text);
+      font-size: 18px;
+      line-height: 1.08;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      padding: 22px 28px 28px;
+    }
+
+    .metric-card,
+    .pass-card,
+    .takeaway-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.026));
+    }
+
+    .metric-card {
+      min-height: 132px;
+      padding: 18px;
+    }
+
+    .metric-card span,
+    .pass-card span,
+    .takeaway-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 840;
+      letter-spacing: 0.12em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .metric-card strong {
+      display: block;
+      margin-top: 18px;
+      color: var(--text);
+      font-size: 35px;
+      letter-spacing: 0;
+      line-height: 0.94;
+    }
+
+    .metric-card em {
+      display: block;
+      margin-top: 12px;
+      color: var(--soft);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 650;
+      line-height: 1.18;
+    }
+
+    .metric-card.highlight {
+      border-color: rgba(71, 230, 162, 0.42);
+      background: linear-gradient(180deg, rgba(71, 230, 162, 0.12), rgba(255, 255, 255, 0.03));
+    }
+
+    .metric-card.warning {
+      border-color: rgba(241, 201, 107, 0.40);
+      background: linear-gradient(180deg, rgba(241, 201, 107, 0.11), rgba(255, 255, 255, 0.03));
+    }
+
+    .pass-compare {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      padding: 22px 28px 28px;
+    }
+
+    .pass-card {
+      padding: 20px;
+    }
+
+    .pass-card h3 {
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 25px;
+      line-height: 1.05;
+    }
+
+    .pass-card p {
+      margin-top: 12px;
+      color: var(--soft);
+      font-size: 15px;
+      font-weight: 620;
+    }
+
+    .pass-card.selected {
+      border-color: rgba(72, 211, 255, 0.34);
+    }
+
+    .mini-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .mini-metrics div {
+      padding: 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.046);
+    }
+
+    .mini-metrics b {
+      display: block;
+      color: var(--text);
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .mini-metrics i {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border-top: 1px solid var(--line);
+    }
+
+    .visual-panel {
+      background: #080b0d;
+    }
+
+    .visual-panel img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .visual-panel .panel-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 14px;
+      border-top: 1px solid var(--line);
+      background: rgba(17, 23, 28, 0.94);
+    }
+
+    .panel-label span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 820;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .panel-label strong {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.1;
+      text-align: right;
+    }
+
+    .takeaway-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .takeaway-card {
+      min-height: 150px;
+      padding: 18px;
+    }
+
+    .takeaway-card strong {
+      display: block;
+      margin-top: 18px;
+      font-size: 24px;
+      line-height: 1.06;
+    }
+
+    .takeaway-card p {
+      margin-top: 12px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 620;
+    }
+
+    .appendix {
+      margin-top: 28px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(17, 23, 28, 0.72);
+      overflow: hidden;
+    }
+
+    details + details {
+      margin-top: 12px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 20px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 760;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      display: flex;
+      width: 28px;
+      height: 28px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      color: var(--green);
+      font-size: 18px;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    .detail-body {
+      padding: 0 20px 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.045);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    td {
+      color: #d7e1e7;
+      font-weight: 620;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code,
+    pre {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: #dbe8ef;
+      background: #080b0d;
+      font-size: 13px;
+      line-height: 1.45;
+      overflow-x: auto;
+    }
+
+    .explainer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .explainer-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .explainer-card h3 {
+      color: var(--text);
+      font-size: 19px;
+      line-height: 1.1;
+    }
+
+    .explainer-card p {
+      margin-top: 10px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 620;
+    }
+
+    .formula {
+      margin-top: 14px;
+      border: 1px solid rgba(71, 230, 162, 0.24);
+      border-radius: 8px;
+      padding: 14px;
+      color: #dbe8ef;
+      background: rgba(71, 230, 162, 0.055);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding: 18px 2px 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 880px) {
+      .report-shell {
+        width: min(100vw - 28px, 1120px);
+        padding-top: 18px;
+      }
+
+      .topbar,
+      .hero-copy,
+      .read-grid,
+      .pass-compare,
+      .visual-grid,
+      .explainer-grid,
+      .takeaway-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        display: grid;
+        gap: 10px;
+      }
+
+      .status-chip {
+        width: max-content;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 12px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      html,
+      body {
+        background: #0a0d0f;
+        color: var(--text);
+      }
+
+      .report-shell {
+        width: 100%;
+        padding: 0 0 18px;
+      }
+
+      .topbar {
+        position: static;
+        margin-bottom: 18px;
+        background: transparent;
+      }
+
+      .hero,
+      .section,
+      details {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+
+      .section,
+      .appendix {
+        margin-top: 18px;
+      }
+
+      details {
+        page-break-inside: avoid;
+      }
+
+      summary::after {
+        display: none;
+      }
+
+      .footer {
+        margin-top: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="report-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <strong>Passing Window Review</strong>
+          <span>Analyst evidence export</span>
+        </div>
+      </div>
+      <a class="status-chip" href="case1_analyst_report.pdf" target="_blank" rel="noopener">Open PDF</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div>
+          <div class="kicker">Case 1 / Missed Playable Value</div>
+          <h1>The better window came earlier.</h1>
+          <p class="dek">Howieson completed the safer pass. Moreno was the higher-value option, but the cleanest progressive window appeared before the ball was released.</p>
+        </div>
+        <aside class="meta-panel" aria-label="Case metadata">
+          <div class="meta-row"><span>Match</span><strong>1899585 / Auckland FC vs Wellington Phoenix FC</strong></div>
+          <div class="meta-row"><span>Carrier</span><strong>C. Howieson</strong></div>
+          <div class="meta-row"><span>Reviewed</span><strong>N. Moreno / option 7_2339</strong></div>
+          <div class="meta-row"><span>Selected</span><strong>N. Pijnaker / option 7_2340</strong></div>
+          <div class="meta-row"><span>Label</span><strong>missed_playable_value</strong></div>
+        </aside>
+      </div>
+      <div class="hero-media">
+        <img src="case1_sequence_pitch_only.gif" alt="Animated four-frame Case 1 review sequence without the analysis panel">
+      </div>
+      <div class="caption">
+        <span>Animated review sequence, pitch view only.</span>
+        <span>Frames 57975-58023</span>
+      </div>
+    </section>
+
+    <section class="section pad">
+      <div class="read-grid">
+        <div>
+          <div class="kicker">Executive read</div>
+          <p class="callout">Not "Howieson clearly missed an easy pass." The report asks when the Moreno option was actually playable.</p>
+          <p class="body-copy">The value layer identifies Moreno as the more threatening progressive option. Decision Friction adds the timing layer: at the reviewed opportunity frame, Moreno keeps almost all of his theoretical value; 1.7 seconds later, at the pass frame, the same lane has tightened.</p>
+        </div>
+        <div class="compact-list">
+          <div><span>Question</span><strong>Was the best pass really playable?</strong></div>
+          <div><span>Answer</span><strong>Yes, but the cleanest window came earlier.</strong></div>
+          <div><span>Coach read</span><strong>Review the timing of the window, not only the final pass choice.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Headline evidence</div>
+          <h2>Three numbers explain why this was worth reviewing.</h2>
+        </div>
+        <p>The selected pass was successful. The review is about whether a higher-value window existed before that release.</p>
+      </div>
+      <div class="card-grid">
+        <div class="metric-card highlight">
+          <span>Time gap</span>
+          <strong>1.7s</strong>
+          <em>from best Moreno frame to Howieson's pass</em>
+        </div>
+        <div class="metric-card">
+          <span>Moreno xT</span>
+          <strong>0.034</strong>
+          <em>higher theoretical value than the completed pass</em>
+        </div>
+        <div class="metric-card warning">
+          <span>Lane access</span>
+          <strong>1.00 -> 0.36</strong>
+          <em>clean earlier, much tighter by release</em>
+        </div>
+        <div class="metric-card">
+          <span>S_play</span>
+          <strong>0.94 -> 0.81</strong>
+          <em>playability fell, but did not become a hard constraint</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Actual pass vs reviewed option</div>
+          <h2>The model separates value from realistic availability.</h2>
+        </div>
+        <p>SkillCorner provides the option and value layer. The report packages the extra playability context around that option.</p>
+      </div>
+      <div class="pass-compare">
+        <article class="pass-card selected">
+          <span>Selected pass</span>
+          <h3>Howieson to Pijnaker</h3>
+          <p>Safe, completed, and low value. This is not treated as a failed action.</p>
+          <div class="mini-metrics">
+            <div><b>0.004</b><i>xT</i></div>
+            <div><b>0.992</b><i>xPass</i></div>
+            <div><b>received</b><i>outcome</i></div>
+          </div>
+        </article>
+        <article class="pass-card">
+          <span>Reviewed option</span>
+          <h3>Howieson to Moreno</h3>
+          <p>Higher-value progressive option. The key question is when it was cleanest.</p>
+          <div class="mini-metrics">
+            <div><b>0.034</b><i>xT</i></div>
+            <div><b>0.914</b><i>xPass</i></div>
+            <div><b>not targeted</b><i>outcome</i></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pad">
+      <div class="kicker">Coach and analyst takeaway</div>
+      <h2>This is a timing review, not a blame clip.</h2>
+      <div class="takeaway-grid">
+        <article class="takeaway-card">
+          <span>What value saw</span>
+          <strong>Moreno was worth asking about.</strong>
+          <p>The xThreat gap is large enough that the unused option deserves review.</p>
+        </article>
+        <article class="takeaway-card">
+          <span>What tracking added</span>
+          <strong>The best window was earlier.</strong>
+          <p>By the pass frame, the lane score had fallen from 1.00 to 0.36.</p>
+        </article>
+        <article class="takeaway-card">
+          <span>What to discuss</span>
+          <strong>Could Howieson release sooner?</strong>
+          <p>The actionable question is timing, scanning, and window recognition.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="appendix" aria-label="Audit appendix">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Audit appendix</div>
+          <h2>Technical detail stays available without crowding the read.</h2>
+        </div>
+        <p>Open the sections below only when the review needs frame provenance or a plain-language metric explanation.</p>
+      </div>
+
+      <details>
+        <summary>Frame selection and provenance</summary>
+        <div class="detail-body">
+          <table>
+            <thead>
+              <tr><th>Moment</th><th>Frame</th><th>Gap</th><th>Interpretation</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Possession starts</td><td>57975</td><td>-</td><td>Howieson first controls the ball.</td></tr>
+              <tr><td>Moreno option opens</td><td>57975</td><td>0.0s</td><td>The candidate exists immediately.</td></tr>
+              <tr><td>Opportunity frame</td><td>58006</td><td>+3.1s after possession start</td><td>Moreno is at his cleanest scored moment.</td></tr>
+              <tr><td>Pass frame</td><td>58023</td><td>+1.7s after opportunity</td><td>Howieson passes to Pijnaker instead.</td></tr>
+              <tr><td>Moreno option closes</td><td>58023</td><td>0.0s after pass</td><td>The option closes on the pass frame.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details>
+        <summary>Metric explainer</summary>
+        <div class="detail-body">
+          <div class="explainer-grid">
+            <div class="explainer-card">
+              <h3>What playability asks</h3>
+              <p>Of the value this option carries, how much was actually executable from the tracking geometry at this moment?</p>
+              <div class="formula">S_play = geometric_mean(lane, pressure, receiver, movement, timing)</div>
+              <p>The geometric mean is intentionally strict. If one component is very poor, the whole playability score drops instead of being hidden by strong scores elsewhere.</p>
+            </div>
+            <div class="explainer-card">
+              <h3>What friction asks</h3>
+              <p>How much theoretical value is lost after accounting for whether the pass was playable?</p>
+              <div class="formula">V_play = xT x S_play<br>F_decision = xT - V_play</div>
+              <p>In this case, friction is low at the opportunity frame because Moreno was clean earlier. The review point is that the lane tightened by the pass frame.</p>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <tr><th>Component</th><th>Opportunity frame</th><th>Pass frame</th><th>Read</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Lane access</td><td>1.000</td><td>0.358</td><td>Main deterioration: the passing lane narrowed.</td></tr>
+              <tr><td>Passer pressure</td><td>1.000</td><td>1.000</td><td>Howieson was not under direct pressure.</td></tr>
+              <tr><td>Receiver separation</td><td>1.000</td><td>1.000</td><td>Moreno stayed free.</td></tr>
+              <tr><td>Movement fit</td><td>0.748</td><td>0.982</td><td>Good enough at the opportunity frame; stronger by release.</td></tr>
+              <tr><td>Timing</td><td>1.000</td><td>1.000</td><td>The option was still active.</td></tr>
+              <tr><td><strong>S_play</strong></td><td><strong>0.944</strong></td><td><strong>0.811</strong></td><td><strong>Playable, but less clean after the delay.</strong></td></tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr><th>Output</th><th>Opportunity frame value</th><th>Plain-English read</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>xThreat</td><td>0.0344</td><td>The theoretical value of the Moreno option.</td></tr>
+              <tr><td>Playable value</td><td>0.0325</td><td>Most of that value was accessible at the clean frame.</td></tr>
+              <tr><td>Decision friction</td><td>0.0019</td><td>Very little value was lost to playability constraints at that moment.</td></tr>
+              <tr><td>Reason code</td><td>none</td><td>No component was constrained enough to assign a pitch-facing reason code at the opportunity frame.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <footer class="footer">
+      Generated report concept for the Pitch to the Pros 3 final deck. The report is grounded in the selected Case 1 package and is intended as a readable export that can also be screen-recorded for slide 12.
+    </footer>
+  </main>
+  <script>
+    const printDetails = [...document.querySelectorAll("details")];
+    window.addEventListener("beforeprint", () => {
+      for (const detail of printDetails) {
+        detail.dataset.wasOpen = detail.open ? "true" : "false";
+        detail.open = true;
+      }
+    });
+    window.addEventListener("afterprint", () => {
+      for (const detail of printDetails) {
+        detail.open = detail.dataset.wasOpen === "true";
+        delete detail.dataset.wasOpen;
+      }
+    });
+  </script>
+</body>
+</html>

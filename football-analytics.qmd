@@ -12,12 +12,61 @@ listing:
     domain: "football"
 ---
 
-I bring 10+ years of professional data science and machine learning experience to football analytics, backed by a Stanford AI Graduate Program and a Master's in Data Science from UC San Diego. At CrowdStrike, I build production ML systems, AI agents, and large-scale data pipelines --- skills that translate directly to working with tracking data, event data, and advanced football metrics.
+::: {.football-profile}
+::: {.football-profile-photo}
+![](headshot.JPEG){fig-alt="Ryan Inghilterra headshot"}
 
-My current research focuses on **off-ball movement quantification**. The Active Support Index (ASI) uses SkillCorner tracking data and Opta events data to measure how effectively players support teammates under pressure --- a dimension of play that's critical to team performance but difficult to capture with traditional metrics.
+::: {.football-contact}
+[Email](mailto:ringhilterra17@gmail.com){.football-contact-btn}
+[Website](https://ringhilterra.github.io/){.football-contact-btn}
+[LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.football-contact-btn .secondary}
+:::
+:::
 
-I'm also interested in simulation environments for tactical analysis, agent-based modeling for player decision-making, and applying modern ML techniques (embeddings, graph neural networks, transformers) to match event sequences.
+::: {.football-profile-main}
+::: {.football-current}
+::: {.football-current-item}
+Role
+: Senior Data Scientist
 
-**I'm open to collaborations, consulting opportunities, and conversations with clubs, analytics companies, and fellow researchers.** Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/) or [X/Twitter](https://x.com/RyanInghilterra).
+Organisation
+: CrowdStrike
+:::
+
+::: {.football-current-item}
+Department
+: Data Science
+
+Location
+: San Diego, California
+:::
+:::
+
+## Biography
+
+I'm a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.
+
+My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I've taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.
+
+I'm looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I'm most interested in work that turns technical modeling into practical football insight and real-world impact.
+:::
+:::
+
+::: {.pitch-feature}
+::: {.pitch-feature-media}
+<iframe class="marp-deck-embed" src="projects/pitch-to-pros-3/deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy"></iframe>
+:::
+
+::: {.pitch-feature-copy}
+Pitch to the Pros 3 Finalist
+: **Was the Best Pass Really Playable?**
+
+I was selected as one of four finalists for Training Ground Guru's Pitch to the Pros 3, where I presented a tracking-data framework for adding decision-window context to pass value.
+
+The work combines SkillCorner passing options, xThreat, event data and tracking-derived playability to ask whether high-value pass options were actually open, constrained, or already gone by the time the player made the decision.
+
+[View the deck](projects/pitch-to-pros-3/deck/decision_friction_final.html){.btn .btn-primary target="_blank"} [Read the project summary](projects/pitch-to-pros-3/){.btn .btn-outline-primary}
+:::
+:::
 
 ## Projects

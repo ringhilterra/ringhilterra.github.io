@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-05-25">
+<meta name="description" content="A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.">
 
-<title>Football Analytics – Ryan Inghilterra</title>
+<title>Pitch to the Pros 3 Finalist: Decision Friction – Ryan Inghilterra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -140,7 +82,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ryan Inghilterra</span>
     </a>
   </div>
@@ -151,23 +93,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./professional.html"> 
+    <a class="nav-link" href="../../professional.html"> 
 <span class="menu-text">Professional</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./football-analytics.html" aria-current="page"> 
+    <a class="nav-link" href="../../football-analytics.html"> 
 <span class="menu-text">Football Analytics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -199,20 +141,46 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZGVjaXNpb24tc3VwcG9ydA==">decision-support <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXZlbnRzLWRhdGE=">events-data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zm9vdGJhbGw=">football <span class="quarto-category-count">(3)</span></div><div class="category" data-category="a2FnZ2xl">kaggle <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFjaGluZS1sZWFybmluZw==">machine-learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0cmljcw==">metrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2ltdWxhdGlvbg==">simulation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhY2tpbmctZGF0YQ==">tracking-data <span class="quarto-category-count">(2)</span></div><div class="category" data-category="eFRocmVhdA==">xThreat <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#was-the-best-pass-really-playable" id="toc-was-the-best-pass-really-playable" class="nav-link active" data-scroll-target="#was-the-best-pass-really-playable">Was the Best Pass Really Playable?</a></li>
+  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link" data-scroll-target="#what-i-built">What I Built</a></li>
+  <li><a href="#data-and-method" id="toc-data-and-method" class="nav-link" data-scroll-target="#data-and-method">Data and Method</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Football Analytics</h1>
-</div>
+<h1 class="title">Pitch to the Pros 3 Finalist: Decision Friction</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">tracking-data</div>
+    <div class="quarto-category">xThreat</div>
+    <div class="quarto-category">decision-support</div>
+    <div class="quarto-category">football</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 25, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -222,173 +190,51 @@ window.Quarto = {
 </header>
 
 
-<div class="football-profile">
-<div class="football-profile-photo">
-<p><img src="headshot.JPEG" class="img-fluid" alt="Ryan Inghilterra headshot"></p>
-<div class="football-contact">
-<p><a href="mailto:ringhilterra17@gmail.com" class="football-contact-btn">Email</a> <a href="https://ringhilterra.github.io/" class="football-contact-btn">Website</a> <a href="https://www.linkedin.com/in/ryan-inghilterra-017/" class="football-contact-btn secondary">LinkedIn</a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pitch to the Pros 3 finalist
 </div>
 </div>
-<div class="football-profile-main">
-<div class="football-current">
-<div class="football-current-item">
-<dl>
-<dt>Role</dt>
-<dd>
-Senior Data Scientist
-</dd>
-<dt>Organisation</dt>
-<dd>
-CrowdStrike
-</dd>
-</dl>
-</div>
-<div class="football-current-item">
-<dl>
-<dt>Department</dt>
-<dd>
-Data Science
-</dd>
-<dt>Location</dt>
-<dd>
-San Diego, California
-</dd>
-</dl>
+<div class="callout-body-container callout-body">
+<p>I was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3 and presented this work to professionals in the game.</p>
 </div>
 </div>
-<section id="biography" class="level2">
-<h2 class="anchored" data-anchor-id="biography">Biography</h2>
-<p>I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.</p>
-<p>My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I’ve taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.</p>
-<p>I’m looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I’m most interested in work that turns technical modeling into practical football insight and real-world impact.</p>
-</section>
-</div>
-</div>
-<div class="pitch-feature">
-<div class="pitch-feature-media">
-<iframe class="marp-deck-embed" src="projects/pitch-to-pros-3/deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy">
+<section id="was-the-best-pass-really-playable" class="level2">
+<h2 class="anchored" data-anchor-id="was-the-best-pass-really-playable">Was the Best Pass Really Playable?</h2>
+<p>This project asks a simple review question: when a higher-value pass is available on paper, was it actually playable inside the player’s decision window?</p>
+<p>The framework combines SkillCorner passing options, xThreat, event data, and tracking-derived context to score candidate passes frame by frame. Instead of treating pass value as a static number at release, it traces whether the lane, pressure, receiver space, movement fit, and timing made the option realistic before the pass was played.</p>
+<p><a href="deck/decision_friction_final.html" class="btn btn-primary" target="_blank">View the presentation deck</a> <a href="deck/report_scroll/case1_analyst_report.html" class="btn btn-outline-primary" target="_blank">View the analyst report example</a></p>
+<iframe class="marp-deck-embed project-deck-embed" src="deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy">
 </iframe>
+</section>
+<section id="what-i-built" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built">What I Built</h2>
+<ul>
+<li>A pass-window review workflow that scans candidate pass options before release.</li>
+<li>A playability score built from lane access, pressure, receiver freedom, movement fit, and timing.</li>
+<li>Case-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.</li>
+<li>A prototype analyst export that packages frames, scores, and review evidence into a shareable report.</li>
+</ul>
+</section>
+<section id="data-and-method" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-method">Data and Method</h2>
+<p>The finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.</p>
+<p>SkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="deck/assets/case1_slide8_timing_read.png" class="img-fluid figure-img"></p>
+<figcaption>Timing read from the finalist deck</figcaption>
+</figure>
 </div>
-<div class="pitch-feature-copy">
-<dl>
-<dt>Pitch to the Pros 3 Finalist</dt>
-<dd>
-<strong>Was the Best Pass Really Playable?</strong>
-</dd>
-</dl>
-<p>I was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3, where I presented a tracking-data framework for adding decision-window context to pass value.</p>
-<p>The work combines SkillCorner passing options, xThreat, event data and tracking-derived playability to ask whether high-value pass options were actually open, constrained, or already gone by the time the player made the decision.</p>
-<p><a href="projects/pitch-to-pros-3/deck/decision_friction_final.html" class="btn btn-primary" target="_blank">View the deck</a> <a href="projects/pitch-to-pros-3/" class="btn btn-outline-primary">Read the project summary</a></p>
-</div>
-</div>
-<section id="projects" class="level2">
-<h2 class="anchored" data-anchor-id="projects">Projects</h2>
-
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0JTJDZm9vdGJhbGw=" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1779938912855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
-<a href="./projects/pitch-to-pros-3/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/pitch-to-pros-3/deck/assets/case1_slide8_timing_read.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Pitch to the Pros 3 Finalist: Decision Friction
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhY2tpbmctZGF0YQ=='); return false;">tracking-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('eFRocmVhdA=='); return false;">xThreat</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGVjaXNpb24tc3VwcG9ydA=='); return false;">decision-support</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 25, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bWV0cmljcyUyQ3RyYWNraW5nLWRhdGElMkNldmVudHMtZGF0YSUyQ2Zvb3RiYWxs" data-listing-date-sort="1767168000000" data-listing-file-modified-sort="1770918279829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
-<a href="./projects/asi/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/asi/fig2_asi_physical_validation.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Active Support Index (ASI)
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWV0cmljcw=='); return false;">metrics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhY2tpbmctZGF0YQ=='); return false;">tracking-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnRzLWRhdGE='); return false;">events-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Quantifying off-ball movement during pressure situations</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Dec 31, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bWFjaGluZS1sZWFybmluZyUyQ2Zvb3RiYWxsJTJDa2FnZ2xlJTJDc2ltdWxhdGlvbg==" data-listing-date-sort="1604563200000" data-listing-file-modified-sort="1779938509170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
-<a href="./projects/kaggle-mancity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/kaggle-mancity/thumbnail.gif" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kaggle Google Football with Manchester City
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZS1sZWFybmluZw=='); return false;">machine-learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('a2FnZ2xl'); return false;">kaggle</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c2ltdWxhdGlvbg=='); return false;">simulation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Kaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 5, 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

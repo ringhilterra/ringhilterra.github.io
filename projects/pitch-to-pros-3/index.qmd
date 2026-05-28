@@ -1,0 +1,38 @@
+---
+title: "Pitch to the Pros 3 Finalist: Decision Friction"
+description: "A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability."
+date: "2026-05-25"
+categories: [tracking-data, xThreat, decision-support, football]
+domain: football
+image: deck/assets/case1_slide8_timing_read.png
+---
+
+::: {.callout-note}
+## Pitch to the Pros 3 finalist
+I was selected as one of four finalists for Training Ground Guru's Pitch to the Pros 3 and presented this work to professionals in the game.
+:::
+
+## Was the Best Pass Really Playable?
+
+This project asks a simple review question: when a higher-value pass is available on paper, was it actually playable inside the player's decision window?
+
+The framework combines SkillCorner passing options, xThreat, event data, and tracking-derived context to score candidate passes frame by frame. Instead of treating pass value as a static number at release, it traces whether the lane, pressure, receiver space, movement fit, and timing made the option realistic before the pass was played.
+
+[View the presentation deck](deck/decision_friction_final.html){.btn .btn-primary target="_blank"} [View the analyst report example](deck/report_scroll/case1_analyst_report.html){.btn .btn-outline-primary target="_blank"}
+
+<iframe class="marp-deck-embed project-deck-embed" src="deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy"></iframe>
+
+## What I Built
+
+- A pass-window review workflow that scans candidate pass options before release.
+- A playability score built from lane access, pressure, receiver freedom, movement fit, and timing.
+- Case-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.
+- A prototype analyst export that packages frames, scores, and review evidence into a shareable report.
+
+## Data and Method
+
+The finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.
+
+SkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually.
+
+![Timing read from the finalist deck](deck/assets/case1_slide8_timing_read.png)

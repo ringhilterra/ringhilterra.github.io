@@ -1,20 +1,8 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/welcome.html"
-    ]
-  },
-  {
-    "listing": "/football-analytics.html",
-    "items": [
-      "/projects/asi/index.html",
-      "/projects/kaggle-mancity/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
+      "/projects/pitch-to-pros-3/index.html",
       "/projects/asi/index.html",
       "/projects/news-tweets-nlp/index.html",
       "/projects/time-series-classification/index.html",
@@ -22,6 +10,20 @@
       "/projects/dessert-flavor-pairings/index.html",
       "/projects/enriched-covid19-data/index.html",
       "/projects/american-gut-microbiome/index.html"
+    ]
+  },
+  {
+    "listing": "/football-analytics.html",
+    "items": [
+      "/projects/pitch-to-pros-3/index.html",
+      "/projects/asi/index.html",
+      "/projects/kaggle-mancity/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/welcome.html"
     ]
   },
   {
