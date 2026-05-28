@@ -151,7 +151,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Looking for professional work? Visit the Professional page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPitch to the Pros 3 Finalist: Decision Friction\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\nfootball\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+    "text": "Looking for industry work? Visit the Industry Work page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\nfootball\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\n\n\nQuantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome.html",
@@ -165,7 +165,7 @@
     "href": "football-analytics.html",
     "title": "Football Analytics",
     "section": "",
-    "text": "Email Website LinkedIn\n\n\n\n\n\n\nRole\n\nSenior Data Scientist\n\nOrganisation\n\nCrowdStrike\n\n\n\n\n\nDepartment\n\nData Science\n\nLocation\n\nSan Diego, California\n\n\n\n\n\n\nI’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.\nMy football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I’ve taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.\nI’m looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I’m most interested in work that turns technical modeling into practical football insight and real-world impact."
+    "text": "I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.\nMy football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I’ve taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.\nI’m looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I’m most interested in work that turns technical modeling into practical football insight and real-world impact."
   },
   {
     "objectID": "football-analytics.html#biography",
@@ -186,14 +186,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics — developing novel metrics from tracking data and building simulation environments."
+    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently, I lead agentic AI initiatives and ship ML-powered detection systems at CrowdStrike, helping protect top companies around the world. I also do applied research and project work in football analytics, using tracking and event data to model pass playability, decision-window context, and off-ball movement."
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "About",
     "section": "Experience",
-    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading agentic AI initiatives and shipping ML-powered detection scoring to production\n7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection\nFirst production ML model for Data Protection (USB exfiltration detection)\n\nSee full professional work →\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: 2M new target communities from 1B+ data points using unsupervised ML\nNetwork optimization via linear programming (18% capacity increase)\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon (2017)"
+    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading agentic AI initiatives and shipping ML-powered detection scoring to production\n7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection\nFirst production ML model for Data Protection (USB exfiltration detection)\n\nSee full industry work →\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: 2M new target communities from 1B+ data points using unsupervised ML\nNetwork optimization via linear programming (18% capacity increase)\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon (2017)"
   },
   {
     "objectID": "about.html#education",
@@ -221,40 +221,40 @@
     "href": "index.html",
     "title": "Ryan Inghilterra",
     "section": "",
-    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\nI build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics — developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.\n\n\n\nProfessional Work\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\n7 pending patents in ML & Cybersecurity\nStanford AI Graduate Professional Program\n\nExplore professional work →\n\n\nFootball Analytics\n\nActive Support Index — quantifying off-ball movement under pressure\nKaggle simulation competition with agent framework\nTracking data analysis and metrics development\n\nExplore football work →\n\n\nPublications & Patents\n\nPublished technical articles on CrowdStrike blog\n7 pending ML & Cybersecurity patents\nResearch in anomaly detection and source code classification\n\nView publications →"
+    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\n\nIndustry Work\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\n7 pending patents in ML & Cybersecurity\nStanford AI Graduate Professional Program\n\nExplore industry work →\n\n\nFootball Analytics\n\nPitch to the Pros 3 finalist — Was the Best Pass Really Playable?\nDecision-window context for pass value using SkillCorner tracking, options and xThreat\nActive Support Index and off-ball movement work with event and tracking data\n\nExplore football work →\n\n\nPublications & Patents\n\nPublished technical articles on CrowdStrike blog\n7 pending ML & Cybersecurity patents\nResearch in anomaly detection and source code classification\n\nView publications →"
   },
   {
     "objectID": "professional.html",
     "href": "professional.html",
-    "title": "Professional Work",
+    "title": "Industry Work",
     "section": "",
-    "text": "Senior ML/AI professional with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, protecting millions of endpoints worldwide."
+    "text": "Senior ML/AI practitioner with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, helping protect top companies around the world."
   },
   {
     "objectID": "professional.html#crowdstrike-highlights",
     "href": "professional.html#crowdstrike-highlights",
-    "title": "Professional Work",
+    "title": "Industry Work",
     "section": "CrowdStrike — Highlights",
     "text": "CrowdStrike — Highlights\n\n\nAgentic AI Initiative\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems for cybersecurity defense.\n\n\nML-Powered Detection Scoring\n\nDS lead for ML-powered detection scoring system — AI-powered risk scoring feature in Falcon Next-Gen SIEM, now in production.\nWatch feature video →\n\n\nUSB Exfiltration Detection\nFirst production ML model for Data Protection — USB exfiltration detection shipped in Falcon Device Control.\n\n\nSource Code Classification Pipeline\n\nReduced ML model training time from 227 hours to 6 hours using TensorFlow, Rust, and AWS EC2 GPU instances.\nRead article →\n\n\nCloud Workload Anomaly Detection\n\nResearch challenging containerized workload predictability assumptions, analyzing billions of container events.\nRead article →\n\n\n7 Pending Patents\nSeven pending patents in Machine Learning and Cybersecurity, spanning detection systems, data pipelines, and AI-driven threat analysis."
   },
   {
     "objectID": "professional.html#previous-roles",
     "href": "professional.html#previous-roles",
-    "title": "Professional Work",
+    "title": "Industry Work",
     "section": "Previous Roles",
     "text": "Previous Roles\n\nViasat — Senior Data Scientist\n\nGlobal Demand Model: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis\nNetwork planning optimization via linear programming (18% capacity increase)\nXGBoost model for rural internet speed prediction deployed across Mexico, Brazil, and Nigeria\n\n\n\nTeradata — Software Engineer\n\nFull-stack development on NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Teradata Analytics Hackathon (2017)"
   },
   {
     "objectID": "professional.html#technical-skills",
     "href": "professional.html#technical-skills",
-    "title": "Professional Work",
+    "title": "Industry Work",
     "section": "Technical Skills",
     "text": "Technical Skills\n\n\nML / AI\n\nSupervised & Unsupervised ML\nGenAI & LLMs (LangChain, HuggingFace)\nGraph ML (PyG, NetworkX)\nNLP (Deep Learning, Transformers)\nTime Series Analysis\nPyTorch, TensorFlow, Scikit-learn, XGBoost\n\n\n\nData Engineering\n\nPython, SQL, Pandas, NumPy\nETL Pipelines & Data Architecture\nDistributed Computing\nGeospatial Analysis\n\n\n\nTools & Infrastructure\n\nAWS (S3, EC2, Athena)\nDocker, Linux, Git\nJupyter, VSCode\nPlotly, Seaborn\n\n\n\nFootball Analytics\n\nTracking Data Analysis\nMetric Development (ASI)\nAgent Simulation (Kaggle)\nEvent Data Processing"
   },
   {
     "objectID": "professional.html#personal-academic-projects",
     "href": "professional.html#personal-academic-projects",
-    "title": "Professional Work",
+    "title": "Industry Work",
     "section": "Personal & Academic Projects",
     "text": "Personal & Academic Projects\nThese side projects showcase range across data visualization, NLP, time series analysis, and more.\nBrowse all projects →"
   },
@@ -359,35 +359,35 @@
   {
     "objectID": "projects/pitch-to-pros-3/index.html",
     "href": "projects/pitch-to-pros-3/index.html",
-    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
     "section": "",
     "text": "NotePitch to the Pros 3 finalist\n\n\n\nI was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3 and presented this work to professionals in the game."
   },
   {
     "objectID": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
     "href": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
-    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
     "section": "Was the Best Pass Really Playable?",
-    "text": "Was the Best Pass Really Playable?\nThis project asks a simple review question: when a higher-value pass is available on paper, was it actually playable inside the player’s decision window?\nThe framework combines SkillCorner passing options, xThreat, event data, and tracking-derived context to score candidate passes frame by frame. Instead of treating pass value as a static number at release, it traces whether the lane, pressure, receiver space, movement fit, and timing made the option realistic before the pass was played.\nView the presentation deck View the analyst report example"
+    "text": "Was the Best Pass Really Playable?\nView the presentation deck View the analyst report example"
   },
   {
     "objectID": "projects/pitch-to-pros-3/index.html#what-i-built",
     "href": "projects/pitch-to-pros-3/index.html#what-i-built",
-    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
     "section": "What I Built",
     "text": "What I Built\n\nA pass-window review workflow that scans candidate pass options before release.\nA playability score built from lane access, pressure, receiver freedom, movement fit, and timing.\nCase-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.\nA prototype analyst export that packages frames, scores, and review evidence into a shareable report."
   },
   {
     "objectID": "projects/pitch-to-pros-3/index.html#data-and-method",
     "href": "projects/pitch-to-pros-3/index.html#data-and-method",
-    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
     "section": "Data and Method",
     "text": "Data and Method\nThe finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.\nSkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually."
   },
   {
     "objectID": "projects/pitch-to-pros-3/index.html#deck-highlights",
     "href": "projects/pitch-to-pros-3/index.html#deck-highlights",
-    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
     "section": "Deck Highlights",
     "text": "Deck Highlights\n\n\n\n\n\nTiming read from the finalist deck\n\n\nTiming read: shows how a high-value option can be clean earlier and more constrained by the actual release frame.\n\n\n\n\n\nAnalysis automation system slide from the finalist deck\n\n\nAnalysis automation system: shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows."
   },

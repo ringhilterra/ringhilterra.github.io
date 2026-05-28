@@ -1,10 +1,10 @@
 ---
-title: "Pitch to the Pros 3 Finalist: Decision Friction"
+title: "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?"
 description: "A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability."
 date: "2026-05-25"
 categories: [tracking-data, xThreat, decision-support, football]
 domain: football
-image: deck/assets/case1_slide8_timing_read.png
+image: deck/assets/timing_read_full_slide.png
 ---
 
 ::: {.callout-note}
@@ -13,10 +13,6 @@ I was selected as one of four finalists for Training Ground Guru's Pitch to the 
 :::
 
 ## Was the Best Pass Really Playable?
-
-This project asks a simple review question: when a higher-value pass is available on paper, was it actually playable inside the player's decision window?
-
-The framework combines SkillCorner passing options, xThreat, event data, and tracking-derived context to score candidate passes frame by frame. Instead of treating pass value as a static number at release, it traces whether the lane, pressure, receiver space, movement fit, and timing made the option realistic before the pass was played.
 
 [View the presentation deck](deck/decision_friction_final.html){.btn .btn-primary target="_blank"} [View the analyst report example](deck/report_scroll/case1_analyst_report.html){.btn .btn-outline-primary target="_blank"}
 
@@ -39,7 +35,7 @@ SkillCorner passing options define candidate actions, SkillCorner xThreat estima
 
 ::: {.deck-highlight-grid}
 ::: {.deck-highlight-card}
-![Timing read from the finalist deck](deck/assets/case1_slide8_timing_read.png)
+![Timing read from the finalist deck](deck/assets/timing_read_full_slide.png)
 
 **Timing read:** shows how a high-value option can be clean earlier and more constrained by the actual release frame.
 :::

@@ -302,104 +302,13 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.football-profile {
-  display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 3rem;
-  align-items: start;
-  margin: 1rem 0 3rem;
-}
-
-.football-profile-photo img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 0;
-}
-
-.football-contact {
-  border-top: 1px solid #202124;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-}
-
-.football-contact::before {
-  content: "CONTACT DETAILS";
-  display: block;
-  color: #111827;
-  font-size: 0.95rem;
-  letter-spacing: 0.28em;
-  margin-bottom: 1.2rem;
-}
-
-.football-contact-btn {
-  display: block;
-  width: 100%;
-  border: 1px solid #202124;
-  border-radius: 999px;
-  background: #202124;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.32em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.85rem;
-}
-
-.football-contact-btn:hover {
-  background: #111827;
-  color: white;
-  text-decoration: none;
-}
-
-.football-contact-btn.secondary {
-  background: white;
-  color: #202124;
-}
-
-.football-contact-btn.secondary:hover {
-  background: var(--bg-subtle);
-  color: #202124;
-}
-
-.football-profile-main {
+.football-biography {
   border-top: 1px solid #202124;
   padding-top: 1.25rem;
+  margin: 1rem 0 2.5rem;
 }
 
-.football-current {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.5rem;
-  border-bottom: 1px solid #202124;
-  padding: 1.7rem 0 2.4rem;
-  margin-bottom: 1.6rem;
-}
-
-.football-current dl {
-  margin: 0;
-}
-
-.football-current dt {
-  color: #3f9b5a;
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.football-current dd {
-  color: #111827;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.25;
-  margin: 0 0 1.25rem;
-}
-
-.football-profile-main h2 {
+.football-biography h2 {
   border: 0;
   color: #111827;
   font-size: 1rem;
@@ -409,7 +318,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.football-profile-main p {
+.football-biography p {
   color: #111827;
   font-size: 1.08rem;
   line-height: 1.7;
@@ -482,8 +391,8 @@ a:hover {
 
 .deck-highlight-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
   margin: 1.25rem 0 2rem;
 }
 

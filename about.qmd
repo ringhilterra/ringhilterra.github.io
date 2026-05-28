@@ -16,7 +16,7 @@ Senior Data Scientist II at CrowdStrike
 :::
 
 ::: {.hero-bio}
-10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems protecting millions of endpoints. Outside of work, I research football analytics --- developing novel metrics from tracking data and building simulation environments.
+10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently, I lead agentic AI initiatives and ship ML-powered detection systems at CrowdStrike, helping protect top companies around the world. I also do applied research and project work in football analytics, using tracking and event data to model pass playability, decision-window context, and off-ball movement.
 :::
 
 :::
@@ -35,7 +35,7 @@ Aug 2022 -- Present &nbsp;|&nbsp; Promoted from Senior Data Scientist I
 - 7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection
 - First production ML model for Data Protection (USB exfiltration detection)
 
-[See full professional work &rarr;](professional.qmd){.timeline-link}
+[See full industry work &rarr;](professional.qmd){.timeline-link}
 :::
 
 ::: {.timeline-item}

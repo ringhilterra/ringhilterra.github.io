@@ -12,36 +12,7 @@ listing:
     domain: "football"
 ---
 
-::: {.football-profile}
-::: {.football-profile-photo}
-![](headshot.JPEG){fig-alt="Ryan Inghilterra headshot"}
-
-::: {.football-contact}
-[Email](mailto:ringhilterra17@gmail.com){.football-contact-btn}
-[Website](https://ringhilterra.github.io/){.football-contact-btn}
-[LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.football-contact-btn .secondary}
-:::
-:::
-
-::: {.football-profile-main}
-::: {.football-current}
-::: {.football-current-item}
-Role
-: Senior Data Scientist
-
-Organisation
-: CrowdStrike
-:::
-
-::: {.football-current-item}
-Department
-: Data Science
-
-Location
-: San Diego, California
-:::
-:::
-
+::: {.football-biography}
 ## Biography
 
 I'm a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.
@@ -49,7 +20,6 @@ I'm a data scientist and AI/ML engineer with 10+ years of experience across rese
 My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I've taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.
 
 I'm looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I'm most interested in work that turns technical modeling into practical football insight and real-world impact.
-:::
 :::
 
 ::: {.pitch-feature}

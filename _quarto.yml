@@ -19,7 +19,7 @@ website:
       - href: about.qmd
         text: About
       - href: professional.qmd
-        text: Professional
+        text: Industry Work
       - href: football-analytics.qmd
         text: Football Analytics
       - href: publications.qmd

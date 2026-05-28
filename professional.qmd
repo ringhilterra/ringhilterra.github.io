@@ -1,11 +1,11 @@
 ---
-title: "Professional Work"
+title: "Industry Work"
 toc: true
 toc-depth: 2
 page-layout: article
 ---
 
-Senior ML/AI professional with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, protecting millions of endpoints worldwide.
+Senior ML/AI practitioner with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, helping protect top companies around the world.
 
 ## CrowdStrike — Highlights
 

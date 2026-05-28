@@ -14,29 +14,25 @@ page-layout: full
 Senior Data Scientist | ML/AI Engineer | Football Analytics Researcher
 :::
 
-::: {.hero-bio}
-I build production ML systems and AI agents at CrowdStrike, protecting millions of endpoints through applied machine learning. Outside of work, I apply the same technical depth to football analytics --- developing novel metrics from tracking data, building simulation environments, and researching off-ball movement.
-:::
-
 ::: {.featured-grid}
 
 ::: {.featured-block}
-### Professional Work
+### Industry Work
 
 - Leading agentic AI initiatives at CrowdStrike
 - ML-powered detection scoring system in production
 - 7 pending patents in ML & Cybersecurity
 - Stanford AI Graduate Professional Program
 
-[Explore professional work &rarr;](professional.qmd){.block-link}
+[Explore industry work &rarr;](professional.qmd){.block-link}
 :::
 
 ::: {.featured-block}
 ### Football Analytics
 
-- **Active Support Index** --- quantifying off-ball movement under pressure
-- Kaggle simulation competition with agent framework
-- Tracking data analysis and metrics development
+- **Pitch to the Pros 3 finalist** --- Was the Best Pass Really Playable?
+- Decision-window context for pass value using SkillCorner tracking, options and xThreat
+- Active Support Index and off-ball movement work with event and tracking data
 
 [Explore football work &rarr;](football-analytics.qmd){.block-link}
 :::
