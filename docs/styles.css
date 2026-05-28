@@ -480,6 +480,37 @@ a:hover {
   margin: 1.5rem 0 2rem;
 }
 
+.deck-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.deck-highlight-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: white;
+}
+
+.deck-highlight-card p {
+  margin: 0;
+}
+
+.deck-highlight-card img {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.deck-highlight-card p:last-child {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  padding: 1rem;
+}
+
 /* --- Blog Listing --- */
 .quarto-listing .listing-title {
   font-weight: 600;
@@ -640,6 +671,10 @@ a:hover {
   }
 
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-highlight-grid {
     grid-template-columns: 1fr;
   }
 

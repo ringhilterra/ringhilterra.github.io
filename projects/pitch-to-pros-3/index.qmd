@@ -35,4 +35,18 @@ The finalist deck was built on open SkillCorner tracking and event data from 10 
 
 SkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually.
 
+## Deck Highlights
+
+::: {.deck-highlight-grid}
+::: {.deck-highlight-card}
 ![Timing read from the finalist deck](deck/assets/case1_slide8_timing_read.png)
+
+**Timing read:** shows how a high-value option can be clean earlier and more constrained by the actual release frame.
+:::
+
+::: {.deck-highlight-card}
+![Analysis automation system slide from the finalist deck](deck/assets/analysis_automation_system.png)
+
+**Analysis automation system:** shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows.
+:::
+:::

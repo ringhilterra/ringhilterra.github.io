@@ -382,7 +382,14 @@
     "href": "projects/pitch-to-pros-3/index.html#data-and-method",
     "title": "Pitch to the Pros 3 Finalist: Decision Friction",
     "section": "Data and Method",
-    "text": "Data and Method\nThe finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.\nSkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually.\n\n\n\nTiming read from the finalist deck"
+    "text": "Data and Method\nThe finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.\nSkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually."
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html#deck-highlights",
+    "href": "projects/pitch-to-pros-3/index.html#deck-highlights",
+    "title": "Pitch to the Pros 3 Finalist: Decision Friction",
+    "section": "Deck Highlights",
+    "text": "Deck Highlights\n\n\n\n\n\nTiming read from the finalist deck\n\n\nTiming read: shows how a high-value option can be clean earlier and more constrained by the actual release frame.\n\n\n\n\n\nAnalysis automation system slide from the finalist deck\n\n\nAnalysis automation system: shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows."
   },
   {
     "objectID": "publications.html",
