@@ -10,7 +10,7 @@ page-layout: article
 
 This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.
 
-[View industry work](../professional.qmd){.btn .btn-outline-primary}
+[View resume PDF](../assets/ryan-inghilterra-resume.pdf){.btn .btn-outline-primary target="_blank"}
 
 ::: {.patent-grid}
 ::: {.patent-card}

@@ -2,6 +2,7 @@
 title: "Kaggle Google Football with Manchester City"
 description: "Kaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration"
 date: "2020-11-05"
+order: 5
 categories: [machine-learning, football, kaggle, simulation]
 domain: football
 image: thumbnail.gif

@@ -177,21 +177,21 @@
   {
     "objectID": "projects/asi/index.html",
     "href": "projects/asi/index.html",
-    "title": "Active Support Index (ASI)",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
     "section": "",
     "text": "TipWant the full technical details?\n\n\n\nView the complete analysis notebook with all code and methodology."
   },
   {
     "objectID": "projects/asi/index.html#abstract",
     "href": "projects/asi/index.html#abstract",
-    "title": "Active Support Index (ASI)",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
     "section": "Abstract",
     "text": "Abstract\n\nIntroduction\nOn average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.\nCore Question: When a ball carrier is pressured, how actively do teammates move to provide passing options?\nThis research introduces the Active Support Index (ASI), a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.\n\n\nMethods\nWe analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner’s 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.\nMetric Definitions:\n\n\n\n\n\n\n\n\nLevel\nMetric\nFormula\n\n\n\n\nPer Event\nActive Support Ratio\n\\(\\frac{\\text{Active Supporters}}{\\text{Nearby Teammates}}\\)\n\n\nPer Player\nPlayer ASI\n\\(\\frac{\\text{Active Support Count}}{\\text{Support Opportunities}}\\)\n\n\nPer Team\nTeam ASI\n\\(1 - \\text{Static Rate}\\)\n\n\n\nKey Definitions: - Active Supporter: Teammate within 35m of the pressed player AND moving &gt;2 m/s - Static Rate: Proportion of pressure events with zero active supporters - Proximity threshold (35m): Maximum realistic passing range under pressure - Velocity threshold (2 m/s): Boundary separating walking from jogging/running\nFor validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (total_metersperminute_full_tip).\n\n\nResults\nSingle Event Analysis\nFigure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.\n\n\n\nFigure 1\n\n\nValidation with Physical Aggregates\nASI correlates strongly with season-level physical output (r = 0.74, p &lt; 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).\n\n\n\nFigure 2\n\n\nAdditional Findings\n\nPosition Validation: ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p &lt; 0.001).\nTeam Differentiation: Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.\nFatigue Analysis: 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).\n\n\n\nConclusion\nThe Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles."
   },
   {
     "objectID": "projects/asi/index.html#installation-usage",
     "href": "projects/asi/index.html#installation-usage",
-    "title": "Active Support Index (ASI)",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
     "section": "Installation & Usage",
     "text": "Installation & Usage\n\nOption 1: Run in Google Colab\nNo setup required. Simply click the badge below to open and run the notebook directly in Google Colab:\n\n\n\nOpen In Colab\n\n\n\n\nOption 2: Run Locally\nTested on Python 3.12 (macOS)\n\nClone the repository:\ngit clone https://github.com/ringhilterra/analytics_cup_research.git\ncd analytics_cup_research\nInstall dependencies:\npip install -r requirements.txt\nRun the notebook:\njupyter notebook submission.ipynb"
   },
@@ -200,91 +200,21 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Looking for industry work? Visit the Industry Work page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Creation Dynamics in Football\n\n\n\ntracking-data\n\noff-ball-movement\n\nresearch\n\nfootball\n\n\n\nResearch proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.\n\n\n\nJun 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\nfootball\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index (ASI)\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\nhackathon\n\n\n\nSkillCorner 2025 hackathon project quantifying off-ball movement during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPossession Foul-Win Probability Model\n\n\n\nevent-data\n\nxgboost\n\nmodel-calibration\n\nfootball\n\n\n\nA StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.\n\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome.html",
-    "href": "posts/welcome.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ryan Inghilterra",
-    "section": "",
-    "text": "Ryan Inghilterra\n\nSenior Data Scientist | ML/AI Engineer | Football Analytics Researcher\n\n\n\nIndustry Work\n\nLeading agentic AI initiatives at CrowdStrike\nML-powered detection scoring system in production\nPublic ML/cybersecurity patent applications\nStanford AI Graduate Professional Program\n\nExplore industry work →\n\n\nFootball Analytics\n\nPitch to the Pros 3 finalist — Was the Best Pass Really Playable?\nDecision-window context for pass value using SkillCorner tracking, options and xThreat\nOff-ball support dynamics and event-data modelling projects\n\nExplore football work →\n\n\nPatents & Publications\n\nPublished technical articles on CrowdStrike blog\nPublic patent applications in applied ML and cybersecurity\nEvidence of production research, explainability, and analyst workflows\n\nView patent portfolio →"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog posts are now part of the Publications & Patents page.\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Senior Data Scientist II at CrowdStrike\n\n\n10+ years building production software and ML systems across cybersecurity, satellite communications, and data analytics. Currently, I lead agentic AI initiatives and ship ML-powered detection systems at CrowdStrike, helping protect top companies around the world. I also do applied research and project work in football analytics, using tracking and event data to model pass playability, decision-window context, and off-ball movement."
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About",
-    "section": "Experience",
-    "text": "Experience\n\n\nSenior Data Scientist II — CrowdStrike\n\nAug 2022 – Present  |  Promoted from Senior Data Scientist I\n\n\nLeading agentic AI initiatives and shipping ML-powered detection scoring to production\n7 pending patents in ML & Cybersecurity; published articles on source code classification and anomaly detection\nFirst production ML model for Data Protection (USB exfiltration detection)\n\nSee full industry work →\n\n\nData Scientist III — CrowdStrike\n\nAug 2021 – Aug 2022\n\n\nFirst full-time hire on the “AI Across CrowdStrike” team\nBuilt churn prediction model (XGBoost) with supporting data architecture (S3/Athena)\nXLR8 “Fanatical About the Customer” Award winner\n\n\n\nSenior Data Scientist — Viasat\n\nJul 2019 – Aug 2021\n\n\nGlobal Demand Model: 2M new target communities from 1B+ data points using unsupervised ML\nNetwork optimization via linear programming (18% capacity increase)\n\n\n\nData Scientist — Viasat\n\nSep 2017 – Jul 2019\n\n\nFlight pattern analysis across 50 airlines and 10M data points\nDistributed speed test framework achieving 100x throughput improvement\n\n\n\nSoftware Engineer — Teradata\n\nJan 2015 – Sep 2017\n\n\nFull-stack NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Analytics Hackathon (2017)"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n\n\nStanford University\n\nSep 2020 – Apr 2022\n\nGraduate Professional Program, Artificial Intelligence\n\n\nUC San Diego\n\n2017 – 2019\n\nM.A.S. Data Science and Engineering — GPA 4.0\n\n\nUC San Diego\n\n2010 – 2014\n\nB.S. Computer Science, Minor in Economics"
-  },
-  {
-    "objectID": "about.html#connect",
-    "href": "about.html#connect",
-    "title": "About",
-    "section": "Connect",
-    "text": "Connect\n\nLinkedIn: ryan-inghilterra-017\nGitHub: ringhilterra\nTwitter: @ringhilterra"
-  },
-  {
-    "objectID": "football-analytics.html",
-    "href": "football-analytics.html",
-    "title": "Football Analytics",
-    "section": "",
-    "text": "I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.\nMy football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, model calibration, and decision-support tools, using datasets from providers including StatsBomb, SkillCorner, and PFF FC. I’ve taken part in football analytics competitions and was recently selected as a Pitch to the Pros 3 finalist.\nI’m most interested in work that turns technical modelling into practical football insight: reproducible pipelines, interpretable metrics, analyst-facing visuals, and research that can support scouting, recruitment, performance analysis, coaching, or academy evaluation."
-  },
-  {
-    "objectID": "football-analytics.html#biography",
-    "href": "football-analytics.html#biography",
-    "title": "Football Analytics",
-    "section": "",
-    "text": "I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.\nMy football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, model calibration, and decision-support tools, using datasets from providers including StatsBomb, SkillCorner, and PFF FC. I’ve taken part in football analytics competitions and was recently selected as a Pitch to the Pros 3 finalist.\nI’m most interested in work that turns technical modelling into practical football insight: reproducible pipelines, interpretable metrics, analyst-facing visuals, and research that can support scouting, recruitment, performance analysis, coaching, or academy evaluation."
-  },
-  {
-    "objectID": "football-analytics.html#projects",
-    "href": "football-analytics.html#projects",
-    "title": "Football Analytics",
-    "section": "Projects",
-    "text": "Projects"
+    "text": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\nfootball\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Creation Dynamics in Football\n\n\n\ntracking-data\n\noff-ball-movement\n\nresearch\n\nfootball\n\n\n\nResearch proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.\n\n\n\nFeb 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index: SkillCorner Analytics Cup Project\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\nanalytics-cup\n\n\n\nSkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPossession Foul-Win Probability Model\n\n\n\nevent-data\n\nxgboost\n\nmodel-calibration\n\nfootball\n\n\n\nA StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.\n\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle Google Football with Manchester City\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nKaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "patents-publications/index.html",
     "href": "patents-publications/index.html",
     "title": "Patents & Publications",
     "section": "",
-    "text": "This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.\nView industry work\n\n\n\nUS20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
+    "text": "This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.\nView resume PDF\n\n\n\nUS20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
   },
   {
     "objectID": "patents-publications/index.html#public-patent-applications",
     "href": "patents-publications/index.html#public-patent-applications",
     "title": "Patents & Publications",
     "section": "",
-    "text": "This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.\nView industry work\n\n\n\nUS20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
+    "text": "This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.\nView resume PDF\n\n\n\nUS20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
   },
   {
     "objectID": "patents-publications/index.html#technical-articles-media",
@@ -301,39 +231,67 @@
     "text": "Why It Matters\nThe patent and publication record is useful context for football analytics reviewers because it shows production ML work that moved beyond notebooks: model development, explainability, operational delivery, and analyst-facing workflows in high-stakes environments. That is the same professional operating style I try to bring to football analytics projects."
   },
   {
-    "objectID": "professional.html",
-    "href": "professional.html",
-    "title": "Industry Work",
+    "objectID": "football-analytics.html",
+    "href": "football-analytics.html",
+    "title": "Football Analytics",
     "section": "",
-    "text": "Senior ML/AI practitioner with 10+ years building production systems across cybersecurity, satellite communications, and data analytics. Currently leading agentic AI initiatives and shipping ML-powered detection systems at CrowdStrike, helping protect top companies around the world."
+    "text": "Senior production ML and applied AI experience, applied to football questions through tracking data, event data, reproducible modelling, visual explanation, and analyst-facing workflows that turn player, team, and academy questions into practical decision-support insight."
   },
   {
-    "objectID": "professional.html#crowdstrike-highlights",
-    "href": "professional.html#crowdstrike-highlights",
-    "title": "Industry Work",
-    "section": "CrowdStrike — Highlights",
-    "text": "CrowdStrike — Highlights\n\n\nAgentic AI Initiative\nLeading one of CrowdStrike’s agentic AI initiatives, driving innovation in autonomous AI systems for cybersecurity defense.\n\n\nML-Powered Detection Scoring\n\nDS lead for ML-powered detection scoring system — AI-powered risk scoring feature in Falcon Next-Gen SIEM, now in production.\nWatch feature video →\n\n\nUSB Exfiltration Detection\nFirst production ML model for Data Protection — USB exfiltration detection shipped in Falcon Device Control.\n\n\nSource Code Classification Pipeline\n\nReduced ML model training time from 227 hours to 6 hours using TensorFlow, Rust, and AWS EC2 GPU instances.\nRead article →\n\n\nCloud Workload Anomaly Detection\n\nResearch challenging containerized workload predictability assumptions, analyzing billions of container events.\nRead article →\n\n\n7 Pending Patents\nSeven pending patents in machine learning and cybersecurity, with six public applications spanning source-code classification, behavior-based asset classification, anomaly detection, graph ML, and interpretable alert grouping.\nView patent portfolio →"
+    "objectID": "football-analytics.html#project-links",
+    "href": "football-analytics.html#project-links",
+    "title": "Football Analytics",
+    "section": "Project Links",
+    "text": "Project Links\n\n\nPitch to the Pros 3: Was the Best Pass Really Playable?: SkillCorner tracking/event data project adding decision-window context to pass value.\nSupport Creation Dynamics in Football: Research proposal for modelling how off-ball movement creates, improves, weakens, or removes support options.\nActive Support Index: SkillCorner Analytics Cup Project: Off-ball support metric for pressure events using SkillCorner tracking and dynamic event data.\nPossession Foul-Win Probability Model: StatsBomb event-data project with possession labelling, calibrated XGBoost, SHAP review, and lift analysis.\nGoogle Football with Manchester City: Kaggle simulation project with Docker, local agent evaluation, and ML agent exploration."
   },
   {
-    "objectID": "professional.html#previous-roles",
-    "href": "professional.html#previous-roles",
-    "title": "Industry Work",
-    "section": "Previous Roles",
-    "text": "Previous Roles\n\nViasat — Senior Data Scientist\n\nGlobal Demand Model: identified 2M new target communities from 1B+ data points using unsupervised ML and geospatial analysis\nNetwork planning optimization via linear programming (18% capacity increase)\nXGBoost model for rural internet speed prediction deployed across Mexico, Brazil, and Nigeria\n\n\n\nTeradata — Software Engineer\n\nFull-stack development on NextGen BI platform (TypeScript, Node.js, Java)\n1st Prize at Teradata Analytics Hackathon (2017)"
+    "objectID": "football-analytics.html#projects",
+    "href": "football-analytics.html#projects",
+    "title": "Football Analytics",
+    "section": "Projects",
+    "text": "Projects"
   },
   {
-    "objectID": "professional.html#technical-skills",
-    "href": "professional.html#technical-skills",
-    "title": "Industry Work",
-    "section": "Technical Skills",
-    "text": "Technical Skills\n\n\nML / AI\n\nSupervised & Unsupervised ML\nGenAI & LLMs (LangChain, HuggingFace)\nGraph ML (PyG, NetworkX)\nNLP (Deep Learning, Transformers)\nTime Series Analysis\nPyTorch, TensorFlow, Scikit-learn, XGBoost\n\n\n\nData Engineering\n\nPython, SQL, Pandas, NumPy\nETL Pipelines & Data Architecture\nDistributed Computing\nGeospatial Analysis\n\n\n\nTools & Infrastructure\n\nAWS (S3, EC2, Athena)\nDocker, Linux, Git\nJupyter, VSCode\nPlotly, Seaborn\n\n\n\nFootball Analytics\n\nTracking Data Analysis\nMetric Development (ASI)\nAgent Simulation (Kaggle)\nEvent Data Processing"
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts are now part of the Publications & Patents page.\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "professional.html#personal-academic-projects",
-    "href": "professional.html#personal-academic-projects",
-    "title": "Industry Work",
-    "section": "Personal & Academic Projects",
-    "text": "Personal & Academic Projects\nThese side projects showcase range across data visualization, NLP, time series analysis, and more.\nBrowse all projects →"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ryan Inghilterra",
+    "section": "",
+    "text": "Senior Data Scientist II | Production ML, Applied AI & Football Analytics\n\n\nSenior Data Scientist II with 10+ years building production machine learning and applied AI systems in high-growth technology environments. Professionally, I build full-lifecycle ML systems for CrowdStrike’s Falcon platform; in football analytics, I apply the same research, engineering, and decision-support approach to tracking data, event data, off-ball movement, academy analysis, and analyst-facing workflows.\n\n\nView resume PDF Football analytics Patents & publications"
+  },
+  {
+    "objectID": "index.html#current-focus",
+    "href": "index.html#current-focus",
+    "title": "Ryan Inghilterra",
+    "section": "Current Focus",
+    "text": "Current Focus\nI am focused on work that turns complex football questions into practical decision-support tools: scouting, recruitment, performance analysis, coaching workflows, and academy evaluation. My edge is the combination of senior production ML experience, credible football analytics project work, and the ability to translate research into systems and visuals that practitioners can actually use."
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Ryan Inghilterra",
+    "section": "Highlights",
+    "text": "Highlights\n\nSenior Data Scientist II at CrowdStrike, building production machine learning and applied AI systems for high-scale Falcon product environments.\nData science lead for Falcon Next-Gen SIEM’s first ML-powered product feature, with ownership across model development, evaluation, explainability, monitoring design, and delivery.\nPitch to the Pros 3 finalist for “Was the Best Pass Really Playable?”, a SkillCorner tracking/event-data project adding execution context to pass value.\nFootball analytics work across off-ball support creation, StatsBomb event-data modelling, and academy productivity analysis.\nPublic patent applications and technical articles in applied machine learning, cybersecurity research, anomaly detection, and source-code classification."
+  },
+  {
+    "objectID": "index.html#links",
+    "href": "index.html#links",
+    "title": "Ryan Inghilterra",
+    "section": "Links",
+    "text": "Links\n\nFootball Analytics\nPatents & Publications\nResume PDF\nLinkedIn\nGitHub"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
   },
   {
     "objectID": "projects/american-gut-microbiome/index.html",
@@ -473,7 +431,7 @@
     "href": "projects/support-creation-dynamics/index.html",
     "title": "Support Creation Dynamics in Football",
     "section": "",
-    "text": "NoteCurrent status\n\n\n\nActive research proposal and collaboration. This page describes the research direction and methodology; it is not presented as a completed or published paper."
+    "text": "NoteCurrent status\n\n\n\nActive research proposal and collaboration started in February 2026. This page describes the research direction and methodology; it is not presented as a completed or published paper."
   },
   {
     "objectID": "projects/support-creation-dynamics/index.html#from-who-is-open-to-how-did-the-option-get-created",

@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
+    - assets/ryan-inghilterra-resume.pdf
     - projects/pitch-to-pros-3/deck/**
     - projects/foul-win-probability/epl-foul-win-model-report.html
     - projects/foul-win-probability/foul-win-example.png
@@ -13,6 +14,8 @@ project:
     - "posts/**"
     - "projects/**"
     - "patents-publications/index.qmd"
+    - "!about.qmd"
+    - "!professional.qmd"
     - "!project_refs/"
     - "!CLAUDE.md"
 
@@ -22,10 +25,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
-      - href: professional.qmd
-        text: Industry Work
       - href: football-analytics.qmd
         text: Football Analytics
       - href: patents-publications/index.qmd

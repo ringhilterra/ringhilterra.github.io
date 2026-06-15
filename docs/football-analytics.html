@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
 
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
@@ -155,14 +155,6 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
-<span class="menu-text">About</span></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./professional.html">
-<span class="menu-text">Industry Work</span></a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link active" href="./football-analytics.html" aria-current="page">
 <span class="menu-text">Football Analytics</span></a>
   </li>
@@ -221,41 +213,21 @@ window.Quarto = {
 </header>
 
 
-<section id="biography" class="level2 football-biography">
-<h2 class="anchored" data-anchor-id="biography">Biography</h2>
-<p>I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.</p>
-<p>My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, model calibration, and decision-support tools, using datasets from providers including StatsBomb, SkillCorner, and PFF FC. I’ve taken part in football analytics competitions and was recently selected as a Pitch to the Pros 3 finalist.</p>
-<p>I’m most interested in work that turns technical modelling into practical football insight: reproducible pipelines, interpretable metrics, analyst-facing visuals, and research that can support scouting, recruitment, performance analysis, coaching, or academy evaluation.</p>
+<div class="football-brief">
+<p>Senior production ML and applied AI experience, applied to football questions through tracking data, event data, reproducible modelling, visual explanation, and analyst-facing workflows that turn player, team, and academy questions into practical decision-support insight.</p>
+</div>
+<section id="project-links" class="level2">
+<h2 class="anchored" data-anchor-id="project-links">Project Links</h2>
+<div class="project-link-list">
+<ul>
+<li><a href="projects/pitch-to-pros-3/">Pitch to the Pros 3: Was the Best Pass Really Playable?</a>: SkillCorner tracking/event data project adding decision-window context to pass value.</li>
+<li><a href="projects/support-creation-dynamics/">Support Creation Dynamics in Football</a>: Research proposal for modelling how off-ball movement creates, improves, weakens, or removes support options.</li>
+<li><a href="projects/asi/">Active Support Index: SkillCorner Analytics Cup Project</a>: Off-ball support metric for pressure events using SkillCorner tracking and dynamic event data.</li>
+<li><a href="projects/foul-win-probability/">Possession Foul-Win Probability Model</a>: StatsBomb event-data project with possession labelling, calibrated XGBoost, SHAP review, and lift analysis.</li>
+<li><a href="projects/kaggle-mancity/">Google Football with Manchester City</a>: Kaggle simulation project with Docker, local agent evaluation, and ML agent exploration.</li>
+</ul>
+</div>
 </section>
-<div class="pitch-feature">
-<div class="pitch-feature-media">
-<iframe class="marp-deck-embed" src="projects/pitch-to-pros-3/deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy">
-</iframe>
-</div>
-<div class="pitch-feature-copy">
-<dl>
-<dt>Pitch to the Pros 3 Finalist</dt>
-<dd>
-<strong>Was the Best Pass Really Playable?</strong>
-</dd>
-</dl>
-<p>I was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3, where I presented a tracking-data framework for adding decision-window context to pass value.</p>
-<p>The work combines SkillCorner passing options, xThreat, event data and tracking-derived playability to ask whether high-value pass options were actually open, constrained, or already gone by the time the player made the decision.</p>
-<p><a href="projects/pitch-to-pros-3/deck/decision_friction_final.html" class="btn btn-primary" target="_blank">View the deck</a> <a href="projects/pitch-to-pros-3/" class="btn btn-outline-primary">Read the project summary</a></p>
-</div>
-</div>
-<div class="football-proof-grid">
-<section id="support-creation-dynamics" class="level3 football-proof-card">
-<h3 class="anchored" data-anchor-id="support-creation-dynamics">Support Creation Dynamics</h3>
-<p>Temporal framework for measuring how off-ball movement creates, improves, weakens, or removes support options during possession.</p>
-<p><a href="projects/support-creation-dynamics/" class="card-link">Read project</a></p>
-</section>
-<section id="foul-win-probability-model" class="level3 football-proof-card">
-<h3 class="anchored" data-anchor-id="foul-win-probability-model">Foul-Win Probability Model</h3>
-<p>StatsBomb event-data modelling project with labelled possession starts, calibrated XGBoost, SHAP review, and threshold/lift analysis.</p>
-<p><a href="projects/foul-win-probability/" class="card-link">Read project</a></p>
-</section>
-</div>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 
@@ -265,39 +237,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ29mZi1iYWxsLW1vdmVtZW50JTJDcmVzZWFyY2glMkNmb290YmFsbA==" data-listing-date-sort="1781506800000" data-listing-file-modified-sort="1781494086895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
-<a href="./projects/support-creation-dynamics/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/support-creation-dynamics/proposal-preview.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Support Creation Dynamics in Football
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhY2tpbmctZGF0YQ=='); return false;">tracking-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b2ZmLWJhbGwtbW92ZW1lbnQ='); return false;">off-ball-movement</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 15, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0JTJDZm9vdGJhbGw=" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1779939919782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0JTJDZm9vdGJhbGw=" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1781550883663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
 <a href="./projects/pitch-to-pros-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -321,15 +261,37 @@ Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?
 <div class="card-text listing-description delink">
 <p>A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.</p>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 25, 2026
 </div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="dHJhY2tpbmctZGF0YSUyQ29mZi1iYWxsLW1vdmVtZW50JTJDcmVzZWFyY2glMkNmb290YmFsbA==" data-listing-date-sort="1769932800000" data-listing-file-modified-sort="1781550935172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="569">
+<a href="./projects/support-creation-dynamics/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/support-creation-dynamics/proposal-preview.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Support Creation Dynamics in Football
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhY2tpbmctZGF0YQ=='); return false;">tracking-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b2ZmLWJhbGwtbW92ZW1lbnQ='); return false;">off-ball-movement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.</p>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bWV0cmljcyUyQ3RyYWNraW5nLWRhdGElMkNldmVudHMtZGF0YSUyQ2Zvb3RiYWxsJTJDaGFja2F0aG9u" data-listing-date-sort="1767168000000" data-listing-file-modified-sort="1779941234447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
+<div class="g-col-1" data-index="2" data-categories="bWV0cmljcyUyQ3RyYWNraW5nLWRhdGElMkNldmVudHMtZGF0YSUyQ2Zvb3RiYWxsJTJDYW5hbHl0aWNzLWN1cA==" data-listing-date-sort="1767168000000" data-listing-file-modified-sort="1781550883664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
 <a href="./projects/asi/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -337,7 +299,7 @@ May 25, 2026
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Active Support Index (ASI)
+Active Support Index: SkillCorner Analytics Cup Project
 </h5>
 <div class="listing-categories">
 
@@ -349,21 +311,16 @@ Active Support Index (ASI)
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('aGFja2F0aG9u'); return false;">hackathon</div>
+<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHl0aWNzLWN1cA=='); return false;">analytics-cup</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>SkillCorner 2025 hackathon project quantifying off-ball movement during pressure situations</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Dec 31, 2025
-</div>
+<p>SkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations</p>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="ZXZlbnQtZGF0YSUyQ3hnYm9vc3QlMkNtb2RlbC1jYWxpYnJhdGlvbiUyQ2Zvb3RiYWxs" data-listing-date-sort="1735632000000" data-listing-file-modified-sort="1781494138789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="440">
+<div class="g-col-1" data-index="3" data-categories="ZXZlbnQtZGF0YSUyQ3hnYm9vc3QlMkNtb2RlbC1jYWxpYnJhdGlvbiUyQ2Zvb3RiYWxs" data-listing-date-sort="1735632000000" data-listing-file-modified-sort="1781550883664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="440">
 <a href="./projects/foul-win-probability/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -387,15 +344,10 @@ Possession Foul-Win Probability Model
 <div class="card-text listing-description delink">
 <p>A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.</p>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Dec 31, 2024
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZS1sZWFybmluZyUyQ2Zvb3RiYWxsJTJDa2FnZ2xlJTJDc2ltdWxhdGlvbg==" data-listing-date-sort="1604563200000" data-listing-file-modified-sort="1779938509170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZS1sZWFybmluZyUyQ2Zvb3RiYWxsJTJDa2FnZ2xlJTJDc2ltdWxhdGlvbg==" data-listing-date-sort="1604563200000" data-listing-file-modified-sort="1781550883665" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
 <a href="./projects/kaggle-mancity/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -418,11 +370,6 @@ Kaggle Google Football with Manchester City
 </div>
 <div class="card-text listing-description delink">
 <p>Kaggle simulation competition — built Docker environment, agent framework for local pool play matches, and ML agent exploration</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 5, 2020
-</div>
 </div>
 </div>
 </div></a>

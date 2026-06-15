@@ -1,7 +1,9 @@
 ---
 title: "Support Creation Dynamics in Football"
 description: "Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession."
-date: "2026-06-15"
+date: "2026-02-01"
+date-format: "MMMM yyyy"
+order: 2
 categories: [tracking-data, off-ball-movement, research, football]
 domain: football
 image: proposal-preview.png
@@ -11,7 +13,7 @@ toc-depth: 2
 
 ::: {.callout-note}
 ## Current status
-Active research proposal and collaboration. This page describes the research direction and methodology; it is not presented as a completed or published paper.
+Active research proposal and collaboration started in February 2026. This page describes the research direction and methodology; it is not presented as a completed or published paper.
 :::
 
 ::: {.evidence-hero}

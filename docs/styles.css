@@ -100,8 +100,16 @@
   font-size: 1.05rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  max-width: 650px;
-  margin: 0 auto 2.5rem;
+  max-width: 760px;
+  margin: 0 auto 1.25rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: center;
+  margin: 1.2rem auto 0;
 }
 
 /* --- Featured Blocks (Home Page) --- */
@@ -302,6 +310,50 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.football-brief {
+  border-top: 1px solid #202124;
+  color: #111827;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  margin: 1rem 0 1.5rem;
+  padding-top: 1.25rem;
+}
+
+.project-link-list {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  padding: 1.15rem 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.project-link-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-link-list li {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  padding: 0.7rem 0;
+}
+
+.project-link-list li:first-child {
+  padding-top: 0;
+}
+
+.project-link-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-link-list a {
+  font-weight: 650;
+}
+
 .football-biography {
   border-top: 1px solid #202124;
   padding-top: 1.25rem;
@@ -430,6 +482,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  align-items: start;
   margin: 1.5rem 0 2.5rem;
 }
 

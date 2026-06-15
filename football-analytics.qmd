@@ -5,54 +5,25 @@ listing:
   contents: projects/*/index.qmd
   type: grid
   categories: false
-  sort: date desc
-  fields: [image, title, description, date, categories]
+  sort: order
+  fields: [image, title, description, categories]
   image-height: 200px
   include:
     domain: "football"
 ---
 
-::: {.football-biography}
-## Biography
-
-I'm a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.
-
-My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, model calibration, and decision-support tools, using datasets from providers including StatsBomb, SkillCorner, and PFF FC. I've taken part in football analytics competitions and was recently selected as a Pitch to the Pros 3 finalist.
-
-I'm most interested in work that turns technical modelling into practical football insight: reproducible pipelines, interpretable metrics, analyst-facing visuals, and research that can support scouting, recruitment, performance analysis, coaching, or academy evaluation.
+::: {.football-brief}
+Senior production ML and applied AI experience, applied to football questions through tracking data, event data, reproducible modelling, visual explanation, and analyst-facing workflows that turn player, team, and academy questions into practical decision-support insight.
 :::
 
-::: {.pitch-feature}
-::: {.pitch-feature-media}
-<iframe class="marp-deck-embed" src="projects/pitch-to-pros-3/deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy"></iframe>
-:::
+## Project Links
 
-::: {.pitch-feature-copy}
-Pitch to the Pros 3 Finalist
-: **Was the Best Pass Really Playable?**
-
-I was selected as one of four finalists for Training Ground Guru's Pitch to the Pros 3, where I presented a tracking-data framework for adding decision-window context to pass value.
-
-The work combines SkillCorner passing options, xThreat, event data and tracking-derived playability to ask whether high-value pass options were actually open, constrained, or already gone by the time the player made the decision.
-
-[View the deck](projects/pitch-to-pros-3/deck/decision_friction_final.html){.btn .btn-primary target="_blank"} [Read the project summary](projects/pitch-to-pros-3/){.btn .btn-outline-primary}
-:::
-:::
-
-::: {.football-proof-grid}
-::: {.football-proof-card}
-### Support Creation Dynamics
-Temporal framework for measuring how off-ball movement creates, improves, weakens, or removes support options during possession.
-
-[Read project](projects/support-creation-dynamics/){.card-link}
-:::
-
-::: {.football-proof-card}
-### Foul-Win Probability Model
-StatsBomb event-data modelling project with labelled possession starts, calibrated XGBoost, SHAP review, and threshold/lift analysis.
-
-[Read project](projects/foul-win-probability/){.card-link}
-:::
+::: {.project-link-list}
+- [Pitch to the Pros 3: Was the Best Pass Really Playable?](projects/pitch-to-pros-3/): SkillCorner tracking/event data project adding decision-window context to pass value.
+- [Support Creation Dynamics in Football](projects/support-creation-dynamics/): Research proposal for modelling how off-ball movement creates, improves, weakens, or removes support options.
+- [Active Support Index: SkillCorner Analytics Cup Project](projects/asi/): Off-ball support metric for pressure events using SkillCorner tracking and dynamic event data.
+- [Possession Foul-Win Probability Model](projects/foul-win-probability/): StatsBomb event-data project with possession labelling, calibrated XGBoost, SHAP review, and lift analysis.
+- [Google Football with Manchester City](projects/kaggle-mancity/): Kaggle simulation project with Docker, local agent evaluation, and ML agent exploration.
 :::
 
 ## Projects

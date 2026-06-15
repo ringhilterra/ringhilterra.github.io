@@ -2,8 +2,8 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/support-creation-dynamics/index.html",
       "/projects/pitch-to-pros-3/index.html",
+      "/projects/support-creation-dynamics/index.html",
       "/projects/asi/index.html",
       "/projects/foul-win-probability/index.html",
       "/projects/news-tweets-nlp/index.html",
@@ -15,19 +15,19 @@
     ]
   },
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/welcome.html"
-    ]
-  },
-  {
     "listing": "/football-analytics.html",
     "items": [
-      "/projects/support-creation-dynamics/index.html",
       "/projects/pitch-to-pros-3/index.html",
+      "/projects/support-creation-dynamics/index.html",
       "/projects/asi/index.html",
       "/projects/foul-win-probability/index.html",
       "/projects/kaggle-mancity/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/welcome.html"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 ---
 title: "Ryan Inghilterra"
 toc: false
-page-layout: full
+page-layout: article
 ---
 
 ::: {.hero-section}
@@ -11,42 +11,35 @@ page-layout: full
 # Ryan Inghilterra
 
 ::: {.hero-subtitle}
-Senior Data Scientist | ML/AI Engineer | Football Analytics Researcher
+Senior Data Scientist II | Production ML, Applied AI & Football Analytics
 :::
 
-::: {.featured-grid}
-
-::: {.featured-block}
-### Industry Work
-
-- Leading agentic AI initiatives at CrowdStrike
-- ML-powered detection scoring system in production
-- Public ML/cybersecurity patent applications
-- Stanford AI Graduate Professional Program
-
-[Explore industry work &rarr;](professional.qmd){.block-link}
+::: {.hero-bio}
+Senior Data Scientist II with 10+ years building production machine learning and applied AI systems in high-growth technology environments. Professionally, I build full-lifecycle ML systems for CrowdStrike's Falcon platform; in football analytics, I apply the same research, engineering, and decision-support approach to tracking data, event data, off-ball movement, academy analysis, and analyst-facing workflows.
 :::
 
-::: {.featured-block}
-### Football Analytics
-
-- **Pitch to the Pros 3 finalist** --- Was the Best Pass Really Playable?
-- Decision-window context for pass value using SkillCorner tracking, options and xThreat
-- Off-ball support dynamics and event-data modelling projects
-
-[Explore football work &rarr;](football-analytics.qmd){.block-link}
-:::
-
-::: {.featured-block}
-### Patents & Publications
-
-- Published technical articles on CrowdStrike blog
-- Public patent applications in applied ML and cybersecurity
-- Evidence of production research, explainability, and analyst workflows
-
-[View patent portfolio &rarr;](patents-publications/){.block-link}
+::: {.home-actions}
+[View resume PDF](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & publications](patents-publications/){.btn .btn-outline-primary}
 :::
 
 :::
 
-:::
+## Current Focus
+
+I am focused on work that turns complex football questions into practical decision-support tools: scouting, recruitment, performance analysis, coaching workflows, and academy evaluation. My edge is the combination of senior production ML experience, credible football analytics project work, and the ability to translate research into systems and visuals that practitioners can actually use.
+
+## Highlights
+
+- Senior Data Scientist II at CrowdStrike, building production machine learning and applied AI systems for high-scale Falcon product environments.
+- Data science lead for Falcon Next-Gen SIEM's first ML-powered product feature, with ownership across model development, evaluation, explainability, monitoring design, and delivery.
+- Pitch to the Pros 3 finalist for "Was the Best Pass Really Playable?", a SkillCorner tracking/event-data project adding execution context to pass value.
+- Football analytics work across off-ball support creation, StatsBomb event-data modelling, and academy productivity analysis.
+- Public patent applications and technical articles in applied machine learning, cybersecurity research, anomaly detection, and source-code classification.
+
+## Links
+
+- [Football Analytics](football-analytics.qmd)
+- [Patents & Publications](patents-publications/)
+- [Resume PDF](assets/ryan-inghilterra-resume.pdf)
+- [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/)
+- [GitHub](https://github.com/ringhilterra)

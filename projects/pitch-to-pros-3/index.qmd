@@ -2,6 +2,7 @@
 title: "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?"
 description: "A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability."
 date: "2026-05-25"
+order: 1
 categories: [tracking-data, xThreat, decision-support, football]
 domain: football
 image: deck/assets/timing_read_full_slide.png

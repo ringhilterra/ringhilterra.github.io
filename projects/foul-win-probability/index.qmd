@@ -2,6 +2,7 @@
 title: "Possession Foul-Win Probability Model"
 description: "A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul."
 date: "2024-12-31"
+order: 4
 categories: [event-data, xgboost, model-calibration, football]
 domain: football
 image: foul-win-example.png

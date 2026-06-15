@@ -1,8 +1,9 @@
 ---
-title: "Active Support Index (ASI)"
-description: "SkillCorner 2025 hackathon project quantifying off-ball movement during pressure situations"
+title: "Active Support Index: SkillCorner Analytics Cup Project"
+description: "SkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations"
 date: "2025-12-31"
-categories: [metrics, tracking-data, events-data, football, hackathon]
+order: 3
+categories: [metrics, tracking-data, events-data, football, analytics-cup]
 domain: football
 image: fig2_asi_physical_validation.png
 ---
