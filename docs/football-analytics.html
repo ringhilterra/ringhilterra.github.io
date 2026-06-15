@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -76,12 +76,12 @@ ul.task-list li input[type="checkbox"] {
     const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
-      return; 
+      return;
     }
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -151,42 +151,42 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./index.html">
 <span class="menu-text">Home</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="./about.html">
 <span class="menu-text">About</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./professional.html"> 
+    <a class="nav-link" href="./professional.html">
 <span class="menu-text">Industry Work</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./football-analytics.html" aria-current="page"> 
+    <a class="nav-link active" href="./football-analytics.html" aria-current="page">
 <span class="menu-text">Football Analytics</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
+    <a class="nav-link" href="./patents-publications/index.html">
+<span class="menu-text">Patents &amp; Publications</span></a>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/ringhilterra"> <i class="bi bi-github" role="img">
-</i> 
+</i>
 <span class="menu-text"></span></a>
-  </li>  
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/ryan-inghilterra-017/"> <i class="bi bi-linkedin" role="img">
-</i> 
+</i>
 <span class="menu-text"></span></a>
-  </li>  
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://x.com/RyanInghilterra"> <i class="bi bi-twitter" role="img">
-</i> 
+</i>
 <span class="menu-text"></span></a>
-  </li>  
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -198,7 +198,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -211,11 +211,11 @@ window.Quarto = {
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -224,8 +224,8 @@ window.Quarto = {
 <section id="biography" class="level2 football-biography">
 <h2 class="anchored" data-anchor-id="biography">Biography</h2>
 <p>I’m a data scientist and AI/ML engineer with 10+ years of experience across research, innovation and production systems. Professionally, I work on applying machine learning and AI to real-world problems at scale; outside of that, I bring the same technical skillset to football analytics.</p>
-<p>My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, simulation and decision-support tools, using datasets from providers including StatsBomb and SkillCorner. I’ve taken part in multiple football analytics hackathons and was recently selected as a Pitch to the Pros 3 finalist.</p>
-<p>I’m looking to connect and collaborate with others in the football analytics space, particularly through consultancy, research partnerships or applied projects with clubs, data providers and practitioners. I’m most interested in work that turns technical modeling into practical football insight and real-world impact.</p>
+<p>My football analytics work spans event and tracking data, xG, xThreat, EPV, off-ball movement, model calibration, and decision-support tools, using datasets from providers including StatsBomb, SkillCorner, and PFF FC. I’ve taken part in football analytics competitions and was recently selected as a Pitch to the Pros 3 finalist.</p>
+<p>I’m most interested in work that turns technical modelling into practical football insight: reproducible pipelines, interpretable metrics, analyst-facing visuals, and research that can support scouting, recruitment, performance analysis, coaching, or academy evaluation.</p>
 </section>
 <div class="pitch-feature">
 <div class="pitch-feature-media">
@@ -244,6 +244,18 @@ window.Quarto = {
 <p><a href="projects/pitch-to-pros-3/deck/decision_friction_final.html" class="btn btn-primary" target="_blank">View the deck</a> <a href="projects/pitch-to-pros-3/" class="btn btn-outline-primary">Read the project summary</a></p>
 </div>
 </div>
+<div class="football-proof-grid">
+<section id="support-creation-dynamics" class="level3 football-proof-card">
+<h3 class="anchored" data-anchor-id="support-creation-dynamics">Support Creation Dynamics</h3>
+<p>Temporal framework for measuring how off-ball movement creates, improves, weakens, or removes support options during possession.</p>
+<p><a href="projects/support-creation-dynamics/" class="card-link">Read project</a></p>
+</section>
+<section id="foul-win-probability-model" class="level3 football-proof-card">
+<h3 class="anchored" data-anchor-id="foul-win-probability-model">Foul-Win Probability Model</h3>
+<p>StatsBomb event-data modelling project with labelled possession starts, calibrated XGBoost, SHAP review, and threshold/lift analysis.</p>
+<p><a href="projects/foul-win-probability/" class="card-link">Read project</a></p>
+</section>
+</div>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 
@@ -253,7 +265,39 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0JTJDZm9vdGJhbGw=" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1779939919782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ29mZi1iYWxsLW1vdmVtZW50JTJDcmVzZWFyY2glMkNmb290YmFsbA==" data-listing-date-sort="1781506800000" data-listing-file-modified-sort="1781494086895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
+<a href="./projects/support-creation-dynamics/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/support-creation-dynamics/proposal-preview.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Support Creation Dynamics in Football
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhY2tpbmctZGF0YQ=='); return false;">tracking-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b2ZmLWJhbGwtbW92ZW1lbnQ='); return false;">off-ball-movement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 15, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0JTJDZm9vdGJhbGw=" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1779939919782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
 <a href="./projects/pitch-to-pros-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -285,7 +329,7 @@ May 25, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWV0cmljcyUyQ3RyYWNraW5nLWRhdGElMkNldmVudHMtZGF0YSUyQ2Zvb3RiYWxsJTJDaGFja2F0aG9u" data-listing-date-sort="1767168000000" data-listing-file-modified-sort="1779941234447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
+<div class="g-col-1" data-index="2" data-categories="bWV0cmljcyUyQ3RyYWNraW5nLWRhdGElMkNldmVudHMtZGF0YSUyQ2Zvb3RiYWxsJTJDaGFja2F0aG9u" data-listing-date-sort="1767168000000" data-listing-file-modified-sort="1779941234447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
 <a href="./projects/asi/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -319,7 +363,39 @@ Dec 31, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bWFjaGluZS1sZWFybmluZyUyQ2Zvb3RiYWxsJTJDa2FnZ2xlJTJDc2ltdWxhdGlvbg==" data-listing-date-sort="1604563200000" data-listing-file-modified-sort="1779938509170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
+<div class="g-col-1" data-index="3" data-categories="ZXZlbnQtZGF0YSUyQ3hnYm9vc3QlMkNtb2RlbC1jYWxpYnJhdGlvbiUyQ2Zvb3RiYWxs" data-listing-date-sort="1735632000000" data-listing-file-modified-sort="1781494138789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="440">
+<a href="./projects/foul-win-probability/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/foul-win-probability/foul-win-example.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Possession Foul-Win Probability Model
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQtZGF0YQ=='); return false;">event-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('eGdib29zdA=='); return false;">xgboost</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWwtY2FsaWJyYXRpb24='); return false;">model-calibration</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGw='); return false;">football</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Dec 31, 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZS1sZWFybmluZyUyQ2Zvb3RiYWxsJTJDa2FnZ2xlJTJDc2ltdWxhdGlvbg==" data-listing-date-sort="1604563200000" data-listing-file-modified-sort="1779938509170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
 <a href="./projects/kaggle-mancity/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -365,7 +441,7 @@ Nov 5, 2020
     anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
+        if (clz.startsWith('code-annotation-')) {
           return true;
         }
       }
@@ -385,11 +461,11 @@ Nov 5, 2020
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
         button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
+        tooltip = new bootstrap.Tooltip(button,
+          { trigger: "manual",
             customClass: "code-copy-button-tooltip",
             offset: [0, -8]});
-        tooltip.show();    
+        tooltip.show();
       }
       setTimeout(function() {
         if (tooltip) {
@@ -466,7 +542,7 @@ Nov 5, 2020
       if (onUntriggerFn) {
         config.onUntrigger = onUntriggerFn;
       }
-      window.tippy(el, config); 
+      window.tippy(el, config);
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
     for (var i=0; i<noterefs.length; i++) {
@@ -541,7 +617,7 @@ Nov 5, 2020
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
         let url = xref.getAttribute('href');
-        let hash = undefined; 
+        let hash = undefined;
         if (url.startsWith('#')) {
           hash = url;
         } else {
@@ -569,7 +645,7 @@ Nov 5, 2020
               if (note !== null) {
                 const html = processXRef(id, note);
                 instance.setContent(html);
-              } 
+              }
             }).finally(() => {
               instance.enable();
               instance.show();
@@ -593,7 +669,7 @@ Nov 5, 2020
               }
               const html = processXRef(null, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -633,7 +709,7 @@ Nov 5, 2020
               height = bottom - top;
             }
             if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
+              // cook up a div (if necessary) and position it
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
                 div = window.document.createElement("div");

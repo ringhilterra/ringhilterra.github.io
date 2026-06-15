@@ -21,7 +21,7 @@ Senior Data Scientist | ML/AI Engineer | Football Analytics Researcher
 
 - Leading agentic AI initiatives at CrowdStrike
 - ML-powered detection scoring system in production
-- 7 pending patents in ML & Cybersecurity
+- Public ML/cybersecurity patent applications
 - Stanford AI Graduate Professional Program
 
 [Explore industry work &rarr;](professional.qmd){.block-link}
@@ -32,19 +32,19 @@ Senior Data Scientist | ML/AI Engineer | Football Analytics Researcher
 
 - **Pitch to the Pros 3 finalist** --- Was the Best Pass Really Playable?
 - Decision-window context for pass value using SkillCorner tracking, options and xThreat
-- Active Support Index and off-ball movement work with event and tracking data
+- Off-ball support dynamics and event-data modelling projects
 
 [Explore football work &rarr;](football-analytics.qmd){.block-link}
 :::
 
 ::: {.featured-block}
-### Publications & Patents
+### Patents & Publications
 
 - Published technical articles on CrowdStrike blog
-- 7 pending ML & Cybersecurity patents
-- Research in anomaly detection and source code classification
+- Public patent applications in applied ML and cybersecurity
+- Evidence of production research, explainability, and analyst workflows
 
-[View publications &rarr;](publications.qmd){.block-link}
+[View patent portfolio &rarr;](patents-publications/){.block-link}
 :::
 
 :::

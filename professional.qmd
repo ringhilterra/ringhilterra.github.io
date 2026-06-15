@@ -53,7 +53,9 @@ Research challenging containerized workload predictability assumptions, analyzin
 
 ::: {.work-card}
 #### 7 Pending Patents
-Seven pending patents in Machine Learning and Cybersecurity, spanning detection systems, data pipelines, and AI-driven threat analysis.
+Seven pending patents in machine learning and cybersecurity, with six public applications spanning source-code classification, behavior-based asset classification, anomaly detection, graph ML, and interpretable alert grouping.
+
+[View patent portfolio &rarr;](patents-publications/){.card-link}
 :::
 
 :::

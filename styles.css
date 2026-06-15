@@ -541,6 +541,104 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* --- Evidence and Project Pages --- */
+.evidence-hero,
+.project-media-block {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1.1fr);
+  gap: 1.5rem;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: #f8fafc;
+  padding: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.evidence-hero-img,
+.project-video {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.evidence-hero-copy h2,
+.project-media-copy h2 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+.evidence-hero-copy p,
+.project-media-copy p {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.evidence-hero-copy .btn,
+.project-media-copy .btn {
+  margin: 0 0.25rem 0.5rem 0;
+}
+
+.patent-grid,
+.metric-grid,
+.stat-grid,
+.football-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.patent-card,
+.metric-card,
+.stat-card,
+.football-proof-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: white;
+  padding: 1.15rem;
+}
+
+.patent-card h3,
+.metric-card h3,
+.stat-card h3,
+.football-proof-card h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.patent-card p,
+.metric-card li,
+.stat-card p,
+.football-proof-card p {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.stat-card h3 {
+  color: #0f766e;
+  font-size: 1.45rem;
+}
+
+.card-link {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-top: 0.4rem;
+}
+
+.card-link:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
 /* --- Timeline Link (About Page) --- */
 .timeline-link {
   display: inline-block;
@@ -602,6 +700,11 @@ a:hover {
   .pub-entry .pub-thumbnail {
     width: 100%;
     min-width: unset;
+  }
+
+  .evidence-hero,
+  .project-media-block {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-05-25">
-<meta name="description" content="A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.">
+<meta name="dcterms.date" content="2024-12-31">
+<meta name="description" content="A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.">
 
-<title>Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable? – Ryan Inghilterra</title>
+<title>Possession Foul-Win Probability Model – Ryan Inghilterra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,11 +144,12 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
 
-  <ul>
-  <li><a href="#was-the-best-pass-really-playable" id="toc-was-the-best-pass-really-playable" class="nav-link active" data-scroll-target="#was-the-best-pass-really-playable">Was the Best Pass Really Playable?</a></li>
-  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link" data-scroll-target="#what-i-built">What I Built</a></li>
-  <li><a href="#data-and-method" id="toc-data-and-method" class="nav-link" data-scroll-target="#data-and-method">Data and Method</a></li>
-  <li><a href="#deck-highlights" id="toc-deck-highlights" class="nav-link" data-scroll-target="#deck-highlights">Deck Highlights</a></li>
+  <ul class="collapse">
+  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link active" data-scroll-target="#what-i-built">What I Built</a></li>
+  <li><a href="#model-framing" id="toc-model-framing" class="nav-link" data-scroll-target="#model-framing">Model Framing</a></li>
+  <li><a href="#selected-results" id="toc-selected-results" class="nav-link" data-scroll-target="#selected-results">Selected Results</a></li>
+  <li><a href="#why-it-is-relevant" id="toc-why-it-is-relevant" class="nav-link" data-scroll-target="#why-it-is-relevant">Why It Is Relevant</a></li>
+  <li><a href="#caveats-and-next-steps" id="toc-caveats-and-next-steps" class="nav-link" data-scroll-target="#caveats-and-next-steps">Caveats and Next Steps</a></li>
   </ul>
 </nav>
     </div>
@@ -157,18 +158,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?</h1>
+<h1 class="title">Possession Foul-Win Probability Model</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">tracking-data</div>
-    <div class="quarto-category">xThreat</div>
-    <div class="quarto-category">decision-support</div>
+    <div class="quarto-category">event-data</div>
+    <div class="quarto-category">xgboost</div>
+    <div class="quarto-category">model-calibration</div>
     <div class="quarto-category">football</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.
+    A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.
   </div>
 </div>
 
@@ -179,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 25, 2026</p>
+      <p class="date">December 31, 2024</p>
     </div>
   </div>
 
@@ -191,61 +192,104 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pitch to the Pros 3 finalist
+<span class="screen-reader-only">Tip</span>Full technical notebook
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3 and presented this work to professionals in the game.</p>
+<p>The public notebook export includes the code, event extraction logic, model training, calibration, SHAP review, and threshold analysis.</p>
+<p><a href="epl-foul-win-model-report.html" class="btn btn-primary" target="_blank">Open notebook report</a></p>
 </div>
 </div>
-<section id="was-the-best-pass-really-playable" class="level2">
-<h2 class="anchored" data-anchor-id="was-the-best-pass-really-playable">Was the Best Pass Really Playable?</h2>
-<p><a href="deck/decision_friction_final.html" class="btn btn-primary" target="_blank">View the presentation deck</a> <a href="deck/report_scroll/case1_analyst_report.html" class="btn btn-outline-primary" target="_blank">View the analyst report example</a></p>
-<iframe class="marp-deck-embed project-deck-embed" src="deck/decision_friction_final.html" title="Pitch to the Pros 3 presentation deck" loading="lazy">
-</iframe>
+<div class="project-media-block">
+<p><img src="foul-win-example.png" class="project-video img-fluid"></p>
+<section id="modelling-fouls-as-possession-outcomes" class="level2 project-media-copy">
+<h2 class="anchored" data-anchor-id="modelling-fouls-as-possession-outcomes">Modelling fouls as possession outcomes</h2>
+<p>This project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context.</p>
+<p><a href="tott-vs-leic-poss-47-48-foul.mp4" class="btn btn-outline-primary" target="_blank">Open video example</a></p>
 </section>
+</div>
 <section id="what-i-built" class="level2">
 <h2 class="anchored" data-anchor-id="what-i-built">What I Built</h2>
 <ul>
-<li>A pass-window review workflow that scans candidate pass options before release.</li>
-<li>A playability score built from lane access, pressure, receiver freedom, movement fit, and timing.</li>
-<li>Case-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.</li>
-<li>A prototype analyst export that packages frames, scores, and review evidence into a shareable report.</li>
+<li>An end-to-end event-data pipeline for extracting valid player possession starts from ball receipts and ball recoveries.</li>
+<li>A binary target indicating whether that same player possession ended with the player winning a foul.</li>
+<li>Spatial, contextual, team, player, position, play-pattern, and pressure-related features.</li>
+<li>A calibrated XGBoost classifier with time-based train/test splitting and cross-validation.</li>
+<li>Evaluation through calibration, baseline comparison, SHAP interpretation, and threshold/lift analysis.</li>
 </ul>
 </section>
-<section id="data-and-method" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-method">Data and Method</h2>
-<p>The finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.</p>
-<p>SkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually.</p>
+<section id="model-framing" class="level2">
+<h2 class="anchored" data-anchor-id="model-framing">Model Framing</h2>
+<p>The model input is a valid possession start event: a player receives or recovers the ball, then continues the possession sequence. The output is the probability that this possession sequence ends with that player winning a foul.</p>
+<p>This framing matters because foul events are sparse. In the test set, the historical foul-win base rate was <strong>2.55%</strong>, so accuracy alone would be misleading. The project therefore emphasized calibration, lift, and ranking quality.</p>
 </section>
-<section id="deck-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="deck-highlights">Deck Highlights</h2>
-<div class="deck-highlight-grid">
-<div class="deck-highlight-card">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="deck/assets/timing_read_full_slide.png" class="img-fluid figure-img"></p>
-<figcaption>Timing read from the finalist deck</figcaption>
-</figure>
+<section id="selected-results" class="level2">
+<h2 class="anchored" data-anchor-id="selected-results">Selected Results</h2>
+<div class="stat-grid">
+<section id="section" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="section">60,162</h3>
+<p>Test-set valid player possession starts.</p>
+</section>
+<section id="section-1" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="section-1">0.708</h3>
+<p>XGBoost AUC-ROC versus 0.500 for the base-rate model.</p>
+</section>
+<section id="x" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="x">3.55x</h3>
+<p>Lift over base rate in the top 5% highest-probability possession starts.</p>
+</section>
+<section id="section-2" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="section-2">9.04%</h3>
+<p>Actual foul-win rate in the model’s top 5% group.</p>
+</section>
 </div>
-<p><strong>Timing read:</strong> shows how a high-value option can be clean earlier and more constrained by the actual release frame.</p>
-</div>
-<div class="deck-highlight-card">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="deck/assets/analysis_automation_system.png" class="img-fluid figure-img"></p>
-<figcaption>Analysis automation system slide from the finalist deck</figcaption>
-</figure>
-</div>
-<p><strong>Analysis automation system:</strong> shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows.</p>
-</div>
-</div>
+<p>The model also improved log loss and Brier score against a constant base-rate benchmark:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th style="text-align: right;">Log Loss</th>
+<th style="text-align: right;">Brier Score</th>
+<th style="text-align: right;">AUC-ROC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base-rate foul-win model</td>
+<td style="text-align: right;">0.1143</td>
+<td style="text-align: right;">0.02357</td>
+<td style="text-align: right;">0.500</td>
+</tr>
+<tr class="even">
+<td>Calibrated XGBoost model</td>
+<td style="text-align: right;">0.1067</td>
+<td style="text-align: right;">0.02311</td>
+<td style="text-align: right;">0.708</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="why-it-is-relevant" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-is-relevant">Why It Is Relevant</h2>
+<p>For a club analytics audience, the project demonstrates the modelling workflow around event data:</p>
+<ul>
+<li>Translate a football question into a carefully labelled dataset.</li>
+<li>Handle class imbalance without leaning on misleading accuracy metrics.</li>
+<li>Use calibration because the output is intended to be a probability, not just a ranking.</li>
+<li>Interpret feature behavior with SHAP and sanity checks.</li>
+<li>Turn model output into threshold-based review groups an analyst can inspect.</li>
+</ul>
+<p>The same pattern can support broader football intelligence questions: physicality, pressure tolerance, ball-carrying risk, opponent/referee tendencies, tactical context, and player-level decision support.</p>
+</section>
+<section id="caveats-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="caveats-and-next-steps">Caveats and Next Steps</h2>
+<p>This was a public event-data project, not a club deployment. The next improvements would be to add richer match state, referee context, player-card state, tracking-derived pressure, and more robust out-of-sample validation across seasons and competitions.</p>
 
 
 </section>

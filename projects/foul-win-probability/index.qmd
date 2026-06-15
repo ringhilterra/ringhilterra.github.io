@@ -1,0 +1,90 @@
+---
+title: "Possession Foul-Win Probability Model"
+description: "A StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul."
+date: "2024-12-31"
+categories: [event-data, xgboost, model-calibration, football]
+domain: football
+image: foul-win-example.png
+toc: true
+toc-depth: 2
+---
+
+::: {.callout-tip}
+## Full technical notebook
+The public notebook export includes the code, event extraction logic, model training, calibration, SHAP review, and threshold analysis.
+
+[Open notebook report](epl-foul-win-model-report.html){.btn .btn-primary target="_blank"}
+:::
+
+::: {.project-media-block}
+![](foul-win-example.png){.project-video}
+
+::: {.project-media-copy}
+## Modelling fouls as possession outcomes
+
+This project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context.
+
+[Open video example](tott-vs-leic-poss-47-48-foul.mp4){.btn .btn-outline-primary target="_blank"}
+:::
+:::
+
+## What I Built
+
+- An end-to-end event-data pipeline for extracting valid player possession starts from ball receipts and ball recoveries.
+- A binary target indicating whether that same player possession ended with the player winning a foul.
+- Spatial, contextual, team, player, position, play-pattern, and pressure-related features.
+- A calibrated XGBoost classifier with time-based train/test splitting and cross-validation.
+- Evaluation through calibration, baseline comparison, SHAP interpretation, and threshold/lift analysis.
+
+## Model Framing
+
+The model input is a valid possession start event: a player receives or recovers the ball, then continues the possession sequence. The output is the probability that this possession sequence ends with that player winning a foul.
+
+This framing matters because foul events are sparse. In the test set, the historical foul-win base rate was **2.55%**, so accuracy alone would be misleading. The project therefore emphasized calibration, lift, and ranking quality.
+
+## Selected Results
+
+::: {.stat-grid}
+::: {.stat-card}
+### 60,162
+Test-set valid player possession starts.
+:::
+
+::: {.stat-card}
+### 0.708
+XGBoost AUC-ROC versus 0.500 for the base-rate model.
+:::
+
+::: {.stat-card}
+### 3.55x
+Lift over base rate in the top 5% highest-probability possession starts.
+:::
+
+::: {.stat-card}
+### 9.04%
+Actual foul-win rate in the model's top 5% group.
+:::
+:::
+
+The model also improved log loss and Brier score against a constant base-rate benchmark:
+
+| Model | Log Loss | Brier Score | AUC-ROC |
+| --- | ---: | ---: | ---: |
+| Base-rate foul-win model | 0.1143 | 0.02357 | 0.500 |
+| Calibrated XGBoost model | 0.1067 | 0.02311 | 0.708 |
+
+## Why It Is Relevant
+
+For a club analytics audience, the project demonstrates the modelling workflow around event data:
+
+- Translate a football question into a carefully labelled dataset.
+- Handle class imbalance without leaning on misleading accuracy metrics.
+- Use calibration because the output is intended to be a probability, not just a ranking.
+- Interpret feature behavior with SHAP and sanity checks.
+- Turn model output into threshold-based review groups an analyst can inspect.
+
+The same pattern can support broader football intelligence questions: physicality, pressure tolerance, ball-carrying risk, opponent/referee tendencies, tactical context, and player-level decision support.
+
+## Caveats and Next Steps
+
+This was a public event-data project, not a club deployment. The next improvements would be to add richer match state, referee context, player-card state, tracking-derived pressure, and more robust out-of-sample validation across seasons and competitions.

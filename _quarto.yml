@@ -3,10 +3,16 @@ project:
   output-dir: docs
   resources:
     - projects/pitch-to-pros-3/deck/**
+    - projects/foul-win-probability/epl-foul-win-model-report.html
+    - projects/foul-win-probability/foul-win-example.png
+    - projects/foul-win-probability/tott-vs-leic-poss-47-48-foul.mp4
+    - projects/support-creation-dynamics/proposal-preview.png
+    - projects/support-creation-dynamics/support-creation-dynamics-research-proposal.pdf
   render:
     - "*.qmd"
     - "posts/**"
     - "projects/**"
+    - "patents-publications/index.qmd"
     - "!project_refs/"
     - "!CLAUDE.md"
 
@@ -22,8 +28,8 @@ website:
         text: Industry Work
       - href: football-analytics.qmd
         text: Football Analytics
-      - href: publications.qmd
-        text: Publications
+      - href: patents-publications/index.qmd
+        text: Patents & Publications
     right:
       - icon: github
         href: https://github.com/ringhilterra

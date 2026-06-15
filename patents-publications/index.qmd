@@ -1,0 +1,108 @@
+---
+title: "Patents & Publications"
+description: "Public patent applications, technical articles, and media connected to production machine learning work."
+toc: true
+toc-depth: 2
+page-layout: article
+---
+
+## Public Patent Applications
+
+This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.
+
+[View industry work](../professional.qmd){.btn .btn-outline-primary}
+
+::: {.patent-grid}
+::: {.patent-card}
+### Source Code Programming Language Prediction
+**US20240086187A1**
+
+Machine learning system for classifying source-code programming language from source-code artifacts.
+
+[Google Patents](https://patents.google.com/patent/US20240086187A1/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### Behavior-Based Asset Classifications
+**US20250202921A1**
+
+Behavior-based classification methods for cybersecurity assets using observed activity and contextual signals.
+
+[Google Patents](https://patents.google.com/patent/US20250202921A1/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### Session-Based Anomaly Detection on Cloud Logs
+**US20250233875A1** / **EP4586117A1**
+
+Operational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.
+
+[US filing](https://patents.google.com/patent/US20250233875A1/en){.card-link target="_blank"} [EP filing](https://patents.google.com/patent/EP4586117A1/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### Multi-Modal Breach Detection with Time-Aware Graph ML
+**US20260095470A1**
+
+Cybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.
+
+[Google Patents](https://patents.google.com/patent/US20260095470A1/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### False-Positive Prevention with Multi-Modal Data and Graph ML
+**US20260089177A1**
+
+Prediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.
+
+[Google Patents](https://patents.google.com/patent/US20260089177A1/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### Interpretable ML-Based Alert Grouping for NextGen SIEM
+**US20260111548A1**
+
+Interpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.
+
+[Google Patents](https://patents.google.com/patent/US20260111548A1/en){.card-link target="_blank"}
+:::
+:::
+
+## Technical Articles & Media
+
+::: {.pub-entry}
+![](../images/yt-falcon-siem.jpg){.pub-thumbnail}
+
+**AI-Powered Risk Scoring with Falcon Next-Gen SIEM**
+CrowdStrike &middot; Feature video
+
+Data science lead for the ML-powered risk scoring system that helps analysts prioritize high-priority threats in Falcon Next-Gen SIEM.
+
+[Watch video](https://www.youtube.com/watch?v=KaIaOXZMVi4){.pub-link target="_blank"}
+:::
+
+::: {.pub-entry}
+![](../images/blog-tensorflow-rust.jpg){.pub-thumbnail}
+
+**How CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust**
+CrowdStrike Engineering Blog &middot; June 2022
+
+Technical article on reducing ML model training time from 227 hours to 6 hours through Rust-based feature extraction, GPU infrastructure, and TensorFlow input-pipeline optimization.
+
+[Read article](https://www.crowdstrike.com/en-us/blog/how-crowdstrike-achieves-fast-machine-learning-model-training-with-tensorflow-and-rust/){.pub-link target="_blank"}
+:::
+
+::: {.pub-entry}
+![](../images/blog-container-workloads.jpg){.pub-thumbnail}
+
+**New CrowdStrike Research Challenges Container Predictability Assumptions**
+CrowdStrike Engineering Blog &middot; October 2024
+
+Research article analyzing billions of container events across popular applications and testing assumptions about workload predictability.
+
+[Read article](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-research-challenges-containerized-workload-predictability-assumption/){.pub-link target="_blank"}
+:::
+
+## Why It Matters
+
+The patent and publication record is useful context for football analytics reviewers because it shows production ML work that moved beyond notebooks: model development, explainability, operational delivery, and analyst-facing workflows in high-stakes environments. That is the same professional operating style I try to bring to football analytics projects.
