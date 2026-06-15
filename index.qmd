@@ -7,7 +7,7 @@ page-layout: article
 
 ::: {.hero-section}
 
-![](images/headshot.jpeg){.hero-headshot}
+![](images/ri-hs2-cropped.png){.hero-headshot}
 
 # Ryan Inghilterra
 
