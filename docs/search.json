@@ -368,7 +368,7 @@
     "href": "projects/foul-win-probability/index.html#modelling-fouls-as-possession-outcomes",
     "title": "Possession Foul-Win Probability Model",
     "section": "Modelling fouls as possession outcomes",
-    "text": "Modelling fouls as possession outcomes\nThis project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context.\nOpen video example"
+    "text": "Modelling fouls as possession outcomes\nThis project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context."
   },
   {
     "objectID": "projects/foul-win-probability/index.html#what-i-built",

@@ -6,7 +6,9 @@ project:
     - projects/pitch-to-pros-3/deck/**
     - projects/foul-win-probability/epl-foul-win-model-report.html
     - projects/foul-win-probability/foul-win-example.png
-    - projects/foul-win-probability/tott-vs-leic-poss-47-48-foul.mp4
+    - projects/foul-win-probability/tott_vs_leic_poss_3.mp4
+    - projects/foul-win-probability/tott_vs_leic_poss_47_48_foul.mp4
+    - projects/foul-win-probability/tott_vs_leic_poss_58.mp4
     - projects/support-creation-dynamics/proposal-preview.png
     - projects/support-creation-dynamics/support-creation-dynamics-research-proposal.pdf
   render:

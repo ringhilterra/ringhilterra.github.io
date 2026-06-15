@@ -24,8 +24,6 @@ The public notebook export includes the code, event extraction logic, model trai
 ## Modelling fouls as possession outcomes
 
 This project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context.
-
-[Open video example](tott-vs-leic-poss-47-48-foul.mp4){.btn .btn-outline-primary target="_blank"}
 :::
 :::
 
