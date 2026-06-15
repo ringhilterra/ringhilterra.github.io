@@ -64,6 +64,10 @@
 }
 
 /* --- Hero Section (Home Page) --- */
+#title-block-header:empty {
+  display: none;
+}
+
 .hero-section {
   text-align: center;
   padding: 3rem 1rem 2rem;

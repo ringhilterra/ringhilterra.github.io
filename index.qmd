@@ -1,5 +1,6 @@
 ---
-title: "Ryan Inghilterra"
+title: ""
+pagetitle: "Ryan Inghilterra"
 toc: false
 page-layout: article
 ---
