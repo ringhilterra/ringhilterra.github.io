@@ -238,13 +238,6 @@
     "text": "Senior production ML and applied AI experience, applied to football questions through tracking data, event data, reproducible modelling, visual explanation, and analyst-facing workflows that turn player, team, and academy questions into practical decision-support insight."
   },
   {
-    "objectID": "football-analytics.html#project-links",
-    "href": "football-analytics.html#project-links",
-    "title": "Football Analytics",
-    "section": "Project Links",
-    "text": "Project Links\n\n\nPitch to the Pros 3: Was the Best Pass Really Playable?: SkillCorner tracking/event data project adding decision-window context to pass value.\nSupport Creation Dynamics in Football: Research proposal for modelling how off-ball movement creates, improves, weakens, or removes support options.\nActive Support Index: SkillCorner Analytics Cup Project: Off-ball support metric for pressure events using SkillCorner tracking and dynamic event data.\nPossession Foul-Win Probability Model: StatsBomb event-data project with possession labelling, calibrated XGBoost, SHAP review, and lift analysis.\nFootball Simulation Agent Framework: Google Research Football project with Dockerized simulation, local agent evaluation, and ML agent exploration."
-  },
-  {
     "objectID": "football-analytics.html#projects",
     "href": "football-analytics.html#projects",
     "title": "Football Analytics",
@@ -263,7 +256,7 @@
     "href": "index.html",
     "title": "Ryan Inghilterra",
     "section": "",
-    "text": "Senior Data Scientist II | Production ML, Applied AI & Football Analytics\n\n\nSenior Data Scientist II with 10+ years building production machine learning and applied AI systems in high-growth technology environments. Professionally, I build full-lifecycle ML systems for CrowdStrike’s Falcon platform; in football analytics, I apply the same research, engineering, and decision-support approach to tracking data, event data, off-ball movement, academy analysis, and analyst-facing workflows.\n\n\nView resume PDF Football analytics Patents & publications"
+    "text": "Senior Data Scientist | Production ML, Applied AI & Football Analytics\n\n\nView resume PDF Football analytics Patents & publications"
   },
   {
     "objectID": "index.html#current-focus",
