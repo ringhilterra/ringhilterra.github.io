@@ -447,17 +447,12 @@ a:hover {
 }
 
 .presentation-recording {
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  background: white;
-  box-shadow: var(--shadow-sm);
   margin: 1.5rem 0 1.25rem;
-  padding: 1rem;
 }
 
 .presentation-recording h3 {
   color: var(--text-primary);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   margin: 0 0 0.4rem;
 }
 
@@ -473,12 +468,23 @@ a:hover {
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   background: #020617;
+  box-shadow: var(--shadow-sm);
   margin-bottom: 0.75rem;
 }
 
 .presentation-recording a {
-  font-size: 0.95rem;
-  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pitch-preview-image {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin: 1.5rem 0 2rem;
 }
 
 .deck-highlight-grid {
