@@ -12,18 +12,18 @@ page-layout: article
 # Ryan Inghilterra
 
 ::: {.hero-subtitle}
-Senior Data Scientist | Production ML, Applied AI & Football Analytics
+Senior Data Scientist | Production ML, Applied AI & Football Analytics Research
 :::
 
 ::: {.home-actions}
-[View resume PDF](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & publications](patents-publications/){.btn .btn-outline-primary}
+[View CV PDF](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & publications](patents-publications/){.btn .btn-outline-primary}
 :::
 
 :::
 
 ## Current Focus
 
-I am focused on work that turns complex football questions into practical decision-support tools: scouting, recruitment, performance analysis, coaching workflows, and academy evaluation. My edge is the combination of senior production ML experience, credible football analytics project work, and the ability to translate research into systems and visuals that practitioners can actually use.
+I am focused on work that turns complex football questions into practical decision-support tools: scouting, recruitment, performance analysis, coaching workflows, and academy evaluation. My edge is the combination of senior production ML experience, applied football analytics research, and the ability to translate research into systems and visuals that practitioners can actually use.
 
 ## Highlights
 
@@ -37,6 +37,6 @@ I am focused on work that turns complex football questions into practical decisi
 
 - [Football Analytics](football-analytics.qmd)
 - [Patents & Publications](patents-publications/)
-- [Resume PDF](assets/ryan-inghilterra-resume.pdf)
+- [CV PDF](assets/ryan-inghilterra-resume.pdf)
 - [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/)
 - [GitHub](https://github.com/ringhilterra)
