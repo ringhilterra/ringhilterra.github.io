@@ -12,31 +12,15 @@ page-layout: article
 # Ryan Inghilterra
 
 ::: {.hero-subtitle}
-Senior Data Scientist | Production ML, Applied AI & Football Analytics Research
+Senior Data Scientist II | Applied AI & Production Machine Learning
+:::
+
+::: {.hero-bio}
+I'm a Senior Data Scientist II at CrowdStrike, where I build applied AI and production machine learning systems for large-scale product environments. This site collects my CV, football analytics research, patents and publications, and selected technical work.
 :::
 
 ::: {.home-actions}
-[View CV PDF](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & publications](patents-publications/){.btn .btn-outline-primary}
+[View CV](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football Analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & Publications](patents-publications/){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.btn .btn-outline-primary target="_blank"}
 :::
 
 :::
-
-## Current Focus
-
-I am focused on work that turns complex football questions into practical decision-support tools: scouting, recruitment, performance analysis, coaching workflows, and academy evaluation. My edge is the combination of senior production ML experience, applied football analytics research, and the ability to translate research into systems and visuals that practitioners can actually use.
-
-## Highlights
-
-- Senior Data Scientist II at CrowdStrike, building production machine learning and applied AI systems for high-scale Falcon product environments.
-- Data science lead for Falcon Next-Gen SIEM's first ML-powered product feature, with ownership across model development, evaluation, explainability, monitoring design, and delivery.
-- Pitch to the Pros 3 finalist for "Was the Best Pass Really Playable?", a SkillCorner tracking/event-data project adding execution context to pass value.
-- Football analytics work across off-ball support creation, StatsBomb event-data modelling, and academy productivity analysis.
-- Public patent applications and technical articles in applied machine learning, cybersecurity research, anomaly detection, and source-code classification.
-
-## Links
-
-- [Football Analytics](football-analytics.qmd)
-- [Patents & Publications](patents-publications/)
-- [CV PDF](assets/ryan-inghilterra-resume.pdf)
-- [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/)
-- [GitHub](https://github.com/ringhilterra)
