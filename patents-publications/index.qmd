@@ -8,10 +8,6 @@ page-layout: article
 
 ## Public Patent Applications
 
-This page collects public evidence of applied machine learning, cybersecurity research, and production data science work. The resume summarizes seven pending patents; the portfolio below lists the six published applications that are currently safe to cite publicly.
-
-[View resume PDF](../assets/ryan-inghilterra-resume.pdf){.btn .btn-outline-primary target="_blank"}
-
 ::: {.patent-grid}
 ::: {.patent-card}
 ### Source Code Programming Language Prediction
@@ -102,7 +98,3 @@ Research article analyzing billions of container events across popular applicati
 
 [Read article](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-research-challenges-containerized-workload-predictability-assumption/){.pub-link target="_blank"}
 :::
-
-## Why It Matters
-
-The patent and publication record is useful context for football analytics reviewers because it shows production ML work that moved beyond notebooks: model development, explainability, operational delivery, and analyst-facing workflows in high-stakes environments. That is the same professional operating style I try to bring to football analytics projects.
