@@ -2,6 +2,14 @@
 project_refs/
 **/*.quarto_ipynb
 CLAUDE.md
+.DS_Store
+.claude/
+
+# Local notes and working materials
+_local/
+memory.md
+career-reference.md
+ai-engineer-positioning-report.md
 
 # Source materials
 linkedin_snaps/
