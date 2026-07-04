@@ -12,7 +12,7 @@ page-layout: article
 # Ryan Inghilterra
 
 ::: {.hero-subtitle}
-Senior Data Scientist II | Applied AI & Production Machine Learning
+Senior Data Scientist II @ CrowdStrike | Applied AI, Production ML & Football Analytics
 :::
 
 ::: {.hero-bio}
