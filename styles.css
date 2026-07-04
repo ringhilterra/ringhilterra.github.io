@@ -359,6 +359,37 @@ a:hover {
   font-weight: 650;
 }
 
+.asi-pdf-feature {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  box-shadow: var(--shadow-sm);
+  margin: 1rem 0 2rem;
+  padding: 1.25rem;
+}
+
+.asi-pdf-feature h3 {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  margin: 0 0 0.35rem;
+}
+
+.asi-pdf-feature p {
+  color: var(--text-secondary);
+  margin-bottom: 0.85rem;
+}
+
+.asi-pdf-feature .pdf-embed {
+  display: block;
+  width: 100%;
+  height: min(78vh, 760px);
+  min-height: 520px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: white;
+  margin-top: 1rem;
+}
+
 .football-biography {
   border-top: 1px solid #202124;
   padding-top: 1.25rem;

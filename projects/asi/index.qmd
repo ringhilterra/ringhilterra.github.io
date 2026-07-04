@@ -8,9 +8,14 @@ domain: football
 image: fig2_asi_physical_validation.png
 ---
 
-::: {.callout-tip}
-## Want the full technical details?
-[View the complete analysis notebook](notebook.ipynb) with all code and methodology.
+::: {.asi-pdf-feature}
+### Project PDF
+
+A shareable PDF summary of the Active Support Index methodology, validation, and results.
+
+[Open PDF](asi_pdf_share.pdf){.btn .btn-primary target="_blank"} [View notebook](notebook.ipynb){.btn .btn-outline-primary}
+
+<iframe class="pdf-embed" src="asi_pdf_share.pdf#view=FitH" title="Active Support Index project PDF"></iframe>
 :::
 
 {{< include README.md >}}
