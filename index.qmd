@@ -12,11 +12,7 @@ page-layout: article
 # Ryan Inghilterra
 
 ::: {.hero-subtitle}
-Senior Data Scientist II @ CrowdStrike | Applied AI, Production ML & Football Analytics
-:::
-
-::: {.hero-bio}
-Experienced senior data scientist with 10+ years conducting applied research and building production machine learning and applied AI systems in high-growth technology environments. My work spans model development, validation, explainability, monitoring, and production delivery, with football analytics projects focused on player evaluation, team performance, and academy development.
+Senior Data Scientist II @ CrowdStrike | Football Analytics Researcher
 :::
 
 ::: {.home-actions}
