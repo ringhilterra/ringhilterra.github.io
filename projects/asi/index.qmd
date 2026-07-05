@@ -9,11 +9,7 @@ image: fig2_asi_physical_validation.png
 ---
 
 ::: {.asi-pdf-feature}
-### Project PDF
-
-A shareable PDF summary of the Active Support Index methodology, validation, and results.
-
-[Open PDF](asi_pdf_share.pdf){.btn .btn-primary target="_blank"} [View notebook](notebook.ipynb){.btn .btn-outline-primary}
+[Open PDF](asi_pdf_share.pdf){.btn .btn-primary target="_blank"} [View notebook](notebook.ipynb){.btn .btn-outline-primary} [GitHub](https://github.com/ringhilterra/analytics_cup_research){.btn .btn-outline-primary target="_blank"}
 :::
 
 {{< include README.md >}}
