@@ -63,326 +63,32 @@
     "text": "Future Improvements\n\nContext-aware “active support”: Account for whether a player is already open (opponent proximity). A stationary player in space may be better positioned than one running into traffic.\nAdvanced support classification: Incorporate velocity direction vectors and pass opening angle calculations to distinguish between movement toward useful space versus movement away from the play."
   },
   {
-    "objectID": "projects/time-series-classification/index.html",
-    "href": "projects/time-series-classification/index.html",
-    "title": "Time Series User Classification",
+    "objectID": "projects/training-ground-guru-academy-analysis/index.html",
+    "href": "projects/training-ground-guru-academy-analysis/index.html",
+    "title": "Training Ground Guru Academy Productivity Rankings",
     "section": "",
-    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+    "text": "NoteCurrent status\n\n\n\nActive consulting engagement, 2026-present. This page describes the scope and methodology of the work in progress; public outputs will be linked when available."
   },
   {
-    "objectID": "projects/time-series-classification/index.html#overview",
-    "href": "projects/time-series-classification/index.html#overview",
-    "title": "Time Series User Classification",
-    "section": "",
-    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+    "objectID": "projects/training-ground-guru-academy-analysis/index.html#rebuilding-an-academy-ranking-workflow",
+    "href": "projects/training-ground-guru-academy-analysis/index.html#rebuilding-an-academy-ranking-workflow",
+    "title": "Training Ground Guru Academy Productivity Rankings",
+    "section": "Rebuilding an academy ranking workflow",
+    "text": "Rebuilding an academy ranking workflow\nI was contracted by Training Ground Guru to rebuild the Academy Productivity Rankings analysis and co-author the annual article. The work focuses on making the ranking process more automated, reproducible, auditable, and easier to update across public player and academy data sources.\nBack to football analytics"
   },
   {
-    "objectID": "projects/time-series-classification/index.html#code",
-    "href": "projects/time-series-classification/index.html#code",
-    "title": "Time Series User Classification",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
+    "objectID": "projects/training-ground-guru-academy-analysis/index.html#project-scope",
+    "href": "projects/training-ground-guru-academy-analysis/index.html#project-scope",
+    "title": "Training Ground Guru Academy Productivity Rankings",
+    "section": "Project Scope",
+    "text": "Project Scope\nThe project turns a manually intensive annual analysis into a structured data workflow for evaluating academy player-development contribution across the English academy system.\nThe work includes:\n\nBuilding AI-enhanced web scraping and data ingestion automation for public player-history sources such as FBref and Transfermarkt.\nResolving player and academy histories into an analysis-ready dataset.\nUpdating the scoring methodology for academy productivity.\nBuilding a reproducible ranking pipeline with source tracking and quality checks.\nSupporting the written analysis for the annual Training Ground Guru article."
   },
   {
-    "objectID": "projects/pitch-to-pros-3/index.html",
-    "href": "projects/pitch-to-pros-3/index.html",
-    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
-    "section": "",
-    "text": "NotePitch to the Pros 3 finalist\n\n\n\nI was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3 and presented this work to professionals in the game."
-  },
-  {
-    "objectID": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
-    "href": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
-    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
-    "section": "Was the Best Pass Really Playable?",
-    "text": "Was the Best Pass Really Playable?\n\nPresentation recording\nUnlisted recording of my Pitch to the Pros 3 finalist presentation for “Was the Best Pass Really Playable?”\n\n\nWatch on YouTube\n\nView the presentation deck View the analyst report example\n\n\n\nTiming read from the finalist deck"
-  },
-  {
-    "objectID": "projects/pitch-to-pros-3/index.html#what-i-built",
-    "href": "projects/pitch-to-pros-3/index.html#what-i-built",
-    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
-    "section": "What I Built",
-    "text": "What I Built\n\nA pass-window review workflow that scans candidate pass options before release.\nA playability score built from lane access, pressure, receiver freedom, movement fit, and timing.\nCase-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.\nA prototype analyst export that packages frames, scores, and review evidence into a shareable report."
-  },
-  {
-    "objectID": "projects/pitch-to-pros-3/index.html#data-and-method",
-    "href": "projects/pitch-to-pros-3/index.html#data-and-method",
-    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
-    "section": "Data and Method",
-    "text": "Data and Method\nThe finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.\nSkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually."
-  },
-  {
-    "objectID": "projects/pitch-to-pros-3/index.html#deck-highlights",
-    "href": "projects/pitch-to-pros-3/index.html#deck-highlights",
-    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
-    "section": "Deck Highlights",
-    "text": "Deck Highlights\n\n\n\n\n\nTiming read from the finalist deck\n\n\nTiming read: shows how a high-value option can be clean earlier and more constrained by the actual release frame.\n\n\n\n\n\nAnalysis automation system slide from the finalist deck\n\n\nAnalysis automation system: shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows."
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html",
-    "href": "projects/kaggle-mancity/index.html",
-    "title": "Football Simulation Agent Framework",
-    "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#overview",
-    "href": "projects/kaggle-mancity/index.html#overview",
-    "title": "Football Simulation Agent Framework",
-    "section": "",
-    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#what-i-built",
-    "href": "projects/kaggle-mancity/index.html#what-i-built",
-    "title": "Football Simulation Agent Framework",
-    "section": "What I Built",
-    "text": "What I Built\n\nDocker Environment\nCreated a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.\n\n\nAgent Pool Play Framework\nBuilt a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.\n\n\nML Agent Exploration\nExperimented with multiple approaches to agent design:\n\nRule-based agents with handcrafted game state heuristics (positioning, ball possession, pass selection)\nReinforcement learning approaches using the environment’s reward signal\nImitation learning from high-performing rule-based agents as training signal\nAnalysis of game state representations and action space design choices"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#technical-details",
-    "href": "projects/kaggle-mancity/index.html#technical-details",
-    "title": "Football Simulation Agent Framework",
-    "section": "Technical Details",
-    "text": "Technical Details\nEnvironment: Google Research Football Environment (OpenAI Gym compatible)\nStack: Python, Docker, Jupyter, TensorFlow, OpenAI Gym\nKey challenges:\n\nGame state representation: 115-dimensional vector encoding player positions, ball state, and game context\nAction space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing\nReward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning"
-  },
-  {
-    "objectID": "projects/kaggle-mancity/index.html#code",
-    "href": "projects/kaggle-mancity/index.html#code",
-    "title": "Football Simulation Agent Framework",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
-  },
-  {
-    "objectID": "projects/enriched-covid19-data/index.html",
-    "href": "projects/enriched-covid19-data/index.html",
-    "title": "Enriched COVID-19 U.S. County Data",
-    "section": "",
-    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
-  },
-  {
-    "objectID": "projects/enriched-covid19-data/index.html#overview",
-    "href": "projects/enriched-covid19-data/index.html#overview",
-    "title": "Enriched COVID-19 U.S. County Data",
-    "section": "",
-    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
-  },
-  {
-    "objectID": "projects/enriched-covid19-data/index.html#code",
-    "href": "projects/enriched-covid19-data/index.html#code",
-    "title": "Enriched COVID-19 U.S. County Data",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
-  },
-  {
-    "objectID": "projects/asi/index.html",
-    "href": "projects/asi/index.html",
-    "title": "Active Support Index: SkillCorner Analytics Cup Project",
-    "section": "",
-    "text": "Open PDF View notebook GitHub"
-  },
-  {
-    "objectID": "projects/asi/index.html#abstract",
-    "href": "projects/asi/index.html#abstract",
-    "title": "Active Support Index: SkillCorner Analytics Cup Project",
-    "section": "Abstract",
-    "text": "Abstract\n\nIntroduction\nOn average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.\nCore Question: When a ball carrier is pressured, how actively do teammates move to provide passing options?\nThis research introduces the Active Support Index (ASI), a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.\n\n\nMethods\nWe analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner’s 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.\nMetric Definitions:\n\n\n\n\n\n\n\n\nLevel\nMetric\nFormula\n\n\n\n\nPer Event\nActive Support Ratio\n\\(\\frac{\\text{Active Supporters}}{\\text{Nearby Teammates}}\\)\n\n\nPer Player\nPlayer ASI\n\\(\\frac{\\text{Active Support Count}}{\\text{Support Opportunities}}\\)\n\n\nPer Team\nTeam ASI\n\\(1 - \\text{Static Rate}\\)\n\n\n\nKey Definitions: - Active Supporter: Teammate within 35m of the pressed player AND moving &gt;2 m/s - Static Rate: Proportion of pressure events with zero active supporters - Proximity threshold (35m): Maximum realistic passing range under pressure - Velocity threshold (2 m/s): Boundary separating walking from jogging/running\nFor validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (total_metersperminute_full_tip).\n\n\nResults\nSingle Event Analysis\nFigure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.\n\n\n\nFigure 1\n\n\nValidation with Physical Aggregates\nASI correlates strongly with season-level physical output (r = 0.74, p &lt; 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).\n\n\n\nFigure 2\n\n\nAdditional Findings\n\nPosition Validation: ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p &lt; 0.001).\nTeam Differentiation: Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.\nFatigue Analysis: 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).\n\n\n\nConclusion\nThe Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles."
-  },
-  {
-    "objectID": "projects/asi/index.html#installation-usage",
-    "href": "projects/asi/index.html#installation-usage",
-    "title": "Active Support Index: SkillCorner Analytics Cup Project",
-    "section": "Installation & Usage",
-    "text": "Installation & Usage\n\nOption 1: Run in Google Colab\nNo setup required. Simply click the badge below to open and run the notebook directly in Google Colab:\n\n\n\nOpen In Colab\n\n\n\n\nOption 2: Run Locally\nTested on Python 3.12 (macOS)\n\nClone the repository:\ngit clone https://github.com/ringhilterra/analytics_cup_research.git\ncd analytics_cup_research\nInstall dependencies:\npip install -r requirements.txt\nRun the notebook:\njupyter notebook submission.ipynb"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\nfootball\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Creation Dynamics in Football\n\n\n\ntracking-data\n\noff-ball-movement\n\nresearch\n\nfootball\n\n\n\nResearch proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.\n\n\n\nFeb 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index: SkillCorner Analytics Cup Project\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nfootball\n\nanalytics-cup\n\n\n\nSkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPossession Foul-Win Probability Model\n\n\n\nevent-data\n\nxgboost\n\nmodel-calibration\n\nfootball\n\n\n\nA StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.\n\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nFootball Simulation Agent Framework\n\n\n\nmachine-learning\n\nfootball\n\nkaggle\n\nsimulation\n\n\n\nGoogle Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration.\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "patents-publications/index.html",
-    "href": "patents-publications/index.html",
-    "title": "Patents & Publications",
-    "section": "",
-    "text": "US20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
-  },
-  {
-    "objectID": "patents-publications/index.html#patents",
-    "href": "patents-publications/index.html#patents",
-    "title": "Patents & Publications",
-    "section": "",
-    "text": "US20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
-  },
-  {
-    "objectID": "patents-publications/index.html#technical-articles-media",
-    "href": "patents-publications/index.html#technical-articles-media",
-    "title": "Patents & Publications",
-    "section": "Technical Articles & Media",
-    "text": "Technical Articles & Media\n\n\nAI-Powered Risk Scoring with Falcon Next-Gen SIEM CrowdStrike · Feature video\nData science lead for the ML-powered risk scoring system that helps analysts prioritize high-priority threats in Falcon Next-Gen SIEM.\nWatch video\n\n\n\nHow CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust CrowdStrike Engineering Blog · June 2022\nTechnical article on reducing ML model training time from 227 hours to 6 hours through Rust-based feature extraction, GPU infrastructure, and TensorFlow input-pipeline optimization.\nRead article\n\n\n\nNew CrowdStrike Research Challenges Container Predictability Assumptions CrowdStrike Engineering Blog · October 2024\nResearch article analyzing billions of container events across popular applications and testing assumptions about workload predictability.\nRead article"
-  },
-  {
-    "objectID": "football-analytics.html#projects",
-    "href": "football-analytics.html#projects",
-    "title": "Football Analytics",
-    "section": "Projects",
-    "text": "Projects"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog posts are now part of the Publications & Patents page.\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ryan Inghilterra",
-    "section": "",
-    "text": "Ryan Inghilterra\n\nSenior Data Scientist II @ CrowdStrike | Football Analytics Researcher\n\n\nView CV Football Analytics Patents & Publications LinkedIn"
-  },
-  {
-    "objectID": "posts/welcome.html",
-    "href": "posts/welcome.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html",
-    "href": "projects/american-gut-microbiome/index.html",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html#overview",
-    "href": "projects/american-gut-microbiome/index.html#overview",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "",
-    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html#key-contributions",
-    "href": "projects/american-gut-microbiome/index.html#key-contributions",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "Key Contributions",
-    "text": "Key Contributions\n\nNeural Embedding Techniques for Microbiome Data\n\nHyperbolic embeddings capturing hierarchical structure of microbiome taxonomy\nWord2Vec embeddings treating microbiome samples as documents and OTUs as words\n3D visualization of embedding space showing sample clustering patterns\nNovel application of NLP neural network architectures to biological sequence data\n\n\n\nClassification Performance\nAchieved strong predictive performance across multiple embedding approaches and classifiers, with results showing: - Comparative evaluation of Random Forest, XGBoost, and neural network classifiers - Analysis across different embedding dimensionalities and feature representations - Balanced accuracy metrics for microbiome-based phenotype prediction\n\n\nProduction Data Pipeline Architecture\n\nBuilt scalable Luigi-based pipeline for reproducible end-to-end analysis\nAWS S3 integration for distributed data artifact management\nModular architecture with distinct stages: data ingestion → preprocessing → embedding → modeling → evaluation\nAutomated dependency management and task orchestration\n\n\n\nComprehensive Bioinformatics Workflow\n\nPhylogenetic diversity: Alpha and beta diversity calculations using GreenGenes 97 reference tree\nPrincipal Coordinates Analysis (PCoA) on weighted/unweighted UniFrac distance matrices\nBloom OTU removal and rarefaction normalization for data quality control\nIntegration of BIOM format microbiome data via Redbiom API\n\n\n\nData Engineering & Integration\n\nCleaned and integrated data from 3 heterogeneous sources: raw metadata, BIOM OTU tables, and drug questionnaires\nImplemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer for missing data handling\nCreated consistent sample ID schema joinable across datasets\nFeature engineering from sparse OTU count matrices"
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html#technical-architecture",
-    "href": "projects/american-gut-microbiome/index.html#technical-architecture",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "Technical Architecture",
-    "text": "Technical Architecture\nData Pipeline Components: 1. Biom Data Ingestion — Pulls American Gut Project OTU data from Redbiom API, removes bloom OTUs, applies rarefaction 2. Diversity Analysis — Calculates phylogenetic alpha/beta diversity and runs PCoA 3. Data Integration — Cleans and joins metadata, BIOM, and survey data 4. Embedding Layer — Generates hyperbolic and Word2Vec embeddings 5. ML Pipeline — Preprocessing, feature engineering, hyperparameter tuning, and classification\nTechnologies: - Python (Luigi, scikit-learn, pandas, numpy) - Bioinformatics tools (QIIME2, BIOM format, Redbiom) - AWS S3 for distributed data storage - Interactive Plotly dashboard for visualization"
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html#artifacts",
-    "href": "projects/american-gut-microbiome/index.html#artifacts",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "Artifacts",
-    "text": "Artifacts\n\nCode Repository: GitHub\nPublication: Digital Thesis\nInteractive Dashboard: Embedding Visualizations"
-  },
-  {
-    "objectID": "projects/american-gut-microbiome/index.html#impact",
-    "href": "projects/american-gut-microbiome/index.html#impact",
-    "title": "Neural Embeddings for IGS Microbiome Classification",
-    "section": "Impact",
-    "text": "Impact\nThis work demonstrates how modern machine learning and embedding techniques from NLP can be successfully adapted to biological data, opening new approaches for microbiome analysis beyond traditional ecological metrics. The production-grade pipeline architecture enables reproducible research and supports future extensions to other microbiome datasets.\n\nMasters in Data Science Capstone Project, UC San Diego (2018)"
-  },
-  {
-    "objectID": "projects/dessert-flavor-pairings/index.html",
-    "href": "projects/dessert-flavor-pairings/index.html",
-    "title": "Dessert Flavor Pairings",
-    "section": "",
-    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
-  },
-  {
-    "objectID": "projects/dessert-flavor-pairings/index.html#overview",
-    "href": "projects/dessert-flavor-pairings/index.html#overview",
-    "title": "Dessert Flavor Pairings",
-    "section": "",
-    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
-  },
-  {
-    "objectID": "projects/dessert-flavor-pairings/index.html#code",
-    "href": "projects/dessert-flavor-pairings/index.html#code",
-    "title": "Dessert Flavor Pairings",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html",
-    "href": "projects/foul-win-probability/index.html",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "",
-    "text": "TipFull technical notebook\n\n\n\nThe public notebook export includes the code, event extraction logic, model training, calibration, SHAP review, and threshold analysis.\nOpen notebook report"
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#modelling-fouls-as-possession-outcomes",
-    "href": "projects/foul-win-probability/index.html#modelling-fouls-as-possession-outcomes",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "Modelling fouls as possession outcomes",
-    "text": "Modelling fouls as possession outcomes\nThis project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context."
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#what-i-built",
-    "href": "projects/foul-win-probability/index.html#what-i-built",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "What I Built",
-    "text": "What I Built\n\nAn end-to-end event-data pipeline for extracting valid player possession starts from ball receipts and ball recoveries.\nA binary target indicating whether that same player possession ended with the player winning a foul.\nSpatial, contextual, team, player, position, play-pattern, and pressure-related features.\nA calibrated XGBoost classifier with time-based train/test splitting and cross-validation.\nEvaluation through calibration, baseline comparison, SHAP interpretation, and threshold/lift analysis."
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#model-framing",
-    "href": "projects/foul-win-probability/index.html#model-framing",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "Model Framing",
-    "text": "Model Framing\nThe model input is a valid possession start event: a player receives or recovers the ball, then continues the possession sequence. The output is the probability that this possession sequence ends with that player winning a foul.\nThis framing matters because foul events are sparse. In the test set, the historical foul-win base rate was 2.55%, so accuracy alone would be misleading. The project therefore emphasized calibration, lift, and ranking quality."
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#selected-results",
-    "href": "projects/foul-win-probability/index.html#selected-results",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "Selected Results",
-    "text": "Selected Results\n\n\n60,162\nTest-set valid player possession starts.\n\n\n0.708\nXGBoost AUC-ROC versus 0.500 for the base-rate model.\n\n\n3.55x\nLift over base rate in the top 5% highest-probability possession starts.\n\n\n9.04%\nActual foul-win rate in the model’s top 5% group.\n\n\nThe model also improved log loss and Brier score against a constant base-rate benchmark:\n\n\n\nModel\nLog Loss\nBrier Score\nAUC-ROC\n\n\n\n\nBase-rate foul-win model\n0.1143\n0.02357\n0.500\n\n\nCalibrated XGBoost model\n0.1067\n0.02311\n0.708"
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#why-it-is-relevant",
-    "href": "projects/foul-win-probability/index.html#why-it-is-relevant",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "Why It Is Relevant",
-    "text": "Why It Is Relevant\nFor a club analytics audience, the project demonstrates the modelling workflow around event data:\n\nTranslate a football question into a carefully labelled dataset.\nHandle class imbalance without leaning on misleading accuracy metrics.\nUse calibration because the output is intended to be a probability, not just a ranking.\nInterpret feature behavior with SHAP and sanity checks.\nTurn model output into threshold-based review groups an analyst can inspect.\n\nThe same pattern can support broader football intelligence questions: physicality, pressure tolerance, ball-carrying risk, opponent/referee tendencies, tactical context, and player-level decision support."
-  },
-  {
-    "objectID": "projects/foul-win-probability/index.html#caveats-and-next-steps",
-    "href": "projects/foul-win-probability/index.html#caveats-and-next-steps",
-    "title": "Possession Foul-Win Probability Model",
-    "section": "Caveats and Next Steps",
-    "text": "Caveats and Next Steps\nThis was a public event-data project, not a club deployment. The next improvements would be to add richer match state, referee context, player-card state, tracking-derived pressure, and more robust out-of-sample validation across seasons and competitions."
-  },
-  {
-    "objectID": "projects/news-tweets-nlp/index.html",
-    "href": "projects/news-tweets-nlp/index.html",
-    "title": "News-Tweets NLP Linker",
-    "section": "",
-    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
-  },
-  {
-    "objectID": "projects/news-tweets-nlp/index.html#overview",
-    "href": "projects/news-tweets-nlp/index.html#overview",
-    "title": "News-Tweets NLP Linker",
-    "section": "",
-    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
-  },
-  {
-    "objectID": "projects/news-tweets-nlp/index.html#code",
-    "href": "projects/news-tweets-nlp/index.html#code",
-    "title": "News-Tweets NLP Linker",
-    "section": "Code",
-    "text": "Code\nGitHub Repository"
+    "objectID": "projects/training-ground-guru-academy-analysis/index.html#methodology-focus",
+    "href": "projects/training-ground-guru-academy-analysis/index.html#methodology-focus",
+    "title": "Training Ground Guru Academy Productivity Rankings",
+    "section": "Methodology Focus",
+    "text": "Methodology Focus\nThe important technical challenge is not just collecting data. The ranking needs a defensible chain from source evidence to final score:\n\nIdentify relevant players and club histories.\nNormalize source data into consistent player, club, age, and competition fields.\nTrack provenance so each ranking input can be checked.\nApply scoring logic in a repeatable pipeline.\nReview edge cases before publication."
   },
   {
     "objectID": "projects/support-creation-dynamics/index.html",
@@ -439,6 +145,321 @@
     "title": "Support Creation Dynamics in Football",
     "section": "Why It Matters",
     "text": "Why It Matters\nFor a club environment, this type of work can connect tracking data to questions coaches and analysts already ask:\n\nWhich players consistently create useful options for teammates?\nWhen does movement create a better decision window for the ball carrier?\nWhich possession structures retain the ball under pressure?\nHow can analysts review support quality in a way that is both quantitative and visually checkable?\n\nThe project fits my broader football analytics focus: building reproducible, interpretable models that turn event and tracking data into decision-support tools."
+  },
+  {
+    "objectID": "projects/news-tweets-nlp/index.html",
+    "href": "projects/news-tweets-nlp/index.html",
+    "title": "News-Tweets NLP Linker",
+    "section": "",
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
+  },
+  {
+    "objectID": "projects/news-tweets-nlp/index.html#overview",
+    "href": "projects/news-tweets-nlp/index.html#overview",
+    "title": "News-Tweets NLP Linker",
+    "section": "",
+    "text": "Links tweets with news articles based on text content similarity using NLP techniques. Uses distributed computing (Mesos + Docker) to run the similarity score pipeline in parallel for speedup.\n\n\n\nInteractive dashboard for exploring news-tweet similarity\n\n\nComponents:\n\nSimilarity pipeline — NLP-based text similarity scoring between tweets and news articles\nDistributed computing — Mesos and Docker pipeline for parallel processing\nInteractive dashboard — Dash app to view and interact with similarity results\n\n\n\n\nDistributed computing architecture using Mesos and Docker"
+  },
+  {
+    "objectID": "projects/news-tweets-nlp/index.html#code",
+    "href": "projects/news-tweets-nlp/index.html#code",
+    "title": "News-Tweets NLP Linker",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html",
+    "href": "projects/foul-win-probability/index.html",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "",
+    "text": "TipFull technical notebook\n\n\n\nThe public notebook export includes the code, event extraction logic, model training, calibration, SHAP review, and threshold analysis.\nOpen notebook report"
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#modelling-fouls-as-possession-outcomes",
+    "href": "projects/foul-win-probability/index.html#modelling-fouls-as-possession-outcomes",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "Modelling fouls as possession outcomes",
+    "text": "Modelling fouls as possession outcomes\nThis project estimates the probability that a player wins a foul after receiving or recovering possession using 2015/16 English Premier League event data. The important work was not only training the model, but defining valid possession starts, linking later foul outcomes to the same player possession, and checking edge cases against match context."
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#what-i-built",
+    "href": "projects/foul-win-probability/index.html#what-i-built",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "What I Built",
+    "text": "What I Built\n\nAn end-to-end event-data pipeline for extracting valid player possession starts from ball receipts and ball recoveries.\nA binary target indicating whether that same player possession ended with the player winning a foul.\nSpatial, contextual, team, player, position, play-pattern, and pressure-related features.\nA calibrated XGBoost classifier with time-based train/test splitting and cross-validation.\nEvaluation through calibration, baseline comparison, SHAP interpretation, and threshold/lift analysis."
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#model-framing",
+    "href": "projects/foul-win-probability/index.html#model-framing",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "Model Framing",
+    "text": "Model Framing\nThe model input is a valid possession start event: a player receives or recovers the ball, then continues the possession sequence. The output is the probability that this possession sequence ends with that player winning a foul.\nThis framing matters because foul events are sparse. In the test set, the historical foul-win base rate was 2.55%, so accuracy alone would be misleading. The project therefore emphasized calibration, lift, and ranking quality."
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#selected-results",
+    "href": "projects/foul-win-probability/index.html#selected-results",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "Selected Results",
+    "text": "Selected Results\n\n\n60,162\nTest-set valid player possession starts.\n\n\n0.708\nXGBoost AUC-ROC versus 0.500 for the base-rate model.\n\n\n3.55x\nLift over base rate in the top 5% highest-probability possession starts.\n\n\n9.04%\nActual foul-win rate in the model’s top 5% group.\n\n\nThe model also improved log loss and Brier score against a constant base-rate benchmark:\n\n\n\nModel\nLog Loss\nBrier Score\nAUC-ROC\n\n\n\n\nBase-rate foul-win model\n0.1143\n0.02357\n0.500\n\n\nCalibrated XGBoost model\n0.1067\n0.02311\n0.708"
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#why-it-is-relevant",
+    "href": "projects/foul-win-probability/index.html#why-it-is-relevant",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "Why It Is Relevant",
+    "text": "Why It Is Relevant\nFor a club analytics audience, the project demonstrates the modelling workflow around event data:\n\nTranslate a football question into a carefully labelled dataset.\nHandle class imbalance without leaning on misleading accuracy metrics.\nUse calibration because the output is intended to be a probability, not just a ranking.\nInterpret feature behavior with SHAP and sanity checks.\nTurn model output into threshold-based review groups an analyst can inspect.\n\nThe same pattern can support broader football intelligence questions: physicality, pressure tolerance, ball-carrying risk, opponent/referee tendencies, tactical context, and player-level decision support."
+  },
+  {
+    "objectID": "projects/foul-win-probability/index.html#caveats-and-next-steps",
+    "href": "projects/foul-win-probability/index.html#caveats-and-next-steps",
+    "title": "Possession Foul-Win Probability Model",
+    "section": "Caveats and Next Steps",
+    "text": "Caveats and Next Steps\nThis was a public event-data project, not a club deployment. The next improvements would be to add richer match state, referee context, player-card state, tracking-derived pressure, and more robust out-of-sample validation across seasons and competitions."
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html",
+    "href": "projects/dessert-flavor-pairings/index.html",
+    "title": "Dessert Flavor Pairings",
+    "section": "",
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html#overview",
+    "href": "projects/dessert-flavor-pairings/index.html#overview",
+    "title": "Dessert Flavor Pairings",
+    "section": "",
+    "text": "Interactive visualization of dessert flavor pairings using a chord plot in Python. Explores which dessert flavors pair together most frequently based on recipe data from Kaggle.\n\n\n\nDessert flavor chord diagram\n\n\nInteractive site: ringhilterra.github.io/dessert-flavor-pairings\nData source: Kaggle — Dessert Flavor Combinations"
+  },
+  {
+    "objectID": "projects/dessert-flavor-pairings/index.html#code",
+    "href": "projects/dessert-flavor-pairings/index.html#code",
+    "title": "Dessert Flavor Pairings",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html",
+    "href": "projects/american-gut-microbiome/index.html",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "",
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html#overview",
+    "href": "projects/american-gut-microbiome/index.html#overview",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "",
+    "text": "Masters capstone project analyzing the American Gut Project dataset using advanced neural embedding techniques and supervised machine learning to classify microbiome samples based on IgG (Immunoglobulin G) levels. Built a complete data science pipeline handling bioinformatics data ingestion, phylogenetic diversity analysis, novel embedding approaches, and predictive modeling.\n\n\n\n\n\nResearch Poster - Click to view full size\n\n\nClick poster to view full resolution\nPublication: UCSD Library Digital Collections\nInteractive Dashboard: Live Demo"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html#key-contributions",
+    "href": "projects/american-gut-microbiome/index.html#key-contributions",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "Key Contributions",
+    "text": "Key Contributions\n\nNeural Embedding Techniques for Microbiome Data\n\nHyperbolic embeddings capturing hierarchical structure of microbiome taxonomy\nWord2Vec embeddings treating microbiome samples as documents and OTUs as words\n3D visualization of embedding space showing sample clustering patterns\nNovel application of NLP neural network architectures to biological sequence data\n\n\n\nClassification Performance\nAchieved strong predictive performance across multiple embedding approaches and classifiers, with results showing: - Comparative evaluation of Random Forest, XGBoost, and neural network classifiers - Analysis across different embedding dimensionalities and feature representations - Balanced accuracy metrics for microbiome-based phenotype prediction\n\n\nProduction Data Pipeline Architecture\n\nBuilt scalable Luigi-based pipeline for reproducible end-to-end analysis\nAWS S3 integration for distributed data artifact management\nModular architecture with distinct stages: data ingestion → preprocessing → embedding → modeling → evaluation\nAutomated dependency management and task orchestration\n\n\n\nComprehensive Bioinformatics Workflow\n\nPhylogenetic diversity: Alpha and beta diversity calculations using GreenGenes 97 reference tree\nPrincipal Coordinates Analysis (PCoA) on weighted/unweighted UniFrac distance matrices\nBloom OTU removal and rarefaction normalization for data quality control\nIntegration of BIOM format microbiome data via Redbiom API\n\n\n\nData Engineering & Integration\n\nCleaned and integrated data from 3 heterogeneous sources: raw metadata, BIOM OTU tables, and drug questionnaires\nImplemented multiple imputation techniques: SoftImpute, KNN, and Iterative Imputer for missing data handling\nCreated consistent sample ID schema joinable across datasets\nFeature engineering from sparse OTU count matrices"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html#technical-architecture",
+    "href": "projects/american-gut-microbiome/index.html#technical-architecture",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "Technical Architecture",
+    "text": "Technical Architecture\nData Pipeline Components: 1. Biom Data Ingestion — Pulls American Gut Project OTU data from Redbiom API, removes bloom OTUs, applies rarefaction 2. Diversity Analysis — Calculates phylogenetic alpha/beta diversity and runs PCoA 3. Data Integration — Cleans and joins metadata, BIOM, and survey data 4. Embedding Layer — Generates hyperbolic and Word2Vec embeddings 5. ML Pipeline — Preprocessing, feature engineering, hyperparameter tuning, and classification\nTechnologies: - Python (Luigi, scikit-learn, pandas, numpy) - Bioinformatics tools (QIIME2, BIOM format, Redbiom) - AWS S3 for distributed data storage - Interactive Plotly dashboard for visualization"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html#artifacts",
+    "href": "projects/american-gut-microbiome/index.html#artifacts",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "Artifacts",
+    "text": "Artifacts\n\nCode Repository: GitHub\nPublication: Digital Thesis\nInteractive Dashboard: Embedding Visualizations"
+  },
+  {
+    "objectID": "projects/american-gut-microbiome/index.html#impact",
+    "href": "projects/american-gut-microbiome/index.html#impact",
+    "title": "Neural Embeddings for IGS Microbiome Classification",
+    "section": "Impact",
+    "text": "Impact\nThis work demonstrates how modern machine learning and embedding techniques from NLP can be successfully adapted to biological data, opening new approaches for microbiome analysis beyond traditional ecological metrics. The production-grade pipeline architecture enables reproducible research and supports future extensions to other microbiome datasets.\n\nMasters in Data Science Capstone Project, UC San Diego (2018)"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to my blog.\nI’m a Senior Data Scientist at CrowdStrike, where I build ML systems and AI agents for endpoint security. Outside of work, I apply the same toolkit — machine learning, data engineering, statistical modeling — to my passion: football (soccer) analytics.\nThis space will feature technical write-ups from both worlds: deep dives into metrics development, analysis of tracking and event data, experiments with AI agents, and reflections on applying data science across very different domains.\nComing up, I’ll be writing about the development of the Active Support Index (ASI) — a metric for quantifying off-ball movement under pressure — and sharing other football analytics explorations along the way.\nStay tuned."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ryan Inghilterra",
+    "section": "",
+    "text": "Ryan Inghilterra\n\nSenior Data Scientist II @ CrowdStrike | Football Analytics Researcher\n\n\nView CV Football Analytics Patents & Publications LinkedIn"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts are now part of the Publications & Patents page.\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\nnews\n\n\n\nIntroducing this blog — where cybersecurity ML meets football analytics\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "patents-publications/index.html",
+    "href": "patents-publications/index.html",
+    "title": "Patents & Publications",
+    "section": "",
+    "text": "US20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
+  },
+  {
+    "objectID": "patents-publications/index.html#patents",
+    "href": "patents-publications/index.html#patents",
+    "title": "Patents & Publications",
+    "section": "",
+    "text": "US20240086187A1\nMachine learning system for classifying source-code programming language from source-code artifacts.\nGoogle Patents\n\n\n\nUS20250202921A1\nBehavior-based classification methods for cybersecurity assets using observed activity and contextual signals.\nGoogle Patents\n\n\n\nUS20250233875A1 / EP4586117A1\nOperational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.\nUS filing EP filing\n\n\n\nUS20260095470A1\nCybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.\nGoogle Patents\n\n\n\nUS20260089177A1\nPrediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.\nGoogle Patents\n\n\n\nUS20260111548A1\nInterpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.\nGoogle Patents"
+  },
+  {
+    "objectID": "patents-publications/index.html#technical-articles-media",
+    "href": "patents-publications/index.html#technical-articles-media",
+    "title": "Patents & Publications",
+    "section": "Technical Articles & Media",
+    "text": "Technical Articles & Media\n\n\nAI-Powered Risk Scoring with Falcon Next-Gen SIEM CrowdStrike · Feature video\nData science lead for the ML-powered risk scoring system that helps analysts prioritize high-priority threats in Falcon Next-Gen SIEM.\nWatch video\n\n\n\nHow CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust CrowdStrike Engineering Blog · June 2022\nTechnical article on reducing ML model training time from 227 hours to 6 hours through Rust-based feature extraction, GPU infrastructure, and TensorFlow input-pipeline optimization.\nRead article\n\n\n\nNew CrowdStrike Research Challenges Container Predictability Assumptions CrowdStrike Engineering Blog · October 2024\nResearch article analyzing billions of container events across popular applications and testing assumptions about workload predictability.\nRead article"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Training Ground Guru Academy Productivity Rankings\n\n\n\nacademy-analysis\n\ndata-engineering\n\nplayer-development\n\n\n\nActive consulting project rebuilding the Academy Productivity Rankings analysis with AI-enhanced scraping, reproducible data ingestion, scoring, QA, and source tracking.\n\n\n\nJul 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\nMay 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Creation Dynamics in Football\n\n\n\ntracking-data\n\noff-ball-movement\n\nresearch\n\n\n\nResearch proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.\n\n\n\nFeb 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index: SkillCorner Analytics Cup Project\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\nanalytics-cup\n\n\n\nSkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations\n\n\n\nDec 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPossession Foul-Win Probability Model\n\n\n\nevent-data\n\nxgboost\n\nmodel-calibration\n\n\n\nA StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.\n\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews-Tweets NLP Linker\n\n\n\nnlp\n\ndistributed-computing\n\npython\n\ndata-engineering\n\n\n\nLink tweets with news articles using NLP text similarity, with distributed computing pipeline and interactive dashboard\n\n\n\nJul 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nTime Series User Classification\n\n\n\nmachine-learning\n\ntime-series\n\npython\n\nclassification\n\n\n\nUser identification from walking activity using accelerometer data — comparing Random Forest vs ROCKET classifiers\n\n\n\nJul 14, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nFootball Simulation Agent Framework\n\n\n\nmachine-learning\n\nkaggle\n\nsimulation\n\n\n\nGoogle Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration.\n\n\n\nNov 5, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nDessert Flavor Pairings\n\n\n\nvisualization\n\npython\n\ndata-analysis\n\n\n\nInteractive chord diagram visualizing dessert flavor pairings, built in Python\n\n\n\nApr 15, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnriched COVID-19 U.S. County Data\n\n\n\ndata-engineering\n\npython\n\ngeospatial\n\ndata-analysis\n\n\n\nNYTimes COVID-19 data enriched with county shapes, demographics, population estimates, and per capita metrics\n\n\n\nApr 8, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\nNeural Embeddings for IGS Microbiome Classification\n\n\n\nmachine-learning\n\nbioinformatics\n\ndata-engineering\n\npython\n\nresearch\n\n\n\nMasters capstone: Large-scale microbiome classification using hyperbolic embeddings, Word2Vec, and machine learning pipeline\n\n\n\nJun 15, 2018\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/asi/index.html",
+    "href": "projects/asi/index.html",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
+    "section": "",
+    "text": "Open PDF View notebook GitHub"
+  },
+  {
+    "objectID": "projects/asi/index.html#abstract",
+    "href": "projects/asi/index.html#abstract",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
+    "section": "Abstract",
+    "text": "Abstract\n\nIntroduction\nOn average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.\nCore Question: When a ball carrier is pressured, how actively do teammates move to provide passing options?\nThis research introduces the Active Support Index (ASI), a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.\n\n\nMethods\nWe analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner’s 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.\nMetric Definitions:\n\n\n\n\n\n\n\n\nLevel\nMetric\nFormula\n\n\n\n\nPer Event\nActive Support Ratio\n\\(\\frac{\\text{Active Supporters}}{\\text{Nearby Teammates}}\\)\n\n\nPer Player\nPlayer ASI\n\\(\\frac{\\text{Active Support Count}}{\\text{Support Opportunities}}\\)\n\n\nPer Team\nTeam ASI\n\\(1 - \\text{Static Rate}\\)\n\n\n\nKey Definitions: - Active Supporter: Teammate within 35m of the pressed player AND moving &gt;2 m/s - Static Rate: Proportion of pressure events with zero active supporters - Proximity threshold (35m): Maximum realistic passing range under pressure - Velocity threshold (2 m/s): Boundary separating walking from jogging/running\nFor validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (total_metersperminute_full_tip).\n\n\nResults\nSingle Event Analysis\nFigure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.\n\n\n\nFigure 1\n\n\nValidation with Physical Aggregates\nASI correlates strongly with season-level physical output (r = 0.74, p &lt; 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).\n\n\n\nFigure 2\n\n\nAdditional Findings\n\nPosition Validation: ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p &lt; 0.001).\nTeam Differentiation: Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.\nFatigue Analysis: 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).\n\n\n\nConclusion\nThe Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles."
+  },
+  {
+    "objectID": "projects/asi/index.html#installation-usage",
+    "href": "projects/asi/index.html#installation-usage",
+    "title": "Active Support Index: SkillCorner Analytics Cup Project",
+    "section": "Installation & Usage",
+    "text": "Installation & Usage\n\nOption 1: Run in Google Colab\nNo setup required. Simply click the badge below to open and run the notebook directly in Google Colab:\n\n\n\nOpen In Colab\n\n\n\n\nOption 2: Run Locally\nTested on Python 3.12 (macOS)\n\nClone the repository:\ngit clone https://github.com/ringhilterra/analytics_cup_research.git\ncd analytics_cup_research\nInstall dependencies:\npip install -r requirements.txt\nRun the notebook:\njupyter notebook submission.ipynb"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html",
+    "href": "projects/enriched-covid19-data/index.html",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#overview",
+    "href": "projects/enriched-covid19-data/index.html#overview",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "",
+    "text": "An enriched, updating dataset combining NYTimes COVID-19 data with county-level geospatial shapes, 2019 census population estimates, population densities, demographics, and calculated per capita metrics.\n\n\n\nCOVID-19 cases per capita time-lapse visualization\n\n\nEnrichments include:\n\nCounty shapes and center point coordinates\n2019 census population estimates and population density\nCounty-level demographic breakdowns\nPer capita cases/deaths calculations and daily new case/death metrics\n\nKaggle analysis: COVID19 U.S. Analysis and Visualization\nVisualization: COVID-19 U.S. Time-lapse on r/dataisbeautiful"
+  },
+  {
+    "objectID": "projects/enriched-covid19-data/index.html#code",
+    "href": "projects/enriched-covid19-data/index.html#code",
+    "title": "Enriched COVID-19 U.S. County Data",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html",
+    "href": "projects/kaggle-mancity/index.html",
+    "title": "Football Simulation Agent Framework",
+    "section": "",
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#overview",
+    "href": "projects/kaggle-mancity/index.html#overview",
+    "title": "Football Simulation Agent Framework",
+    "section": "",
+    "text": "Kaggle Simulation Competition — Google Research Football with Manchester City F.C.\nThis competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.\n\n\n\nAgent pool play simulation"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#what-i-built",
+    "href": "projects/kaggle-mancity/index.html#what-i-built",
+    "title": "Football Simulation Agent Framework",
+    "section": "What I Built",
+    "text": "What I Built\n\nDocker Environment\nCreated a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.\n\n\nAgent Pool Play Framework\nBuilt a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.\n\n\nML Agent Exploration\nExperimented with multiple approaches to agent design:\n\nRule-based agents with handcrafted game state heuristics (positioning, ball possession, pass selection)\nReinforcement learning approaches using the environment’s reward signal\nImitation learning from high-performing rule-based agents as training signal\nAnalysis of game state representations and action space design choices"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#technical-details",
+    "href": "projects/kaggle-mancity/index.html#technical-details",
+    "title": "Football Simulation Agent Framework",
+    "section": "Technical Details",
+    "text": "Technical Details\nEnvironment: Google Research Football Environment (OpenAI Gym compatible)\nStack: Python, Docker, Jupyter, TensorFlow, OpenAI Gym\nKey challenges:\n\nGame state representation: 115-dimensional vector encoding player positions, ball state, and game context\nAction space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing\nReward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning"
+  },
+  {
+    "objectID": "projects/kaggle-mancity/index.html#code",
+    "href": "projects/kaggle-mancity/index.html#code",
+    "title": "Football Simulation Agent Framework",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html",
+    "href": "projects/pitch-to-pros-3/index.html",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
+    "section": "",
+    "text": "NotePitch to the Pros 3 finalist\n\n\n\nI was selected as one of four finalists for Training Ground Guru’s Pitch to the Pros 3 and presented this work to professionals in the game."
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
+    "href": "projects/pitch-to-pros-3/index.html#was-the-best-pass-really-playable",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
+    "section": "Was the Best Pass Really Playable?",
+    "text": "Was the Best Pass Really Playable?\n\nPresentation recording\nUnlisted recording of my Pitch to the Pros 3 finalist presentation for “Was the Best Pass Really Playable?”\n\n\nWatch on YouTube\n\nView the presentation deck View the analyst report example\n\n\n\nTiming read from the finalist deck"
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html#what-i-built",
+    "href": "projects/pitch-to-pros-3/index.html#what-i-built",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
+    "section": "What I Built",
+    "text": "What I Built\n\nA pass-window review workflow that scans candidate pass options before release.\nA playability score built from lane access, pressure, receiver freedom, movement fit, and timing.\nCase-study visuals showing how an option can be clean earlier, constrained later, or never realistically open.\nA prototype analyst export that packages frames, scores, and review evidence into a shareable report."
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html#data-and-method",
+    "href": "projects/pitch-to-pros-3/index.html#data-and-method",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
+    "section": "Data and Method",
+    "text": "Data and Method\nThe finalist deck was built on open SkillCorner tracking and event data from 10 Australian A-League 2024/25 matches. The analysis used 9.6M player-frame tracking samples, 47.9K dynamic events, and 24.4K linked passing options.\nSkillCorner passing options define candidate actions, SkillCorner xThreat estimates potential value, and tracking data supplies the geometry for execution context. The output is designed for practitioner review: ranked alternatives, timing status, primary constraints, and evidence that can be checked visually."
+  },
+  {
+    "objectID": "projects/pitch-to-pros-3/index.html#deck-highlights",
+    "href": "projects/pitch-to-pros-3/index.html#deck-highlights",
+    "title": "Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?",
+    "section": "Deck Highlights",
+    "text": "Deck Highlights\n\n\n\n\n\nTiming read from the finalist deck\n\n\nTiming read: shows how a high-value option can be clean earlier and more constrained by the actual release frame.\n\n\n\n\n\nAnalysis automation system slide from the finalist deck\n\n\nAnalysis automation system: shows how the metric pipeline can scale from individual pass reviews into repeatable analyst workflows."
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html",
+    "href": "projects/time-series-classification/index.html",
+    "title": "Time Series User Classification",
+    "section": "",
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html#overview",
+    "href": "projects/time-series-classification/index.html#overview",
+    "title": "Time Series User Classification",
+    "section": "",
+    "text": "Multiclass classification project identifying users from smartphone accelerometer data collected during walking activity (22 participants). Compares traditional feature engineering with time series windowing (Random Forest) against state-of-the-art ROCKET (Random Convolutional Kernels) classifier.\n\n\n\nAccelerometer data view\n\n\nKey results:\n\n\n\nClassifier\nTest Accuracy\nBalanced Accuracy\n\n\n\n\nRF Window 50\n0.61\n0.54\n\n\nROCKET Window 100\n0.70\n0.61\n\n\n\nROCKET significantly outperforms Random Forest using only raw x, y, z features — no manual feature engineering required.\nDataset: UCI — User Identification From Walking Activity"
+  },
+  {
+    "objectID": "projects/time-series-classification/index.html#code",
+    "href": "projects/time-series-classification/index.html#code",
+    "title": "Time Series User Classification",
+    "section": "Code",
+    "text": "Code\nGitHub Repository"
   },
   {
     "objectID": "publications.html",

@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2020-11-05">
-<meta name="description" content="Google Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration.">
+<meta name="description" content="Active consulting project rebuilding the Academy Productivity Rankings analysis with AI-enhanced scraping, reproducible data ingestion, scoring, QA, and source tracking.">
 
-<title>Football Simulation Agent Framework – Ryan Inghilterra</title>
+<title>Training Ground Guru Academy Productivity Rankings – Ryan Inghilterra</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,16 +130,9 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link" data-scroll-target="#what-i-built">What I Built</a>
   <ul class="collapse">
-  <li><a href="#docker-environment" id="toc-docker-environment" class="nav-link" data-scroll-target="#docker-environment">Docker Environment</a></li>
-  <li><a href="#agent-pool-play-framework" id="toc-agent-pool-play-framework" class="nav-link" data-scroll-target="#agent-pool-play-framework">Agent Pool Play Framework</a></li>
-  <li><a href="#ml-agent-exploration" id="toc-ml-agent-exploration" class="nav-link" data-scroll-target="#ml-agent-exploration">ML Agent Exploration</a></li>
-  </ul></li>
-  <li><a href="#technical-details" id="toc-technical-details" class="nav-link" data-scroll-target="#technical-details">Technical Details</a></li>
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#project-scope" id="toc-project-scope" class="nav-link active" data-scroll-target="#project-scope">Project Scope</a></li>
+  <li><a href="#methodology-focus" id="toc-methodology-focus" class="nav-link" data-scroll-target="#methodology-focus">Methodology Focus</a></li>
   </ul>
 </nav>
     </div>
@@ -149,17 +141,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Football Simulation Agent Framework</h1>
+<h1 class="title">Training Ground Guru Academy Productivity Rankings</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">machine-learning</div>
-    <div class="quarto-category">kaggle</div>
-    <div class="quarto-category">simulation</div>
+    <div class="quarto-category">academy-analysis</div>
+    <div class="quarto-category">data-engineering</div>
+    <div class="quarto-category">player-development</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Google Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration.
+    Active consulting project rebuilding the Academy Productivity Rankings analysis with AI-enhanced scraping, reproducible data ingestion, scoring, QA, and source tracking.
   </div>
 </div>
 
@@ -170,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 5, 2020</p>
+      <p class="date">July 2026</p>
     </div>
   </div>
   
@@ -182,52 +174,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Kaggle Simulation Competition — <a href="https://www.kaggle.com/c/google-football/overview">Google Research Football with Manchester City F.C.</a></p>
-<p>This competition challenged participants to build AI agents that play football in Google Research’s Football Environment, a physics-based 3D simulation. Teams competed by submitting agents that were matched against each other on Kaggle’s servers, with final rankings determined by Elo-style ratings from thousands of matches.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="thumbnail.gif" class="img-fluid figure-img"></p>
-<figcaption>Agent pool play simulation</figcaption>
-</figure>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Current status
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Active consulting engagement, 2026-present. This page describes the scope and methodology of the work in progress; public outputs will be linked when available.</p>
+</div>
+</div>
+<div class="evidence-hero">
+<p><img src="academy-productivity-thumbnail.svg" class="evidence-hero-img img-fluid"></p>
+<section id="rebuilding-an-academy-ranking-workflow" class="level2 evidence-hero-copy">
+<h2 class="anchored" data-anchor-id="rebuilding-an-academy-ranking-workflow">Rebuilding an academy ranking workflow</h2>
+<p>I was contracted by Training Ground Guru to rebuild the Academy Productivity Rankings analysis and co-author the annual article. The work focuses on making the ranking process more automated, reproducible, auditable, and easier to update across public player and academy data sources.</p>
+<p><a href="../../football-analytics.html" class="btn btn-primary">Back to football analytics</a></p>
 </section>
-<section id="what-i-built" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-built">What I Built</h2>
-<section id="docker-environment" class="level3">
-<h3 class="anchored" data-anchor-id="docker-environment">Docker Environment</h3>
-<p>Created a containerized setup for the Google Football simulation environment with integrated Jupyter notebooks, enabling rapid prototyping and consistent reproducibility across machines. The Docker setup packages all dependencies (OpenAI Gym, Google Football env, TensorFlow) into a single portable image.</p>
-</section>
-<section id="agent-pool-play-framework" class="level3">
-<h3 class="anchored" data-anchor-id="agent-pool-play-framework">Agent Pool Play Framework</h3>
-<p>Built a local tournament framework to evaluate agents against each other before submitting to Kaggle. This allowed running round-robin matches between different agent versions, tracking win rates, goal differentials, and behavioral patterns — much faster iteration than waiting for Kaggle’s evaluation queue.</p>
-</section>
-<section id="ml-agent-exploration" class="level3">
-<h3 class="anchored" data-anchor-id="ml-agent-exploration">ML Agent Exploration</h3>
-<p>Experimented with multiple approaches to agent design:</p>
+</div>
+<section id="project-scope" class="level2">
+<h2 class="anchored" data-anchor-id="project-scope">Project Scope</h2>
+<p>The project turns a manually intensive annual analysis into a structured data workflow for evaluating academy player-development contribution across the English academy system.</p>
+<p>The work includes:</p>
 <ul>
-<li><strong>Rule-based agents</strong> with handcrafted game state heuristics (positioning, ball possession, pass selection)</li>
-<li><strong>Reinforcement learning</strong> approaches using the environment’s reward signal</li>
-<li><strong>Imitation learning</strong> from high-performing rule-based agents as training signal</li>
-<li>Analysis of game state representations and action space design choices</li>
+<li>Building AI-enhanced web scraping and data ingestion automation for public player-history sources such as FBref and Transfermarkt.</li>
+<li>Resolving player and academy histories into an analysis-ready dataset.</li>
+<li>Updating the scoring methodology for academy productivity.</li>
+<li>Building a reproducible ranking pipeline with source tracking and quality checks.</li>
+<li>Supporting the written analysis for the annual Training Ground Guru article.</li>
 </ul>
 </section>
-</section>
-<section id="technical-details" class="level2">
-<h2 class="anchored" data-anchor-id="technical-details">Technical Details</h2>
-<p><strong>Environment:</strong> Google Research Football Environment (OpenAI Gym compatible)</p>
-<p><strong>Stack:</strong> Python, Docker, Jupyter, TensorFlow, OpenAI Gym</p>
-<p><strong>Key challenges:</strong></p>
-<ul>
-<li>Game state representation: 115-dimensional vector encoding player positions, ball state, and game context</li>
-<li>Action space: 19 discrete actions (movement, passing, shooting) requiring strategic sequencing</li>
-<li>Reward shaping: Sparse rewards (goals) made RL training difficult; experimented with dense reward functions based on ball progression and positioning</li>
-</ul>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p><a href="https://github.com/ringhilterra/kaggle-google-football-sim">GitHub Repository</a></p>
+<section id="methodology-focus" class="level2">
+<h2 class="anchored" data-anchor-id="methodology-focus">Methodology Focus</h2>
+<p>The important technical challenge is not just collecting data. The ranking needs a defensible chain from source evidence to final score:</p>
+<ol type="1">
+<li>Identify relevant players and club histories.</li>
+<li>Normalize source data into consistent player, club, age, and competition fields.</li>
+<li>Track provenance so each ranking input can be checked.</li>
+<li>Apply scoring logic in a repeatable pipeline.</li>
+<li>Review edge cases before publication.</li>
+</ol>
 
 
 </section>

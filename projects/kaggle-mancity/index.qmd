@@ -2,8 +2,8 @@
 title: "Football Simulation Agent Framework"
 description: "Google Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration."
 date: "2020-11-05"
-order: 5
-categories: [machine-learning, football, kaggle, simulation]
+order: 6
+categories: [machine-learning, kaggle, simulation]
 domain: football
 image: thumbnail.gif
 ---

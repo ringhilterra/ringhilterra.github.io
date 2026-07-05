@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Academy productivity rankings data board</title>
+  <desc id="desc">A football pitch and ranked academy data board representing a reproducible academy analysis workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.52" stop-color="#edf7f2"/>
+      <stop offset="1" stop-color="#f4f7fb"/>
+    </linearGradient>
+    <linearGradient id="pitch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.42">
+    <path d="M70 115h1060" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M70 605h1060" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M118 70v580" stroke="#dbe4ef" stroke-width="2"/>
+    <path d="M1082 70v580" stroke="#dbe4ef" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(92 98)" filter="url(#shadow)">
+    <rect x="0" y="0" width="476" height="524" rx="18" fill="url(#pitch)"/>
+    <rect x="36" y="36" width="404" height="452" rx="8" fill="none" stroke="#d9f99d" stroke-width="5" opacity="0.82"/>
+    <line x1="238" y1="36" x2="238" y2="488" stroke="#d9f99d" stroke-width="4" opacity="0.7"/>
+    <circle cx="238" cy="262" r="72" fill="none" stroke="#d9f99d" stroke-width="4" opacity="0.74"/>
+    <circle cx="238" cy="262" r="7" fill="#d9f99d"/>
+    <rect x="36" y="166" width="88" height="192" fill="none" stroke="#d9f99d" stroke-width="4" opacity="0.7"/>
+    <rect x="352" y="166" width="88" height="192" fill="none" stroke="#d9f99d" stroke-width="4" opacity="0.7"/>
+    <rect x="36" y="214" width="34" height="96" fill="none" stroke="#d9f99d" stroke-width="4" opacity="0.7"/>
+    <rect x="406" y="214" width="34" height="96" fill="none" stroke="#d9f99d" stroke-width="4" opacity="0.7"/>
+
+    <g fill="#f8fafc">
+      <circle cx="156" cy="162" r="12"/>
+      <circle cx="226" cy="218" r="12"/>
+      <circle cx="302" cy="184" r="12"/>
+      <circle cx="196" cy="336" r="12"/>
+      <circle cx="324" cy="354" r="12"/>
+    </g>
+    <path d="M156 162c39 36 62 56 70 56 18 0 49-19 76-34" fill="none" stroke="#facc15" stroke-width="6" stroke-linecap="round"/>
+    <path d="M196 336c48-5 91 1 128 18" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(518 84)" filter="url(#shadow)">
+    <rect x="0" y="0" width="590" height="552" rx="18" fill="#ffffff"/>
+    <rect x="0" y="0" width="590" height="82" rx="18" fill="#111827"/>
+    <rect x="0" y="56" width="590" height="30" fill="#111827"/>
+    <text x="34" y="50" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Academy Productivity</text>
+    <text x="407" y="50" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#a7f3d0">2026 workflow</text>
+
+    <g font-family="Arial, Helvetica, sans-serif">
+      <text x="34" y="122" font-size="14" font-weight="700" fill="#64748b">RANK</text>
+      <text x="106" y="122" font-size="14" font-weight="700" fill="#64748b">ACADEMY</text>
+      <text x="360" y="122" font-size="14" font-weight="700" fill="#64748b">SCORE</text>
+      <text x="465" y="122" font-size="14" font-weight="700" fill="#64748b">QA</text>
+
+      <g transform="translate(34 148)">
+        <rect x="0" y="0" width="522" height="58" rx="10" fill="#f8fafc"/>
+        <text x="14" y="37" font-size="22" font-weight="700" fill="#111827">01</text>
+        <rect x="72" y="17" width="174" height="16" rx="8" fill="#cbd5e1"/>
+        <rect x="326" y="17" width="128" height="16" rx="8" fill="#10b981"/>
+        <circle cx="489" cy="29" r="13" fill="#dcfce7"/>
+        <path d="M482 29l5 5 11-12" fill="none" stroke="#15803d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <g transform="translate(34 222)">
+        <rect x="0" y="0" width="522" height="58" rx="10" fill="#f8fafc"/>
+        <text x="14" y="37" font-size="22" font-weight="700" fill="#111827">02</text>
+        <rect x="72" y="17" width="148" height="16" rx="8" fill="#cbd5e1"/>
+        <rect x="326" y="17" width="106" height="16" rx="8" fill="#14b8a6"/>
+        <circle cx="489" cy="29" r="13" fill="#dcfce7"/>
+        <path d="M482 29l5 5 11-12" fill="none" stroke="#15803d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <g transform="translate(34 296)">
+        <rect x="0" y="0" width="522" height="58" rx="10" fill="#f8fafc"/>
+        <text x="14" y="37" font-size="22" font-weight="700" fill="#111827">03</text>
+        <rect x="72" y="17" width="196" height="16" rx="8" fill="#cbd5e1"/>
+        <rect x="326" y="17" width="91" height="16" rx="8" fill="#38bdf8"/>
+        <circle cx="489" cy="29" r="13" fill="#e0f2fe"/>
+        <path d="M481 29h16" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
+      </g>
+
+      <g transform="translate(34 392)">
+        <rect x="0" y="0" width="150" height="78" rx="12" fill="#ecfeff"/>
+        <text x="18" y="32" font-size="15" font-weight="700" fill="#0f172a">FBref</text>
+        <text x="18" y="55" font-size="13" fill="#475569">player output</text>
+
+        <rect x="186" y="0" width="150" height="78" rx="12" fill="#f0fdf4"/>
+        <text x="204" y="32" font-size="15" font-weight="700" fill="#0f172a">Transfermarkt</text>
+        <text x="204" y="55" font-size="13" fill="#475569">career history</text>
+
+        <rect x="372" y="0" width="150" height="78" rx="12" fill="#fffbeb"/>
+        <text x="390" y="32" font-size="15" font-weight="700" fill="#0f172a">Source Log</text>
+        <text x="390" y="55" font-size="13" fill="#475569">audit trail</text>
+
+        <path d="M150 39h36" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+        <path d="M336 39h36" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>
