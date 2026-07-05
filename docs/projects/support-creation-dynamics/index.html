@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.">
+<meta name="description" content="Active research collaboration developing a temporal support-quality framework for measuring how off-ball movement creates, improves, weakens, or removes passing options.">
 
 <title>Support Creation Dynamics in Football – Ryan Inghilterra</title>
 <style>
@@ -132,8 +132,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul class="collapse">
   <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">Research Question</a></li>
-  <li><a href="#proposed-framework" id="toc-proposed-framework" class="nav-link" data-scroll-target="#proposed-framework">Proposed Framework</a></li>
-  <li><a href="#data-and-method" id="toc-data-and-method" class="nav-link" data-scroll-target="#data-and-method">Data and Method</a></li>
+  <li><a href="#working-framework" id="toc-working-framework" class="nav-link" data-scroll-target="#working-framework">Working Framework</a></li>
+  <li><a href="#data-and-implementation" id="toc-data-and-implementation" class="nav-link" data-scroll-target="#data-and-implementation">Data and Implementation</a></li>
   <li><a href="#validation-plan" id="toc-validation-plan" class="nav-link" data-scroll-target="#validation-plan">Validation Plan</a></li>
   <li><a href="#exploratory-archetypes" id="toc-exploratory-archetypes" class="nav-link" data-scroll-target="#exploratory-archetypes">Exploratory Archetypes</a></li>
   <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why It Matters</a></li>
@@ -149,13 +149,14 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-categories">
     <div class="quarto-category">tracking-data</div>
     <div class="quarto-category">off-ball-movement</div>
+    <div class="quarto-category">support-quality</div>
     <div class="quarto-category">research</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession.
+    Active research collaboration developing a temporal support-quality framework for measuring how off-ball movement creates, improves, weakens, or removes passing options.
   </div>
 </div>
 
@@ -188,15 +189,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Active research proposal and collaboration started in February 2026. This page describes the research direction and methodology; it is not presented as a completed or published paper.</p>
+<p>Active research collaboration, 2026-present. This page describes the project direction and implementation groundwork; it is not presented as a completed or published paper.</p>
 </div>
 </div>
 <div class="evidence-hero">
-<p><img src="proposal-preview.png" class="evidence-hero-img img-fluid"></p>
-<section id="from-who-is-open-to-how-did-the-option-get-created" class="level2 evidence-hero-copy">
-<h2 class="anchored" data-anchor-id="from-who-is-open-to-how-did-the-option-get-created">From “who is open?” to “how did the option get created?”</h2>
-<p>This project proposes a temporal framework for quantifying how off-ball movement changes the support environment available to the player in possession. The goal is to measure support as a dynamic process rather than a single frame snapshot.</p>
-<p><a href="support-creation-dynamics-research-proposal.pdf" class="btn btn-primary" target="_blank">View research proposal</a> <a href="../../football-analytics.html" class="btn btn-outline-primary">Back to football analytics</a></p>
+<p><img src="support-dynamics-thumbnail.svg" class="evidence-hero-img img-fluid"></p>
+<section id="from-who-is-open-to-how-did-that-option-emerge" class="level2 evidence-hero-copy">
+<h2 class="anchored" data-anchor-id="from-who-is-open-to-how-did-that-option-emerge">From “who is open?” to “how did that option emerge?”</h2>
+<p>I am collaborating with Rui Marcelino, Professor at the University of Maia and sports scientist with the Portuguese Football Federation men’s beach soccer team, on a research project about off-ball support creation.</p>
+<p>The goal is to move from static availability to temporal support dynamics: how teammate movement creates, improves, weakens, or removes useful options before the possession outcome happens.</p>
+<p><a href="../../football-analytics.html" class="btn btn-primary">Back to football analytics</a></p>
 </section>
 </div>
 <section id="research-question" class="level2">
@@ -207,8 +209,8 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <p>The working hypothesis is that possessions with positive support creation dynamics should be more likely to retain the ball, progress territorially, and increase attacking threat than possessions where the support environment remains static or deteriorates.</p>
 </section>
-<section id="proposed-framework" class="level2">
-<h2 class="anchored" data-anchor-id="proposed-framework">Proposed Framework</h2>
+<section id="working-framework" class="level2">
+<h2 class="anchored" data-anchor-id="working-framework">Working Framework</h2>
 <p>The core metric is <strong>Temporal Support Opportunity Quality (SOQ)</strong>. SOQ combines the current support state with how that state evolved over the previous seconds.</p>
 <div class="metric-grid">
 <section id="instantaneous-state" class="level3 metric-card">
@@ -242,9 +244,19 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div>
 </section>
-<section id="data-and-method" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-method">Data and Method</h2>
-<p>The proposed primary dataset is PFF FC 2022 FIFA World Cup tracking and event data, with SkillCorner open data as a possible prototyping or external validation source. The method is designed to stay interpretable:</p>
+<section id="data-and-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-implementation">Data and Implementation</h2>
+<p>The primary implementation work is being built on <strong>Gradient Sports 2022 FIFA World Cup tracking and event data</strong>, formerly distributed as PFF FC data. SkillCorner open data remains useful as a comparison point because my original Active Support Index work was built on SkillCorner tracking and dynamic events.</p>
+<p>The groundwork so far has focused on making the data layer reliable before extending the support metric:</p>
+<ul>
+<li>A reusable Gradient/PFF processing layer for loading, normalizing, synchronizing, enriching, and exporting clean match data.</li>
+<li>Direction normalization so the home team attacks left-to-right across the full match, while preserving raw coordinates.</li>
+<li>Event-to-tracking synchronization using the provider’s stamped <code>possession_event_id</code> rather than estimated frame matching.</li>
+<li>Pressure-event handling using <code>pe_pressurePlayerId</code>, which is a closer analogue to pressure events than challenge-only subsets.</li>
+<li>Speed and pressure enrichment with explicit handling for unknown speed values instead of silently treating missing data as stationary.</li>
+<li>A clean Parquet bundle design for tracking, events, players, and metadata so the research metric can sit on top of a tested data contract.</li>
+</ul>
+<p>The method is designed to stay interpretable:</p>
 <ol type="1">
 <li>Identify possession sequences with the ball in play and a meaningful possession structure.</li>
 <li>Build frame-level support features for availability, lane quality, pressure, space, and team structure.</li>

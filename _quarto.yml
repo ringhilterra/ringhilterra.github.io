@@ -10,8 +10,6 @@ project:
     - projects/foul-win-probability/tott_vs_leic_poss_3.mp4
     - projects/foul-win-probability/tott_vs_leic_poss_47_48_foul.mp4
     - projects/foul-win-probability/tott_vs_leic_poss_58.mp4
-    - projects/support-creation-dynamics/proposal-preview.png
-    - projects/support-creation-dynamics/support-creation-dynamics-research-proposal.pdf
   render:
     - "*.qmd"
     - "posts/**"

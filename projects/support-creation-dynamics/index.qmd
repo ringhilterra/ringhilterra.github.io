@@ -1,30 +1,32 @@
 ---
 title: "Support Creation Dynamics in Football"
-description: "Research proposal for a temporal framework measuring how off-ball movement creates, improves, weakens, or removes support options during possession."
+description: "Active research collaboration developing a temporal support-quality framework for measuring how off-ball movement creates, improves, weakens, or removes passing options."
 date: "2026-02-01"
 date-format: "MMMM YYYY"
 order: 3
-categories: [tracking-data, off-ball-movement, research]
+categories: [tracking-data, off-ball-movement, support-quality, research]
 domain: football
-image: proposal-preview.png
+image: support-dynamics-thumbnail.svg
 toc: true
 toc-depth: 2
 ---
 
 ::: {.callout-note}
 ## Current status
-Active research proposal and collaboration started in February 2026. This page describes the research direction and methodology; it is not presented as a completed or published paper.
+Active research collaboration, 2026-present. This page describes the project direction and implementation groundwork; it is not presented as a completed or published paper.
 :::
 
 ::: {.evidence-hero}
-![](proposal-preview.png){.evidence-hero-img}
+![](support-dynamics-thumbnail.svg){.evidence-hero-img}
 
 ::: {.evidence-hero-copy}
-## From "who is open?" to "how did the option get created?"
+## From "who is open?" to "how did that option emerge?"
 
-This project proposes a temporal framework for quantifying how off-ball movement changes the support environment available to the player in possession. The goal is to measure support as a dynamic process rather than a single frame snapshot.
+I am collaborating with Rui Marcelino, Professor at the University of Maia and sports scientist with the Portuguese Football Federation men's beach soccer team, on a research project about off-ball support creation.
 
-[View research proposal](support-creation-dynamics-research-proposal.pdf){.btn .btn-primary target="_blank"} [Back to football analytics](../../football-analytics.qmd){.btn .btn-outline-primary}
+The goal is to move from static availability to temporal support dynamics: how teammate movement creates, improves, weakens, or removes useful options before the possession outcome happens.
+
+[Back to football analytics](../../football-analytics.qmd){.btn .btn-primary}
 :::
 :::
 
@@ -36,7 +38,7 @@ Most football analytics work evaluates available options at a moment in time: pa
 
 The working hypothesis is that possessions with positive support creation dynamics should be more likely to retain the ball, progress territorially, and increase attacking threat than possessions where the support environment remains static or deteriorates.
 
-## Proposed Framework
+## Working Framework
 
 The core metric is **Temporal Support Opportunity Quality (SOQ)**. SOQ combines the current support state with how that state evolved over the previous seconds.
 
@@ -68,9 +70,20 @@ The core metric is **Temporal Support Opportunity Quality (SOQ)**. SOQ combines 
 :::
 :::
 
-## Data and Method
+## Data and Implementation
 
-The proposed primary dataset is PFF FC 2022 FIFA World Cup tracking and event data, with SkillCorner open data as a possible prototyping or external validation source. The method is designed to stay interpretable:
+The primary implementation work is being built on **Gradient Sports 2022 FIFA World Cup tracking and event data**, formerly distributed as PFF FC data. SkillCorner open data remains useful as a comparison point because my original Active Support Index work was built on SkillCorner tracking and dynamic events.
+
+The groundwork so far has focused on making the data layer reliable before extending the support metric:
+
+- A reusable Gradient/PFF processing layer for loading, normalizing, synchronizing, enriching, and exporting clean match data.
+- Direction normalization so the home team attacks left-to-right across the full match, while preserving raw coordinates.
+- Event-to-tracking synchronization using the provider's stamped `possession_event_id` rather than estimated frame matching.
+- Pressure-event handling using `pe_pressurePlayerId`, which is a closer analogue to pressure events than challenge-only subsets.
+- Speed and pressure enrichment with explicit handling for unknown speed values instead of silently treating missing data as stationary.
+- A clean Parquet bundle design for tracking, events, players, and metadata so the research metric can sit on top of a tested data contract.
+
+The method is designed to stay interpretable:
 
 1. Identify possession sequences with the ball in play and a meaningful possession structure.
 2. Build frame-level support features for availability, lane quality, pressure, space, and team structure.
