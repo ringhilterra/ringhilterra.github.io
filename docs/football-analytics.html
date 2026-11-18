@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-football-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-football-projects'] = new List('listing-football-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -215,9 +215,34 @@ window.Quarto = {
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-football-projects">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1795038125627" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+<div class="g-col-1" data-index="0" data-categories="YXBwbGllZCUyMEFJJTJDZm9vdGJhbGwlMjBkYXRhJTIwc2NpZW5jZSUyQ3BsYXllciUyMGRldmVsb3BtZW50" data-listing-date-sort="1788764400000" data-listing-file-modified-sort="1795039478174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="525">
+<a href="./projects/training-ground-guru-academy-analysis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/training-ground-guru-academy-analysis/academy-leaders.png" class="thumbnail-image card-img" style="height: 200px;" alt="Chelsea lead Arsenal, Manchester United and Manchester City in the 2025/26 academy productivity rankings.">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Training Ground Guru Academy Productivity Rankings
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwbGllZCUyMEFJ'); return false;">applied AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9vdGJhbGwlMjBkYXRhJTIwc2NpZW5jZQ=='); return false;">football data science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGxheWVyJTIwZGV2ZWxvcG1lbnQ='); return false;">player development</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>My AI-assisted study of 2,067 players for TGG led to five articles, a live masterclass, BBC Sport coverage and commissioned club reports.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="dHJhY2tpbmctZGF0YSUyQ3hUaHJlYXQlMkNkZWNpc2lvbi1zdXBwb3J0" data-listing-date-sort="1779692400000" data-listing-file-modified-sort="1795038813700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
 <a href="./projects/pitch-to-pros-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -238,31 +263,6 @@ Pitch to the Pros 3 Finalist: Was the Best Pass Really Playable?
 </div>
 <div class="card-text listing-description delink">
 <p>A finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="YWNhZGVteS1hbmFseXNpcyUyQ2RhdGEtZW5naW5lZXJpbmclMkNwbGF5ZXItZGV2ZWxvcG1lbnQ=" data-listing-date-sort="1782889200000" data-listing-file-modified-sort="1795038125627" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
-<a href="./projects/training-ground-guru-academy-analysis/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/training-ground-guru-academy-analysis/academy-productivity-thumbnail.svg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Training Ground Guru Academy Productivity Rankings
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWNhZGVteS1hbmFseXNpcw=='); return false;">academy-analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS1lbmdpbmVlcmluZw=='); return false;">data-engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGxheWVyLWRldmVsb3BtZW50'); return false;">player-development</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Active consulting project rebuilding the Academy Productivity Rankings analysis with AI-enhanced scraping, reproducible data ingestion, scoring, QA, and source tracking.</p>
 </div>
 </div>
 </div></a>

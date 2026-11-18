@@ -2,6 +2,7 @@
 title: "Football Analytics"
 toc: false
 listing:
+  id: football-projects
   contents: projects/*/index.qmd
   type: grid
   categories: false

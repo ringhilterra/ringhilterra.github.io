@@ -1,51 +1,104 @@
 ---
 title: "Training Ground Guru Academy Productivity Rankings"
-description: "Active consulting project rebuilding the Academy Productivity Rankings analysis with AI-enhanced scraping, reproducible data ingestion, scoring, QA, and source tracking."
-date: "2026-07-01"
+description: "My AI-assisted study of 2,067 players for TGG led to five articles, a live masterclass, BBC Sport coverage and commissioned club reports."
+date: "2026-09-07"
 date-format: "MMMM YYYY"
-order: 2
-categories: [academy-analysis, data-engineering, player-development]
+order: 1
+categories: [applied AI, football data science, player development]
 domain: football
-image: academy-productivity-thumbnail.svg
-toc: true
-toc-depth: 2
+image: academy-leaders.png
+image-alt: "Chelsea lead Arsenal, Manchester United and Manchester City in the 2025/26 academy productivity rankings."
+toc: false
+page-layout: full
 ---
 
-::: {.callout-note}
-## Current status
-Active consulting engagement, 2026-present. This page describes the scope and methodology of the work in progress; public outputs will be linked when available.
+:::::: {.academy-study}
+
+[Football Analytics](../../football-analytics.qmd){.academy-back}
+
+::::: {.academy-opening}
+:::: {.academy-intro}
+[Training Ground Guru · 2025/26]{.academy-edition}
+
+# Academy Productivity Rankings {.unlisted}
+
+I led the research behind Training Ground Guru’s seventh edition. I built an AI-assisted workflow to trace where professional players trained and calculate how much credit each academy earned. The work became five TGG articles, a live masterclass and a benchmarking service for clubs.
+
+[Explore the series](#the-tgg-series){.academy-action} [Inside the masterclass](#inside-the-masterclass)
+::::
+
+::: {.academy-pathway}
+### From player to ranking {.unlisted .unanchored}
+
+<ol>
+<li><strong>Trace the player</strong><span>Match a senior player to reports of their academy spells.</span></li>
+<li><strong>Check the evidence</strong><span>Use an AI agent to compare sources, dates and gaps in the record.</span></li>
+<li><strong>Share the credit</strong><span>Weight the senior career and divide points by time at each academy.</span></li>
+</ol>
+:::
+:::::
+
+::: {.academy-scope}
+<div><strong>2,067</strong> players researched</div>
+<div><strong>89</strong> academies ranked</div>
+<div><strong>23</strong> senior competitions</div>
 :::
 
-::: {.evidence-hero}
-![](academy-productivity-thumbnail.svg){.evidence-hero-img}
+## The TGG series
 
-::: {.evidence-hero-copy}
-## Rebuilding an academy ranking workflow
+I wrote the methodology and the complete table. Three further articles with the TGG editorial team explored what the results meant on the pitch.
 
-I was contracted by Training Ground Guru to rebuild the Academy Productivity Rankings analysis and co-author the annual article. The work focuses on making the ranking process more automated, reproducible, auditable, and easier to update across public player and academy data sources.
+```{=html}
+<div class="academy-articles">
+<a class="academy-article" href="https://trainingground.guru/chelsea-make-it-four-in-a-row-in-tggs-academy-productivity-rankings/">
+  <img src="previews/headline.jpg" alt="" loading="lazy">
+  <div class="academy-article-copy"><strong>The national rankings and top 20</strong><p>The public top 20 and the clubs that moved up when the study expanded to Wales and 23 senior competitions.</p><small>7 Sep 2026 · With Ian Westbrook</small></div>
+</a>
+<a class="academy-article" href="https://trainingground.guru/academy-rankings-2025-26-how-the-research-was-done/">
+  <img src="previews/method.jpg" alt="" loading="lazy">
+  <div class="academy-article-copy"><strong>How the research was done</strong><p>How I reconstructed individual academy spells, weighted senior competitions and allocated credit between clubs.</p><small>7 Sep 2026 · Sole author · TGG members</small></div>
+</a>
+<a class="academy-article" href="https://trainingground.guru/academy-rankings-2025-26-the-complete-table/">
+  <img src="previews/table.jpg" alt="" loading="lazy">
+  <div class="academy-article-copy"><strong>The complete 89-academy table</strong><p>All 89 academies, with each club’s score broken down by the competitions its graduates reached.</p><small>7 Sep 2026 · Sole author · TGG members</small></div>
+</a>
+<a class="academy-article" href="https://trainingground.guru/chelsea-top-u23-academy-rankings-as-everton-leeds-show-their-age/">
+  <img src="previews/u23.jpg" alt="" loading="lazy">
+  <div class="academy-article-copy"><strong>The U23 rankings</strong><p>A younger cohort gives a different view of which academies are producing senior players now.</p><small>17 Sep 2026 · With Ian Westbrook and Simon Austin · TGG members</small></div>
+</a>
+<a class="academy-article" href="https://trainingground.guru/how-chelsea-built-a-28-point-lead-inside-the-academy-rankings-data/">
+  <img src="previews/chelsea.jpg" alt="" loading="lazy">
+  <div class="academy-article-copy"><strong>How Chelsea built a 28-point lead</strong><p>Our league-by-league breakdown shows how Premier League graduates drove Chelsea’s advantage over Arsenal.</p><small>23 Sep 2026 · With Ian Westbrook · TGG members</small></div>
+</a>
+</div>
+```
 
-[Back to football analytics](../../football-analytics.qmd){.btn .btn-primary}
+::: {.academy-press-strip}
+## Press coverage {#in-the-press}
+
+- **BBC Sport** [Chelsea top national academy rankings again](https://www.bbc.com/sport/football/articles/cvgy8ngm28po)
+- **Southampton Daily Echo** [My comments on Southampton’s eighth-place finish](https://www.dailyecho.co.uk/sport/26528645.southampton-academy-ranked-one-englands-best-productivity-study/)
 :::
+
+## Inside the masterclass
+
+On launch day I presented *Inside the TGG Academy Productivity Rankings* for Training Ground Guru and Twelve Football. This figure from my talk shows how I researched a player’s pathway. The agent compared public sources, checked the career timeline and followed up on gaps before recording an academy spell with its evidence.
+
+[<img src="agent-workflow.png" alt="The agent starts with an FBref player identity, checks public sources and chronology, and records academy spells with supporting evidence and uncertainty.">View workflow at full size](agent-workflow.png){.academy-workflow aria-label="Open the masterclass workflow figure at full size"}
+
+[Masterclass announcement](https://trainingground.guru/chelseas-crown-on-the-line-in-2025-26-academy-rankings/) · [My launch recap](https://www.linkedin.com/posts/ryan-inghilterra-017_academy-rankings-202526-how-the-research-activity-7503113663973748736-l0Yu) · [Read my methodology](https://trainingground.guru/academy-rankings-2025-26-how-the-research-was-done/)
+
+## How clubs used the rankings
+
+**Plymouth Argyle commissioned the first bespoke report.** Across 23 pages, we compared the academy with named peers and broke down which graduates, leagues and age groups contributed to its score. Each report includes a call with me to discuss the findings. [TGG’s announcement and sample report pages](https://trainingground.guru/clubs-can-now-commission-a-bespoke-tgg-academy-productivity-report/)
+
+### Academy reactions
+
+::: {.academy-clubs}
+- [Chelsea’s academy director on a fourth consecutive win](https://trainingground.guru/academy-rankings-success-testament-to-environment-we-have-created-van-der-kraan/)
+- [How Cardiff City outranked 14 Category One academies](https://trainingground.guru/how-cat-two-cardiff-outranked-14-category-one-academies/)
+- [How Reading finished 12th on the lowest Category One budget](https://trainingground.guru/how-reading-finished-12th-in-tgg-academy-rankings-on-lowest-cat-one-budget/)
+- [Why Bristol Rovers climbed 21 places](https://trainingground.guru/bristol-rovers-how-the-highest-risers-in-tggs-academy-rankings-did-it/)
 :::
 
-## Project Scope
-
-The project turns a manually intensive annual analysis into a structured data workflow for evaluating academy player-development contribution across the English academy system.
-
-The work includes:
-
-- Building AI-enhanced web scraping and data ingestion automation for public player-history sources such as FBref and Transfermarkt.
-- Resolving player and academy histories into an analysis-ready dataset.
-- Updating the scoring methodology for academy productivity.
-- Building a reproducible ranking pipeline with source tracking and quality checks.
-- Supporting the written analysis for the annual Training Ground Guru article.
-
-## Methodology Focus
-
-The important technical challenge is not just collecting data. The ranking needs a defensible chain from source evidence to final score:
-
-1. Identify relevant players and club histories.
-2. Normalize source data into consistent player, club, age, and competition fields.
-3. Track provenance so each ranking input can be checked.
-4. Apply scoring logic in a repeatable pipeline.
-5. Review edge cases before publication.
+::::::

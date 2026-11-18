@@ -862,3 +862,169 @@ a:hover {
     padding: 1.25rem;
   }
 }
+
+/* Academy rankings feature on the football project listing */
+#listing-football-projects .g-col-1:has(a[href*="/training-ground-guru-academy-analysis/"]) {
+  grid-column: 1 / -1;
+}
+
+#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  background: #f4f7f1;
+  border-color: #cedbd1;
+}
+
+#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-img-top {
+  display: grid;
+  align-items: center;
+  margin: 0;
+  background: #0d322b;
+  border: 0;
+}
+
+#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-img {
+  height: auto !important;
+  width: 100%;
+}
+
+#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-body {
+  align-self: center;
+  padding: clamp(1.2rem, 3vw, 2.4rem);
+}
+
+#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-title {
+  font: 500 clamp(1.65rem, 2.6vw, 2.2rem)/1.08 Georgia, serif;
+  color: #14382e;
+}
+
+main:has(> .academy-study) > .quarto-title-block { display: none; }
+
+.academy-study {
+  --forest: #133e32;
+  --ink: #1f342f;
+  max-width: 64rem;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  color: var(--ink);
+}
+
+.academy-study a { color: var(--forest); text-underline-offset: 0.2em; }
+.academy-study a:hover { color: #12634c; }
+.academy-study h1, .academy-study h2, .academy-study h3 {
+  color: var(--forest);
+  font-family: Georgia, serif;
+  font-weight: 500;
+  border: 0;
+}
+
+.academy-study h2 { font-size: clamp(1.8rem, 3.1vw, 2.5rem); margin: 2.8rem 0 1rem; }
+.academy-study h2 + p, .academy-study section > p { max-width: 78ch; }
+.academy-back { font-size: 0.95rem; }
+.academy-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(16rem, 1fr);
+  align-items: center;
+  gap: clamp(1.75rem, 5vw, 4rem);
+  margin: 2rem 0;
+}
+.academy-pathway {
+  padding: 1.35rem 1.5rem;
+  border-radius: 0.6rem;
+  background: #123a34;
+  color: #e8f3ed;
+}
+.academy-pathway h3 { margin: 0 0 1rem; color: #fff; font-size: 1.45rem; }
+.academy-pathway ol { list-style: none; padding: 0; margin: 0; }
+.academy-pathway li { position: relative; padding: 0 0 0.9rem 1.3rem; }
+.academy-pathway li:last-child { padding-bottom: 0; }
+.academy-pathway li::before {
+  content: ""; position: absolute; top: 0.55rem; left: 0; width: 0.55rem; height: 0.55rem;
+  border-radius: 50%; background: #d9ea83;
+}
+.academy-pathway li:not(:last-child)::after {
+  content: ""; position: absolute; left: 0.23rem; top: 1.12rem; bottom: -0.45rem;
+  border-left: 1px solid #6d9a86;
+}
+.academy-pathway li strong, .academy-pathway li span { display: block; }
+.academy-pathway li span { font-size: 0.92rem; line-height: 1.38; color: #d2e3d8; }
+
+.academy-edition {
+  font-size: 0.91rem;
+  color: #476257;
+}
+
+.academy-edition { font-weight: 650; }
+.academy-study h1 { font-size: clamp(2.7rem, 5.4vw, 4.6rem); line-height: 1.02; letter-spacing: -0.045em; margin: 0 0 1rem; }
+.academy-intro > p { margin-bottom: 0.8rem; }
+.academy-action { display: inline-block; font-weight: 650; margin: 0.35rem 1rem 0.35rem 0; }
+.academy-scope {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.7rem 0;
+  font-size: 0.9rem;
+  border-block: 1px solid #b6c7ba;
+}
+.academy-scope > div + div { border-left: 1px solid #c8d5ca; padding-left: 1.4rem; }
+.academy-scope strong { display: block; font: 500 clamp(1.6rem, 3vw, 2.15rem)/1.15 Georgia, serif; color: var(--forest); }
+.academy-articles { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; }
+.academy-article {
+  grid-column: span 2; display: flex; flex-direction: column;
+  border: 1px solid #ccd7ce; border-radius: 0.5rem; overflow: hidden; text-decoration: none;
+}
+.academy-article:nth-child(-n+2) { grid-column: span 3; }
+.academy-article:hover, .academy-article:focus-visible { border-color: #48715b; background: #f6f9f4; }
+.academy-article:hover strong, .academy-article:focus-visible strong { text-decoration: underline; }
+.academy-article img { display: block; width: 100%; aspect-ratio: 2.6; max-height: 10rem; object-fit: cover; object-position: center 30%; }
+.academy-article-copy { display: flex; flex-direction: column; flex: 1; padding: 0.85rem; }
+.academy-article-copy strong { font: 500 1.3rem/1.15 Georgia, serif; }
+.academy-article-copy p { margin: 0.45rem 0 0.7rem; color: #314b41; line-height: 1.45; }
+.academy-article-copy small { margin-top: auto; color: #52665d; font-size: 0.83rem; }
+.academy-press-strip {
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem;
+  background: #edf4ed;
+  border-left: 3px solid #587d65;
+}
+.academy-press-strip h2 { margin: 0 0 0.6rem; font-size: 1.35rem; }
+.academy-press-strip ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.academy-press-strip strong { display: block; font-size: 0.9rem; }
+.academy-workflow {
+  display: block;
+  width: min(85%, 28rem);
+  padding: 0.5rem;
+  border: 1px solid #cbd7cc;
+  border-radius: 0.35rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.academy-workflow img { display: block; width: 100%; height: auto; margin-bottom: 0.35rem; }
+.academy-clubs li { margin-block: 0.55rem; }
+
+@media (max-width: 700px) {
+  #listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card,
+  .academy-opening, .academy-articles, .academy-press-strip ul { grid-template-columns: 1fr; }
+  .academy-article, .academy-article:nth-child(-n+2) {
+    grid-column: auto;
+    display: grid;
+    grid-template-columns: 4.6rem minmax(0, 1fr);
+    align-items: start;
+    padding: 0.75rem;
+    gap: 0.8rem;
+  }
+  .academy-article img { aspect-ratio: 1; border-radius: 0.2rem; }
+  .academy-article-copy { padding: 0; }
+  .academy-article-copy strong { font-size: 1.2rem; }
+  .academy-study { padding: 0; }
+  .academy-scope { gap: 0.6rem; font-size: 0.87rem; }
+  .academy-scope > div + div { padding-left: 0.7rem; }
+
+}
