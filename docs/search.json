@@ -235,7 +235,7 @@
     "href": "index.html",
     "title": "Ryan Inghilterra",
     "section": "",
-    "text": "Ryan Inghilterra\nSenior Data Scientist II @ CrowdStrike | Football Analytics Researcher\n\n\n\n\n\n\nI’m a Senior Data Scientist II at CrowdStrike with over 10 years of experience across data science, AI/ML, and engineering. My work spans applied research and translating that research into production capabilities at scale, with a recent focus on LLMs and agentic AI.\nI’m also an independent football analytics researcher, applying AI and data science to player evaluation, team performance, and tactical analysis.\n\n\nFootball Analytics Patents & Publications LinkedIn"
+    "text": "Senior Data Scientist II @ CrowdStrike | Football Analytics Researcher\n\n\n\n\n\n\nI’m a Senior Data Scientist II at CrowdStrike with over 10 years of experience across data science, AI/ML, and engineering. My work spans applied research and translating that research into production capabilities at scale, with a recent focus on LLMs and agentic AI.\nI’m also an independent football analytics researcher, applying AI and data science to player evaluation, team performance, and tactical analysis.\n\n\nFootball Analytics Patents & Publications LinkedIn\n\n\n\n\nTwo U.S. patents granted in 2026. I’m a co-inventor on CrowdStrike patents for behavior-based asset classification and anomaly detection in cloud logs (PDF).\nSeptember 2026 academy rankings. I led Training Ground Guru’s study of 89 academies, wrote or co-authored five articles, and taught a masterclass on the AI-assisted research.\n\nCoverage and reaction. BBC Sport covered the rankings, and TGG interviewed academy leaders at Chelsea, Cardiff City and Reading."
   },
   {
     "objectID": "blog.html",
@@ -446,5 +446,12 @@
     "title": "Football Analytics",
     "section": "",
     "text": "Training Ground Guru Academy Productivity Rankings\n\n\n\napplied AI\n\nfootball data science\n\nplayer development\n\n\n\nTraining Ground Guru commissioned me to lead its 2025/26 academy rankings. I rebuilt data collection with AI, revised the scoring and expanded player and league coverage.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPitch to the Pros 3 Finalist: Was the Best Pass Really Playable?\n\n\n\ntracking-data\n\nxThreat\n\ndecision-support\n\n\n\nA finalist presentation on adding decision-window context to pass value with tracking data, xThreat, and frame-level playability.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nActive Support Index: SkillCorner Analytics Cup Project\n\n\n\nmetrics\n\ntracking-data\n\nevents-data\n\n\n\nSkillCorner Analytics Cup project quantifying off-ball teammate support during pressure situations\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPossession Foul-Win Probability Model\n\n\n\nevent-data\n\nxgboost\n\nmodel-calibration\n\n\n\nA StatsBomb event-data project estimating when a player possession is likely to end with that player winning a foul.\n\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nFootball Simulation Agent Framework\n\n\n\nmachine-learning\n\nsimulation\n\n\n\nGoogle Research Football competition project with Dockerized simulation, local agent evaluation, and ML agent exploration.\n\n\n\n2020\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#recent-highlights",
+    "href": "index.html#recent-highlights",
+    "title": "Ryan Inghilterra",
+    "section": "",
+    "text": "Two U.S. patents granted in 2026. I’m a co-inventor on CrowdStrike patents for behavior-based asset classification and anomaly detection in cloud logs (PDF).\nSeptember 2026 academy rankings. I led Training Ground Guru’s study of 89 academies, wrote or co-authored five articles, and taught a masterclass on the AI-assisted research.\n\nCoverage and reaction. BBC Sport covered the rankings, and TGG interviewed academy leaders at Chelsea, Cardiff City and Reading."
   }
 ]

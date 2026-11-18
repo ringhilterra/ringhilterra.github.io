@@ -98,6 +98,13 @@ main:has(> .hero-section) > #title-block-header { display: none; }
 .hero-headshot { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); }
 .home-actions p { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; }
 
+.home-highlights { max-width: 70ch; margin-top: 2rem; }
+.home-highlights h2 { font-size: 1.35rem; color: var(--text-primary); }
+.home-highlights ul { padding-left: 1.25rem; }
+.home-highlights li { margin-block: 0.6rem; color: var(--text-secondary); }
+.home-highlights li::marker { color: #456781; }
+.home-highlights a { text-underline-offset: 0.14em; }
+
 /* --- Featured Blocks (Home Page) --- */
 .featured-grid {
   display: grid;
