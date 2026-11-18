@@ -7,7 +7,8 @@ listing:
   type: grid
   categories: false
   sort: order
-  fields: [image, title, description, categories]
+  fields: [image, title, description, categories, date]
+  date-format: "YYYY"
   image-height: 200px
   include:
     domain: "football"

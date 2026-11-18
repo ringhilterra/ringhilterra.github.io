@@ -863,39 +863,45 @@ a:hover {
   }
 }
 
-/* Academy rankings feature on the football project listing */
-#listing-football-projects .g-col-1:has(a[href*="/training-ground-guru-academy-analysis/"]) {
+/* Featured projects on the football listing */
+#listing-football-projects .g-col-1:has(a:is([href*="/training-ground-guru-academy-analysis/"], [href*="/pitch-to-pros-3/"])) {
   grid-column: 1 / -1;
 }
 
-#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
-  background: #f4f7f1;
-  border-color: #cedbd1;
+#listing-football-projects a:is([href*="/training-ground-guru-academy-analysis/"], [href*="/pitch-to-pros-3/"]) {
+  .card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+    background: var(--feature-background, #f4f7f1);
+    border-color: var(--feature-border, #cedbd1);
+  }
+
+  .card-img-top {
+    display: grid;
+    align-items: center;
+    margin: 0;
+    background: var(--feature-image-background, #0d322b);
+    border: 0;
+  }
+
+  .card-img { height: auto !important; width: 100%; }
+  .card-body { align-self: center; padding: clamp(1.2rem, 3vw, 2.4rem); }
+  .card-title {
+    font: 500 var(--feature-title-size, clamp(1.65rem, 2.6vw, 2.2rem))/1.08 Georgia, serif;
+    color: var(--feature-title-color, #14382e);
+  }
+
+  @media (max-width: 700px) {
+    .card { grid-template-columns: 1fr; }
+  }
 }
 
-#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-img-top {
-  display: grid;
-  align-items: center;
-  margin: 0;
-  background: #0d322b;
-  border: 0;
-}
-
-#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-img {
-  height: auto !important;
-  width: 100%;
-}
-
-#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-body {
-  align-self: center;
-  padding: clamp(1.2rem, 3vw, 2.4rem);
-}
-
-#listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card-title {
-  font: 500 clamp(1.65rem, 2.6vw, 2.2rem)/1.08 Georgia, serif;
-  color: #14382e;
+#listing-football-projects a[href*="/pitch-to-pros-3/"] {
+  --feature-background: #f4f6f9;
+  --feature-border: #ccd5e2;
+  --feature-image-background: #0d1117;
+  --feature-title-color: #25384a;
+  --feature-title-size: clamp(1.55rem, 2.35vw, 1.9rem);
 }
 
 main:has(> .academy-study) > .quarto-title-block { display: none; }
@@ -1017,7 +1023,6 @@ main:has(> .academy-study) > .quarto-title-block { display: none; }
 .academy-clubs li { margin-block: 0.55rem; }
 
 @media (max-width: 700px) {
-  #listing-football-projects a[href*="/training-ground-guru-academy-analysis/"] .card,
   .academy-opening, .academy-articles, .academy-press-strip ul { grid-template-columns: 1fr; }
   .academy-talk { display: block; }
   .academy-talk .academy-workflow { width: 85%; }
