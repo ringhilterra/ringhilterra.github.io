@@ -1,6 +1,6 @@
 ---
 title: "Patents & Publications"
-description: "Public patent applications, technical articles, and media connected to production machine learning work."
+description: "Granted patents, pending applications, technical articles, and media connected to production machine learning work."
 toc: true
 toc-depth: 2
 page-layout: article
@@ -10,8 +10,26 @@ page-layout: article
 
 ::: {.patent-grid}
 ::: {.patent-card}
+### Behavior-Based Asset Classifications
+[Granted · US]{.patent-status .granted} **US 12,627,700**
+
+Behavior-based classification methods for cybersecurity assets using observed activity and contextual signals.
+
+[Google Patents](https://patents.google.com/patent/US12627700B2/en){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
+### Session-Based Anomaly Detection on Cloud Logs
+[Granted · US]{.patent-status .granted} **US 12,726,496**
+
+Operational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.
+
+[Google Patents](https://patents.google.com/patent/US20250233875A1/en){.card-link target="_blank"} · [US grant (PDF)](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12726496){.card-link target="_blank"}
+:::
+
+::: {.patent-card}
 ### Source Code Programming Language Prediction
-**US20240086187A1**
+[Pending]{.patent-status} **US20240086187A1**
 
 Machine learning system for classifying source-code programming language from source-code artifacts.
 
@@ -19,26 +37,8 @@ Machine learning system for classifying source-code programming language from so
 :::
 
 ::: {.patent-card}
-### Behavior-Based Asset Classifications
-**US20250202921A1**
-
-Behavior-based classification methods for cybersecurity assets using observed activity and contextual signals.
-
-[Google Patents](https://patents.google.com/patent/US20250202921A1/en){.card-link target="_blank"}
-:::
-
-::: {.patent-card}
-### Session-Based Anomaly Detection on Cloud Logs
-**US20250233875A1** / **EP4586117A1**
-
-Operational prediction on user-based contextual sessions, including anomaly detection on cloud log activity.
-
-[US filing](https://patents.google.com/patent/US20250233875A1/en){.card-link target="_blank"} [EP filing](https://patents.google.com/patent/EP4586117A1/en){.card-link target="_blank"}
-:::
-
-::: {.patent-card}
 ### Multi-Modal Breach Detection with Time-Aware Graph ML
-**US20260095470A1**
+[Pending]{.patent-status} **US20260095470A1**
 
 Cybersecurity breach prediction using multiple data modalities and graph-based machine learning methods.
 
@@ -47,7 +47,7 @@ Cybersecurity breach prediction using multiple data modalities and graph-based m
 
 ::: {.patent-card}
 ### False-Positive Prevention with Multi-Modal Data and Graph ML
-**US20260089177A1**
+[Pending]{.patent-status} **US20260089177A1**
 
 Prediction of false-positive cybersecurity detections using multi-modal analysis and graph ML.
 
@@ -56,7 +56,7 @@ Prediction of false-positive cybersecurity detections using multi-modal analysis
 
 ::: {.patent-card}
 ### Interpretable ML-Based Alert Grouping for NextGen SIEM
-**US20260111548A1**
+[Pending]{.patent-status} **US20260111548A1**
 
 Interpretable cybersecurity detection grouping for analyst triage and alert investigation workflows.
 
@@ -78,17 +78,6 @@ Data science lead for the ML-powered risk scoring system that helps analysts pri
 :::
 
 ::: {.pub-entry}
-![](../images/blog-tensorflow-rust.jpg){.pub-thumbnail}
-
-**How CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust**
-CrowdStrike Engineering Blog &middot; June 2022
-
-Technical article on reducing ML model training time from 227 hours to 6 hours through Rust-based feature extraction, GPU infrastructure, and TensorFlow input-pipeline optimization.
-
-[Read article](https://www.crowdstrike.com/en-us/blog/how-crowdstrike-achieves-fast-machine-learning-model-training-with-tensorflow-and-rust/){.pub-link target="_blank"}
-:::
-
-::: {.pub-entry}
 ![](../images/blog-container-workloads.jpg){.pub-thumbnail}
 
 **New CrowdStrike Research Challenges Container Predictability Assumptions**
@@ -97,4 +86,15 @@ CrowdStrike Engineering Blog &middot; October 2024
 Research article analyzing billions of container events across popular applications and testing assumptions about workload predictability.
 
 [Read article](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-research-challenges-containerized-workload-predictability-assumption/){.pub-link target="_blank"}
+:::
+
+::: {.pub-entry}
+![](../images/blog-tensorflow-rust.jpg){.pub-thumbnail}
+
+**How CrowdStrike Achieves Lightning-Fast Machine Learning Model Training with TensorFlow and Rust**
+CrowdStrike Engineering Blog &middot; June 2022
+
+Technical article on reducing ML model training time from 227 hours to 6 hours through Rust-based feature extraction, GPU infrastructure, and TensorFlow input-pipeline optimization.
+
+[Read article](https://www.crowdstrike.com/en-us/blog/how-crowdstrike-achieves-fast-machine-learning-model-training-with-tensorflow-and-rust/){.pub-link target="_blank"}
 :::

@@ -711,6 +711,10 @@ a:hover {
   margin: 1.25rem 0 2rem;
 }
 
+.patent-grid {
+  grid-auto-rows: 1fr;
+}
+
 .patent-card,
 .metric-card,
 .stat-card,
@@ -737,6 +741,23 @@ a:hover {
   color: var(--text-secondary);
   font-size: 0.94rem;
   line-height: 1.55;
+}
+
+.patent-status {
+  display: inline-block;
+  padding: 0.15em 0.65em;
+  margin-right: 0.3em;
+  border-radius: 1em;
+  background: #f1f5f9;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.patent-status.granted {
+  background: #dcfce7;
+  color: #166534;
 }
 
 .stat-card h3 {

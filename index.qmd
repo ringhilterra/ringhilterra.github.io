@@ -16,7 +16,7 @@ Senior Data Scientist II @ CrowdStrike | Football Analytics Researcher
 :::
 
 ::: {.home-actions}
-[View CV](assets/ryan-inghilterra-resume.pdf){.btn .btn-primary target="_blank"} [Football Analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & Publications](patents-publications/){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.btn .btn-outline-primary target="_blank"}
+[Football Analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & Publications](patents-publications/){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.btn .btn-outline-primary target="_blank"}
 :::
 
 :::
