@@ -22,7 +22,7 @@ page-layout: full
 
 # Academy Productivity Rankings {.unlisted}
 
-I led the research behind Training Ground Guru’s seventh edition. I built an AI-assisted workflow to trace where professional players trained and calculate how much credit each academy earned. The work became five TGG articles, a live masterclass and a benchmarking service for clubs.
+I led Training Ground Guru’s study of how academies in England and Wales develop senior footballers. I built an AI-assisted workflow to trace each player’s academy history and share credit across the clubs that trained him. Plymouth Argyle commissioned the first club report to benchmark its academy against its peers.
 
 [Explore the series](#the-tgg-series){.academy-action} [Inside the masterclass](#inside-the-masterclass)
 ::::
@@ -31,9 +31,9 @@ I led the research behind Training Ground Guru’s seventh edition. I built an A
 ### From player to ranking {.unlisted .unanchored}
 
 <ol>
-<li><strong>Trace the player</strong><span>Match a senior player to reports of their academy spells.</span></li>
-<li><strong>Check the evidence</strong><span>Use an AI agent to compare sources, dates and gaps in the record.</span></li>
-<li><strong>Share the credit</strong><span>Weight the senior career and divide points by time at each academy.</span></li>
+<li><strong>Trace the player</strong><span>Start with the player’s senior record and trace academy spells in public sources.</span></li>
+<li><strong>Check the evidence</strong><span>The AI agent cross-checks identity and dates, follows gaps and links each finding to a source.</span></li>
+<li><strong>Share the credit</strong><span>Use Opta’s league strengths and minutes played to score the senior season. Split the points by time at each academy.</span></li>
 </ol>
 :::
 :::::
@@ -46,7 +46,7 @@ I led the research behind Training Ground Guru’s seventh edition. I built an A
 
 ## The TGG series
 
-I wrote the methodology and the complete table. Three further articles with the TGG editorial team explored what the results meant on the pitch.
+I wrote the methodology and the complete table, and co-authored three analyses.
 
 ```{=html}
 <div class="academy-articles">
@@ -82,11 +82,16 @@ I wrote the methodology and the complete table. Three further articles with the 
 
 ## Inside the masterclass
 
-On launch day I presented *Inside the TGG Academy Productivity Rankings* for Training Ground Guru and Twelve Football. This figure from my talk shows how I researched a player’s pathway. The agent compared public sources, checked the career timeline and followed up on gaps before recording an academy spell with its evidence.
+:::: {.academy-talk}
+::: {.academy-talk-copy}
 
-[<img src="agent-workflow.png" alt="The agent starts with an FBref player identity, checks public sources and chronology, and records academy spells with supporting evidence and uncertainty.">View workflow at full size](agent-workflow.png){.academy-workflow aria-label="Open the masterclass workflow figure at full size"}
+I presented the research to Training Ground Guru and Twelve Football members on launch day. This slide shows how the agent investigated conflicting accounts of a player’s early career and recorded the evidence behind each academy spell.
 
 [Masterclass announcement](https://trainingground.guru/chelseas-crown-on-the-line-in-2025-26-academy-rankings/) · [My launch recap](https://www.linkedin.com/posts/ryan-inghilterra-017_academy-rankings-202526-how-the-research-activity-7503113663973748736-l0Yu) · [Read my methodology](https://trainingground.guru/academy-rankings-2025-26-how-the-research-was-done/)
+:::
+
+[<img src="agent-workflow.png" alt="The agent starts with an FBref player identity, checks public sources and chronology, and records academy spells with supporting evidence and uncertainty.">View workflow at full size](agent-workflow.png){.academy-workflow aria-label="Open the masterclass workflow figure at full size"}
+::::
 
 ## How clubs used the rankings
 
