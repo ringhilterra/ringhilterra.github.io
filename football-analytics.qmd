@@ -12,5 +12,3 @@ listing:
   include:
     domain: "football"
 ---
-
-## Projects

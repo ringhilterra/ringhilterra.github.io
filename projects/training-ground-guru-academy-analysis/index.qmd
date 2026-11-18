@@ -1,6 +1,6 @@
 ---
 title: "Training Ground Guru Academy Productivity Rankings"
-description: "My AI-assisted study of 2,067 players for TGG led to five articles, a live masterclass, BBC Sport coverage and commissioned club reports."
+description: "TGG commissioned me to trace the academy histories of 2,067 players using AI. The study led to five articles, a live masterclass, BBC Sport coverage and club reports."
 date: "2026-09-07"
 date-format: "MMMM YYYY"
 order: 1
