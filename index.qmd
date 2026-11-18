@@ -1,22 +1,33 @@
 ---
-title: ""
+title: "Ryan Inghilterra"
 pagetitle: "Ryan Inghilterra"
 toc: false
-page-layout: article
+page-layout: full
 ---
 
-::: {.hero-section}
+::::: {.hero-section}
 
-![](images/ri-hs2-cropped.png){.hero-headshot}
+:::: {.hero-intro}
 
-# Ryan Inghilterra
+::: {.hero-heading}
 
-::: {.hero-subtitle}
-Senior Data Scientist II @ CrowdStrike | Football Analytics Researcher
+# Ryan Inghilterra {.unlisted .unanchored}
+
+[Senior Data Scientist II @ CrowdStrike | Football Analytics Researcher]{.hero-subtitle}
+:::
+
+<div class="hero-photo"><img src="images/ri-hs2-cropped.png" class="hero-headshot" alt="Ryan Inghilterra on a football pitch"></div>
+::::
+
+::: {.hero-bio}
+
+I'm a Senior Data Scientist II at CrowdStrike with over 10 years of experience across data science, AI/ML, and engineering. My work spans applied research and translating that research into production capabilities at scale, with a recent focus on LLMs and agentic AI.
+
+I'm also an independent football analytics researcher, applying AI and data science to player evaluation, team performance, and tactical analysis.
 :::
 
 ::: {.home-actions}
 [Football Analytics](football-analytics.qmd){.btn .btn-outline-primary} [Patents & Publications](patents-publications/){.btn .btn-outline-primary} [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/){.btn .btn-outline-primary target="_blank"}
 :::
 
-:::
+:::::
