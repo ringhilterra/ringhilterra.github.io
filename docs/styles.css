@@ -840,7 +840,7 @@ a:hover {
 
 .transition-award {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(10rem, 31%);
+  grid-template-columns: minmax(0, 1fr) 9rem;
   align-items: center;
   gap: 1.5rem;
   padding-block: 1rem;
@@ -849,10 +849,12 @@ a:hover {
 .transition-award h2 { margin-top: 0; border: 0; }
 .transition-award .btn { margin-bottom: 0.4rem; }
 .transition-award-copy p:last-child { margin-bottom: 0; }
-.transition-poster img { width: 100%; height: auto; border-radius: 4px; }
+.transition-award > p { margin: 0; }
+.transition-poster { display: block; width: 9rem; max-width: 100%; }
+.transition-poster img { display: block; width: 100%; height: auto; border-radius: 4px; }
 @media (max-width: 620px) {
   .transition-award { grid-template-columns: 1fr; }
-  .transition-poster { width: min(100%, 14rem); }
+  .transition-poster { width: 7rem; }
 }
 
 main:has(> .academy-study) > .quarto-title-block { display: none; }

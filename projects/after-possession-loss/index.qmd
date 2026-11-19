@@ -1,6 +1,6 @@
 ---
 title: "After Possession Loss: Predicting and Exploring Defensive Transitions"
-description: "First place at Twelve Football’s Demo Day. I used player tracking and graph neural networks to forecast the next eight seconds after a turnover."
+description: "I won first place at Demo Day for Twelve Football’s Deep Learning & AI in Sports course. I used player tracking and graph neural networks to forecast the eight seconds after a turnover."
 date: "2026-11-16"
 date-format: "MMMM D, YYYY"
 order: 0
@@ -15,7 +15,7 @@ toc: false
 ::: {.transition-award-copy}
 ## First among 12 projects
 
-On November 16, 2026, I presented this project at the final showcase of Twelve Football’s eight-week *Deep Learning & AI in Sports* programme. Five football industry judges selected it for first place.
+I developed the model during the eight-week course and presented it to five football industry judges at the final Demo Day on November 16, 2026. The panel voted it first out of 12 projects.
 
 The panel included Matteo Matteotti (Inter Milan), Michael Nanopoulos (SkillCorner), Jernej Flisar (Twelve Football), Sebastien Coustou (Gemini Sports AI) and Benjamin Mawdsley (City Football Group).
 
@@ -24,7 +24,7 @@ The panel included Matteo Matteotti (Inter Milan), Michael Nanopoulos (SkillCorn
 [Read instructor Pegah Rahimian’s results recap on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7528911404742037504/)
 :::
 
-<a href="demo-day-awards.jpg" class="transition-poster"><img src="demo-day-awards.jpg" alt="Open the full awards announcement with the winners and judging panel"></a>
+<a href="demo-day-awards.jpg" class="transition-poster"><img src="demo-day-awards.jpg" width="144" height="180" style="width: 144px; max-width: 100%; height: auto;" alt="Open the full awards announcement with the winners and judging panel"></a>
 ::::
 
 ## What happens in the next eight seconds?
