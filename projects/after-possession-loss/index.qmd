@@ -20,7 +20,7 @@ css: presentation.css
 </dl>
 ```
 
-## First among 12 projects
+## Twelve Football Demo Day – 1st Place [🥇]{aria-hidden="true"} {#twelve-football-demo-day}
 
 I developed the project during the eight-week course and demonstrated the app to five football industry judges on November 16, 2026. The panel voted it first out of 12 projects.
 
