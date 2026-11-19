@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-11-16">
-<meta name="description" content="I won first place at Demo Day for Twelve Football’s Deep Learning &amp; AI in Sports course. I used player tracking and graph neural networks to forecast the eight seconds after a turnover.">
+<meta name="description" content="I built a model and app to predict, analyze and simulate defensive transitions. It won Demo Day for Twelve Football’s Deep Learning &amp; AI in Sports course.">
 
 <title>After Possession Loss: Predicting and Exploring Defensive Transitions – Ryan Inghilterra</title>
 <style>
@@ -73,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="presentation.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -143,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    I won first place at Demo Day for Twelve Football’s Deep Learning &amp; AI in Sports course. I used player tracking and graph neural networks to forecast the eight seconds after a turnover.
+    I built a model and app to predict, analyze and simulate defensive transitions. It won Demo Day for Twelve Football’s Deep Learning &amp; AI in Sports course.
   </div>
 </div>
 
@@ -166,35 +167,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="transition-award">
-<section id="first-among-12-projects" class="level2 transition-award-copy">
+<dl class="transition-capabilities" aria-label="Project capabilities">
+  <div><dt>Predict the next eight seconds</dt><dd>A graph neural network tracks how players move to estimate whether the defense will regain the ball or the opponent will advance.</dd></div>
+  <div><dt>Analyze the transition</dt><dd>Compare forecasts with match outcomes to spot patterns, then review plays where the defense won the ball back despite being exposed.</dd></div>
+  <div><dt>Test defensive what-ifs</dt><dd>Move a defender or change a run in the simulator. Compare the new forecast and explore positioning ideas with a tactical AI assistant.</dd></div>
+</dl>
+<section id="first-among-12-projects" class="level2">
 <h2 class="anchored" data-anchor-id="first-among-12-projects">First among 12 projects</h2>
-<p>I developed the model during the eight-week course and presented it to five football industry judges at the final Demo Day on November 16, 2026. The panel voted it first out of 12 projects.</p>
+<p>I developed the project during the eight-week course and demonstrated the app to five football industry judges on November 16, 2026. The panel voted it first out of 12 projects.</p>
 <p>The panel included Matteo Matteotti (Inter Milan), Michael Nanopoulos (SkillCorner), Jernej Flisar (Twelve Football), Sebastien Coustou (Gemini Sports AI) and Benjamin Mawdsley (City Football Group).</p>
-<p><a href="after-possession-loss-slides.pdf" class="btn btn-primary">View my slides (PDF)</a> <a href="https://twelve-courses.teachable.com/courses/2953628/lectures/66591834" class="btn btn-outline-primary">Demo Day presentations</a></p>
-<p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7528911404742037504/">Read instructor Pegah Rahimian’s results recap on LinkedIn</a></p>
-</section>
-<p><a href="demo-day-awards.jpg" class="transition-poster"><img src="demo-day-awards.jpg" width="144" height="180" style="width: 144px; max-width: 100%; height: auto;" alt="Open the full awards announcement with the winners and judging panel"></a></p>
+<div class="demo-day-links">
+<a class="demo-recap" href="https://www.linkedin.com/feed/update/urn:li:activity:7528911404742037504/">
+  <img src="demo-day-awards.jpg" width="52" height="65" alt="">
+  <span><small>Pegah Rahimian · Course instructor</small><strong>Read the Demo Day results on LinkedIn</strong></span>
+</a>
+<a class="demo-recap" href="https://twelve-courses.teachable.com/courses/2953628/lectures/66591834">
+  <span class="demo-play bi bi-play-circle" aria-hidden="true"></span>
+  <span><small>Twelve Football · Event recording</small><strong>Watch all Demo Day presentations</strong></span>
+</a>
 </div>
-<section id="what-happens-in-the-next-eight-seconds" class="level2">
-<h2 class="anchored" data-anchor-id="what-happens-in-the-next-eight-seconds">What happens in the next eight seconds?</h2>
-<p>A team wins the ball back. Did it defend the transition well, or did its opponent miss a chance to break through? I built a model to estimate how exposed the team was <strong>at the opponent’s first controlled touch</strong>. An analyst can then compare that forecast with what happened on the pitch.</p>
-<p>I studied <strong>54,963 open-play possession losses across 648 Premier League matches</strong> using SkillCorner tracking and Dynamic Events data. For losses in the middle and attacking thirds, the model estimated which outcome would happen first within eight seconds: the defending team regained control, the opponent controlled the ball at least 15 metres closer to goal, or neither occurred.</p>
 </section>
-<section id="what-movement-added-to-the-forecast" class="level2">
-<h2 class="anchored" data-anchor-id="what-movement-added-to-the-forecast">What movement added to the forecast</h2>
-<p>I compared XGBoost, using summaries of pressure and team shape, with a graph attention network (GATv2) that represented all 22 players and the ball individually. I tested both with and without movement from the half-second leading up to the opponent’s first touch.</p>
-<p>On <strong>8,952 transitions from 99 held-out matches</strong>, the graph model with motion led all six models across the four reported metrics. Its Brier score, which measures error in the predicted probabilities, was <strong>0.5651</strong>, compared with <strong>0.5750</strong> for the same graph without motion and <strong>0.5810</strong> for XGBoost with motion. Lower scores indicate more accurate probabilities. <a href="after-possession-loss-slides.pdf#page=10">See the full comparison on slide 10</a>.</p>
-</section>
-<section id="exploring-a-different-defensive-shape" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-a-different-defensive-shape">Exploring a different defensive shape</h2>
-<p>In the Brighton–West Ham example, I showed how an analyst could move a defender, change the direction of a run and compare the resulting forecasts. The tactical AI assistant suggests adjustments to investigate. The change in predicted risk gives the analyst a hypothesis to test in video review.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="defensive-what-ifs.png" class="img-fluid figure-img" alt="An illustrative pitch shows a defender’s original and adjusted positions alongside the predicted probabilities and tactical assistant."></p>
-<figcaption>Slide from the presentation showing how an analyst can adjust defensive positions and compare the model’s forecasts.</figcaption>
-</figure>
+<section id="demo-day-presentation" class="level2">
+<h2 class="anchored" data-anchor-id="demo-day-presentation">Demo Day presentation</h2>
+<p><a href="after-possession-loss-slides.pdf" class="btn btn-primary">View my slides (PDF)</a></p>
+<div id="presentation-preview" class="demo-deck carousel slide" role="region" aria-label="Demo Day presentation slides" tabindex="0">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img src="slide-preview/slide-01.webp" width="1440" height="810" loading="lazy" alt="Slide 1. After Possession Loss: Predicting and Exploring Defensive Transitions"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-02.webp" width="1440" height="810" loading="lazy" alt="Slide 2. Possession lost during Brighton vs West Ham"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-03.webp" width="1440" height="810" loading="lazy" alt="Slide 3. Predicting a regain, progression or neither"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-04.webp" width="1440" height="810" loading="lazy" alt="Slide 4. Comparing the actual outcome with the predicted risk"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-05.webp" width="1440" height="810" loading="lazy" alt="Slide 5. Exploring how Brighton could have defended differently"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-06.webp" width="1440" height="810" loading="lazy" alt="Slide 6. Project overview: prediction, analysis and exploration"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-07.webp" width="1440" height="810" loading="lazy" alt="Slide 7. Defining the eight-second prediction task"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-08.webp" width="1440" height="810" loading="lazy" alt="Slide 8. SkillCorner tracking and Dynamic Events data"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-09.webp" width="1440" height="810" loading="lazy" alt="Slide 9. Comparing team summaries with player–ball graphs"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-10.webp" width="1440" height="810" loading="lazy" alt="Slide 10. Performance across 8,952 test samples"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-11.webp" width="1440" height="810" loading="lazy" alt="Slide 11. Finding defensive vulnerability and unexpected outcomes"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-12.webp" width="1440" height="810" loading="lazy" alt="Slide 12. Adjusting defensive shape and comparing forecasts"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-13.webp" width="1440" height="810" loading="lazy" alt="Slide 13. Live demo"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-14.webp" width="1440" height="810" loading="lazy" alt="Slide 14. Thank you"></div>
+    <div class="carousel-item"><img src="slide-preview/slide-15.webp" width="1440" height="810" loading="lazy" alt="Slide 15. Technical appendix: model inputs"></div>
+  </div>
+  <div class="demo-deck-controls">
+    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-target="#presentation-preview" data-bs-slide="prev" disabled="">← Previous</button>
+    <span role="status" aria-atomic="true">Slide 1 of 15</span>
+    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-target="#presentation-preview" data-bs-slide="next">Next →</button>
+  </div>
 </div>
+<script>
+{
+  const deck = document.getElementById('presentation-preview');
+  const total = deck.querySelectorAll('.carousel-item').length;
+  const previous = deck.querySelector('[data-bs-slide="prev"]');
+  const next = deck.querySelector('[data-bs-slide="next"]');
+  const count = deck.querySelector('[role="status"]');
+
+  new bootstrap.Carousel(deck, { interval: false, wrap: false });
+  deck.addEventListener('slid.bs.carousel', ({ to }) => {
+    const focused = document.activeElement;
+    previous.disabled = to === 0;
+    next.disabled = to === total - 1;
+    count.textContent = `Slide ${to + 1} of ${total}`;
+    if ((focused === previous && previous.disabled) || (focused === next && next.disabled)) {
+      deck.focus({ preventScroll: true });
+    }
+  });
+}
+</script>
 
 
 </section>
