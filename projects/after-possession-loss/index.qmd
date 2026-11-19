@@ -1,7 +1,7 @@
 ---
 title: "After Possession Loss: Predicting and Exploring Defensive Transitions"
-description: "I built a model and app to predict, analyze and simulate defensive transitions. It won Demo Day for Twelve Football’s Deep Learning & AI in Sports course."
-date: "2026-11-16"
+description: "I built a model and app to predict and analyze defensive transitions and test positioning changes. It won Demo Day for Twelve Football’s Deep Learning & AI in Sports course."
+date: "2026-11-17"
 date-format: "MMMM D, YYYY"
 order: 0
 domain: football
