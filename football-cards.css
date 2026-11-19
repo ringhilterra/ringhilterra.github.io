@@ -5,7 +5,7 @@
 #listing-football-projects .list > :nth-child(-n+3) .card {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
-  min-height: 21rem;
+  min-height: 16rem;
   background: var(--feature-background, #f4f7f1);
   border-color: var(--feature-border, #cedbd1);
 }
@@ -22,11 +22,17 @@
 }
 #listing-football-projects .list > :nth-child(-n+3) .card-body {
   align-self: center;
-  padding: clamp(1.2rem, 2.8vw, 2rem);
+  padding: 1rem 1.25rem;
 }
 #listing-football-projects .list > :nth-child(-n+3) .card-title {
-  font: 500 clamp(1.55rem, 2.5vw, 1.95rem)/1.08 Georgia, serif;
+  font: 500 clamp(1.55rem, 2.5vw, 1.75rem)/1.08 Georgia, serif;
   color: var(--feature-title-color, #14382e);
+}
+#listing-football-projects .list > :nth-child(-n+3) .listing-description p {
+  margin-bottom: 0;
+}
+#listing-football-projects .list > :nth-child(-n+3) .card-attribution {
+  padding-top: 0.4rem;
 }
 #listing-football-projects a[href*="/after-possession-loss/"] {
   --feature-background: #f7f7f3;
