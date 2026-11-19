@@ -1,6 +1,7 @@
 ---
 title: "Football Analytics"
 toc: false
+css: football-cards.css
 listing:
   id: football-projects
   contents: projects/*/index.qmd
