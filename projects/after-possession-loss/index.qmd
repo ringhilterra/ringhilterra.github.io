@@ -34,7 +34,7 @@ The panel included Matteo Matteotti (Inter Milan), Michael Nanopoulos (SkillCorn
 </a>
 <a class="demo-recap" href="https://twelve-courses.teachable.com/courses/2953628/lectures/66591834">
   <span class="demo-play bi bi-play-circle" aria-hidden="true"></span>
-  <span><small>Twelve Football · Event recording</small><strong>Watch all Demo Day presentations</strong></span>
+  <span><small>Twelve Football · Event recording</small><strong>Watch all Demo Day presentations</strong><small>My presentation starts at 37:30.</small></span>
 </a>
 </div>
 ```
